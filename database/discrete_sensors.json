@@ -1,0 +1,22 @@
+{
+  "bc547": {
+    "name": "BC547 NPN Bipolar Junction Transistor (TO-92)",
+    "description": "General purpose small-signal NPN transistor. Highly used for switching and amplification in labs.",
+    "ascii_art": "\n               \u001b[1mBC547 TO-92 Front View\u001b[0m\n                  (Flat Face)\n                  .---------.\n                 /   \u001b[1mBC547\u001b[0m   \\\n                |  \u001b[1mC\u001b[0m   \u001b[1mB\u001b[0m   \u001b[1mE\u001b[0m  |\n                |  |   |   |  |\n                |  |   |   |  |\n                   1   2   3\n                   \n                Pin 1: \u001b[36mCollector\u001b[0m\n                Pin 2: \u001b[36mBase\u001b[0m\n                Pin 3: \u001b[36mEmitter\u001b[0m\n        "
+  },
+  "irf540n": {
+    "name": "IRF540N N-Channel Power MOSFET (TO-220)",
+    "description": "High-current N-Channel Power MOSFET (100V, 33A). Used for switching high power loads from logic pins.",
+    "ascii_art": "\n               \u001b[1mIRF540N TO-220 Front View\u001b[0m\n                  +------------+\n                  |  [ Metal ] |\n                  |  [ Tab   ] |\n                  |------------|\n                  |  \u001b[1mIRF540N\u001b[0m   |\n                  |  \u001b[1mG\u001b[0m   \u001b[1mD\u001b[0m   \u001b[1mS\u001b[0m |\n                  |  |   |   | |\n                     1   2   3\n                     \n                Pin 1: \u001b[36mGate\u001b[0m (Trigger)\n                Pin 2: \u001b[36mDrain\u001b[0m (Connected to Load V-)\n                Pin 3: \u001b[36mSource\u001b[0m (Connected to System GND)\n        "
+  },
+  "hcsr04": {
+    "name": "HC-SR04 Ultrasonic Distance Sensor Module",
+    "description": "Non-contact ultrasonic range measurement module (2cm to 400cm range). Uses sonic pulses and echoes.",
+    "ascii_art": "\n                  \u001b[1mHC-SR04 Front & Connector View\u001b[0m\n               +---------------------------------+\n               |   [ Transmitter ]   [ Receiver ]|\n               |       (T)               (R)     |\n               +---------------===---------------+\n                               |||\n                               1234\n                               \n                   Pin 1: \u001b[31mVCC\u001b[0m (+5V DC Input)\n                   Pin 2: \u001b[36mTRIG\u001b[0m (Trigger Input: 10us High pulse starts ping)\n                   Pin 3: \u001b[36mECHO\u001b[0m (Echo Output: Duration of High signal = flight time)\n                   Pin 4: \u001b[1mGND\u001b[0m (System Ground)\n        "
+  },
+  "dht11": {
+    "name": "DHT11/DHT22 Temperature & Humidity Sensor",
+    "description": "Digital humidity and temperature sensor. Highly used in smart building or agricultural lab setups.",
+    "ascii_art": "\n               \u001b[1mDHT11 / DHT22 (Pins Facing You)\u001b[0m\n                     .---------------.\n                    | [][][][][][][] |\n                    | [][][][][][][] |\n                    | [][][][][][][] |\n                    |                |\n                    '----------------'\n                       |   |   |   |\n                       1   2   3   4\n                       \n                   Pin 1: \u001b[31mVCC\u001b[0m (3.3V to 5.5V Power)\n                   Pin 2: \u001b[36mDATA\u001b[0m (Single-bus bidirectional data link)\n                   Pin 3: \u001b[1mNC\u001b[0m (No Connect - Leave empty)\n                   Pin 4: \u001b[1mGND\u001b[0m (System Ground)\n        "
+  }
+}

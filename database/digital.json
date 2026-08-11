@@ -1,0 +1,27 @@
+{
+  "l293d": {
+    "name": "L293D Dual H-Bridge Motor Driver (PDIP-16)",
+    "description": "High-current driver designed to control bidirectional speed and direction of up to two DC motors.",
+    "ascii_art": "\n           \u001b[1mL293D Top View\u001b[0m\n            +---\\_/---+\n     1,2EN  | 1    16 | VCC1 (Logic Supply, 5V)\n     1A     | 2    15 | 4A\n     1Y     | 3    14 | 4Y\n     GND    | 4    13 | GND\n     GND    | 5    12 | GND\n     2Y     | 6    11 | 3Y\n     2A     | 7    10 | 3A\n     VCC2   | 8     9 | 3,4EN (Motor Power, 4.5V to 36V)\n            +---------+\n        "
+  },
+  "74hc595": {
+    "name": "74HC595 8-Bit Shift Register (PDIP-16)",
+    "description": "Serial-In Parallel-Out shift register. Used to expand limited GPIO pins to control 8 outputs with just 3 MCU pins.",
+    "ascii_art": "\n           \u001b[1m74HC595 Top View\u001b[0m\n         QB  | 1    16 | VCC (2V to 6V)\n         QC  | 2    15 | QA (First Output Bit)\n         QD  | 3    14 | SER (Serial Data Input)\n         QE  | 4    13 | OE (Output Enable, Active Low)\n         QF  | 5    12 | RCLK (Storage Latch/Register Clock)\n         QG  | 6    11 | SRCLK (Shift Register Clock)\n         QH  | 7    10 | SRCLR (Shift Register Clear, Active Low)\n        GND  | 8     9 | QH' (Serial Out, Daisy Chain Link)\n             +---------+\n        "
+  },
+  "74hc00": {
+    "name": "74HC00 Quad 2-Input NAND Gate (PDIP-14)",
+    "description": "Four independent NAND gates. A fundamental building block of digital logic systems.",
+    "ascii_art": "\n           \u001b[1m74HC00 Top View\u001b[0m\n             +---\\_/---+\n         1A  | 1    14 | VCC (2V to 6V)\n         1B  | 2    13 | 4B\n         1Y  | 3    12 | 4A\n         2A  | 4    11 | 4Y\n         2B  | 5    10 | 3B\n         2Y  | 6     9 | 3A\n         GND | 7     8 | 3Y\n             +---------+\n        "
+  },
+  "74hc14": {
+    "name": "74HC14 Hex Inverter with Schmitt Trigger (PDIP-14)",
+    "description": "Six independent NOT gates with hysteresis, perfect for debouncing switches and squaring up noisy signals.",
+    "ascii_art": "\n           \u001b[1m74HC14 Top View\u001b[0m\n             +---\\_/---+\n         1A  | 1    14 | VCC (2V to 6V)\n         1Y  | 2    13 | 6A\n         2A  | 3    12 | 6Y\n         2Y  | 4    11 | 5A\n         3A  | 5    10 | 5Y\n         3Y  | 6     9 | 4A\n         GND | 7     8 | 4Y\n             +---------+\n        "
+  },
+  "cd4017": {
+    "name": "CD4017 CMOS Decade Counter (PDIP-16)",
+    "description": "5-stage Johnson decade counter that produces sequential outputs from 0 to 9 on incoming clock pulses.",
+    "ascii_art": "\n           \u001b[1mCD4017 Top View\u001b[0m\n             +---\\_/---+\n         Q5  | 1    16 | VDD (3V to 15V)\n         Q1  | 2    15 | RESET (Active High)\n         Q0  | 3    14 | CLOCK (Clock Input)\n         Q2  | 4    13 | CLOCK INHIBIT (Active High)\n         Q7  | 5    12 | CARRY OUT (Div-by-10)\n         Q3  | 6    11 | Q9\n         Q8  | 7    10 | Q4\n         GND | 8     9 | Q6\n             +---------+\n        "
+  }
+}

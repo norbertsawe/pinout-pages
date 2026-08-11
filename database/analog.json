@@ -1,0 +1,17 @@
+{
+  "lm741": {
+    "name": "LM741 Operational Amplifier (PDIP-8)",
+    "description": "Classic single operational amplifier used for analog signal conditioning and filtering.",
+    "ascii_art": "\n            \u001b[1mLM741 Top View\u001b[0m\n             +---\\_/---+\n       OFFSET| 1     8 | NC (No Connect)\n      - INPUT| 2     7 | V+ (Positive Supply, Max +18V)\n      + INPUT| 3     6 | OUTPUT\n           V-| 4     5 | OFFSET\n             +---------+\n        "
+  },
+  "lm358": {
+    "name": "LM358 Dual Operational Amplifier (PDIP-8)",
+    "description": "Low-power dual op-amp. Highly useful because it contains two independent op-amps in a single 8-pin package.",
+    "ascii_art": "\n            \u001b[1mLM358 Top View\u001b[0m\n             +---\\_/---+\n     OUT A   | 1     8 | VCC (Single/Dual Supply, 3V to 32V)\n     -INPUT A| 2     7 | OUT B\n     +INPUT A| 3     6 | -INPUT B\n     GND/V-  | 4     5 | +INPUT B\n             +---------+\n        "
+  },
+  "ne555": {
+    "name": "NE555 Precision Timer IC (PDIP-8)",
+    "description": "Highly versatile timer IC used for creating precise clock pulses, delays, and PWM oscillation.",
+    "ascii_art": "\n            \u001b[1mNE555 Top View\u001b[0m\n            +---\\_/---+\n         GND| 1     8 | VCC (4.5V to 16V)\n     TRIGGER| 2     7 | DISCHARGE\n      OUTPUT| 3     6 | THRESHOLD\n       RESET| 4     5 | CONTROL VOLTAGE\n            +---------+\n        "
+  }
+}
