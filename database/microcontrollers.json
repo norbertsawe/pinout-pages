@@ -1,27 +1,1698 @@
 {
   "atmega328p": {
-    "name": "ATmega328P Microcontroller (28-pin PDIP)",
-    "description": "High-performance, low-power AVR 8-bit RISC microcontroller used on the Arduino Uno.",
-    "ascii_art": "\n                                   \u001b[1mATmega328P (Top View)\u001b[0m\n                                    +--------\\_/-------+\n                (PCINT14/RESET) PC6 | 1             28 | PC5 (ADC5/SCL/PCINT13)\n                  (PCINT16/RXD) PD0 | 2             27 | PC4 (ADC4/SDA/PCINT12)\n                  (PCINT17/TXD) PD1 | 3             26 | PC3 (ADC3/PCINT11)\n                 (PCINT18/INT0) PD2 | 4             25 | PC2 (ADC2/PCINT10)\n                 (PCINT19/INT1) PD3 | 5             24 | PC1 (ADC1/PCINT9)\n               (PCINT20/XCK/T0) PD4 | 6             23 | PC0 (ADC0/PCINT8)\n                                VCC | 7             22 | GND\n                                GND | 8             21 | AREF\n           (PCINT6/XTAL1/TOSC1) PB6 | 9             20 | AVCC (ADC Power Supply Input)\n           (PCINT7/XTAL2/TOSC2) PB7 | 10            19 | PB5 (SCK/PCINT5)\n              (PCINT21/OC0B/T1) PD5 | 11            18 | PB4 (MISO/PCINT4)\n            (PCINT22/OC0A/AIN0) PD6 | 12            17 | PB3 (MOSI/OC2A/PCINT3)\n                 (PCINT23/AIN1) PD7 | 13            16 | PB2 (SS/OC1B/PCINT2)\n             (PCINT0/CLKO/ICP1) PB0 | 14            15 | PB1 (OC1A/PCINT1)\n                                    +------------------+\n        "
+    "schema_version": 2,
+    "name": "ATMEGA328P (PDIP-28)",
+    "description": "AVR microcontroller used by the classic Uno.",
+    "category": "microcontrollers",
+    "package": "PDIP-28",
+    "voltage": "1.8-5.5 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "/RESET/PC6",
+        "kind": "control",
+        "description": "/RESET/PC6 bidirectional.",
+        "functions": [
+          "RESET",
+          "PCINT14"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "PD0",
+        "kind": "digital",
+        "description": "PD0 bidirectional.",
+        "functions": [
+          "UART RXD",
+          "PCINT16"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "PD1",
+        "kind": "digital",
+        "description": "PD1 bidirectional.",
+        "functions": [
+          "UART TXD",
+          "PCINT17"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "PD2",
+        "kind": "digital",
+        "description": "PD2 bidirectional.",
+        "functions": [
+          "INT0",
+          "PCINT18"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "PD3",
+        "kind": "digital",
+        "description": "PD3 bidirectional.",
+        "functions": [
+          "PWM OC2B",
+          "INT1",
+          "PCINT19"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "PD4",
+        "kind": "digital",
+        "description": "PD4 bidirectional.",
+        "functions": [
+          "XCK",
+          "T0",
+          "PCINT20"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "XTAL1/PB6",
+        "kind": "digital",
+        "description": "XTAL1/PB6 bidirectional.",
+        "functions": [
+          "XTAL1",
+          "TOSC1",
+          "PCINT6"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "XTAL2/PB7",
+        "kind": "digital",
+        "description": "XTAL2/PB7 bidirectional.",
+        "functions": [
+          "XTAL2",
+          "TOSC2",
+          "PCINT7"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "PD5",
+        "kind": "digital",
+        "description": "PD5 bidirectional.",
+        "functions": [
+          "PWM OC0B",
+          "T1",
+          "PCINT21"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "PD6",
+        "kind": "digital",
+        "description": "PD6 bidirectional.",
+        "functions": [
+          "PWM OC0A",
+          "AIN0",
+          "PCINT22"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "PD7",
+        "kind": "digital",
+        "description": "PD7 bidirectional.",
+        "functions": [
+          "AIN1",
+          "PCINT23"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "PB0",
+        "kind": "digital",
+        "description": "PB0 bidirectional.",
+        "functions": [
+          "ICP1",
+          "CLKO",
+          "PCINT0"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "PB1",
+        "kind": "digital",
+        "description": "PB1 bidirectional.",
+        "functions": [
+          "PWM OC1A",
+          "PCINT1"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "PB2",
+        "kind": "digital",
+        "description": "PB2 bidirectional.",
+        "functions": [
+          "SPI SS",
+          "PWM OC1B",
+          "PCINT2"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "17",
+        "name": "PB3",
+        "kind": "digital",
+        "description": "PB3 bidirectional.",
+        "functions": [
+          "SPI MOSI",
+          "PWM OC2A",
+          "PCINT3"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "18",
+        "name": "PB4",
+        "kind": "digital",
+        "description": "PB4 bidirectional.",
+        "functions": [
+          "SPI MISO",
+          "PCINT4"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "19",
+        "name": "PB5",
+        "kind": "digital",
+        "description": "PB5 bidirectional.",
+        "functions": [
+          "SPI SCK",
+          "PCINT5"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "20",
+        "name": "AVCC",
+        "kind": "power",
+        "description": "AVCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "21",
+        "name": "AREF",
+        "kind": "analog",
+        "description": "ADC voltage reference.",
+        "functions": [],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "22",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND passive.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "23",
+        "name": "PC0",
+        "kind": "analog",
+        "description": "PC0 bidirectional.",
+        "functions": [
+          "ADC0",
+          "PCINT8"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "24",
+        "name": "PC1",
+        "kind": "analog",
+        "description": "PC1 bidirectional.",
+        "functions": [
+          "ADC1",
+          "PCINT9"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "25",
+        "name": "PC2",
+        "kind": "analog",
+        "description": "PC2 bidirectional.",
+        "functions": [
+          "ADC2",
+          "PCINT10"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "26",
+        "name": "PC3",
+        "kind": "analog",
+        "description": "PC3 bidirectional.",
+        "functions": [
+          "ADC3",
+          "PCINT11"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "27",
+        "name": "PC4",
+        "kind": "analog",
+        "description": "PC4 bidirectional.",
+        "functions": [
+          "ADC4",
+          "I2C SDA",
+          "PCINT12"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      },
+      {
+        "number": "28",
+        "name": "PC5",
+        "kind": "analog",
+        "description": "PC5 bidirectional.",
+        "functions": [
+          "ADC5",
+          "I2C SCL",
+          "PCINT13"
+        ],
+        "voltage": "0-VCC",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.microchip.com/en-us/product/ATmega328P"
+    ],
+    "notes": [
+      "Clock speed depends on supply: up to 20 MHz at 4.5-5.5 V. AVCC must be powered even if ADC is unused."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "1.8-5.5 V"
+    },
+    "ascii_art": "ATMEGA328P (PDIP-28) [atmega328p]\nAVR microcontroller used by the classic Uno.\nPackage: PDIP-28 | Supply: 1.8-5.5 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n                 +---------+\n[CTL] /RESET/PC6 |  1   28 | [ANA] PC5       \n        [IO] PD0 |  2   27 | [ANA] PC4       \n        [IO] PD1 |  3   26 | [ANA] PC3       \n        [IO] PD2 |  4   25 | [ANA] PC2       \n        [IO] PD3 |  5   24 | [ANA] PC1       \n        [IO] PD4 |  6   23 | [ANA] PC0       \n       [PWR] VCC |  7   22 | [GND] GND       \n       [GND] GND |  8   21 | [ANA] AREF      \n  [IO] XTAL1/PB6 |  9   20 | [PWR] AVCC      \n  [IO] XTAL2/PB7 | 10   19 | [IO] PB5        \n        [IO] PD5 | 11   18 | [IO] PB4        \n        [IO] PD6 | 12   17 | [IO] PB3        \n        [IO] PD7 | 13   16 | [IO] PB2        \n        [IO] PB0 | 14   15 | [IO] PB1        \n                 +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
   },
-  "esp32s3": {
-    "name": "ESP32-S3 Raw IC (QFN56 Layout Variant)",
-    "description": "Dual-core Xtensa 32-bit LX7 MCU with built-in Wi-Fi and Bluetooth LE. Excellent for IoT and AI edge designs.",
-    "ascii_art": "\n                        \u001b[1mESP32-S3 (Top View Pin-Map Guide)\u001b[0m\n                      +------------------------------+\n                      | 56 55 54 53 52 51 50 49 48 47 |\n              GND  1  | [ ] [ ] [ ] [ ] [ ] [ ] [ ]   | 46  IO9\n              3V3  2  |                               | 45  IO10\n             RSTN  3  |                               | 44  IO11\n              IO1  4  |                               | 43  IO12\n              IO2  5  |          \u001b[36m\u001b[1mESP32-S3\u001b[0m             | 42  IO13\n              IO3  6  |            \u001b[36m\u001b[1mCHIP\u001b[0m               | 41  IO14\n              IO4  7  |                               | 40  XTAL_P\n              IO5  8  |                               | 39  XTAL_N\n              IO6  9  |                               | 38  GND\n              IO7 10  |                               | 37  IO17\n              IO8 11  |                               | 36  IO18\n                      |   [ ] [ ] [ ] [ ] [ ] [ ]     | \n                       +-----------------------------+\n                         12 13 14 15 16 17 18 19 20 21\n\n        \u001b[33mNote: Check exact hardware datasheet variant footprints before routing multi-layer PCBs!\u001b[0m\n        "
+  "attiny85": {
+    "schema_version": 2,
+    "name": "ATTINY85 (PDIP-8)",
+    "description": "Eight-pin AVR for small embedded projects.",
+    "category": "microcontrollers",
+    "package": "PDIP-8",
+    "voltage": "2.7-5.5 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "/RESET/PB5",
+        "kind": "analog",
+        "description": "/RESET/PB5 bidirectional.",
+        "functions": [
+          "RESET",
+          "ADC0",
+          "debugWIRE"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "XTAL1/PB3",
+        "kind": "analog",
+        "description": "XTAL1/PB3 bidirectional.",
+        "functions": [
+          "ADC3",
+          "XTAL1",
+          "CLKI"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "XTAL2/PB4",
+        "kind": "analog",
+        "description": "XTAL2/PB4 bidirectional.",
+        "functions": [
+          "ADC2",
+          "XTAL2"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "AREF/PB0",
+        "kind": "digital",
+        "description": "AREF/PB0 bidirectional.",
+        "functions": [
+          "USI SDA",
+          "USI DI",
+          "PWM OC0A"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "PB1",
+        "kind": "digital",
+        "description": "PB1 bidirectional.",
+        "functions": [
+          "USI DO",
+          "PWM OC0B"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "PB2",
+        "kind": "analog",
+        "description": "PB2 bidirectional.",
+        "functions": [
+          "USI SCL",
+          "USI USCK",
+          "ADC1"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.microchip.com/en-us/product/ATtiny85"
+    ],
+    "notes": [
+      "ATtiny85-20P variant; 1.8 V operation requires an appropriate low-voltage speed grade."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2.7-5.5 V"
+    },
+    "ascii_art": "ATTINY85 (PDIP-8) [attiny85]\nEight-pin AVR for small embedded projects.\nPackage: PDIP-8 | Supply: 2.7-5.5 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n                 +-------+\n[ANA] /RESET/PB5 | 1   8 | [PWR] VCC       \n [ANA] XTAL1/PB3 | 2   7 | [ANA] PB2       \n [ANA] XTAL2/PB4 | 3   6 | [IO] PB1        \n       [GND] GND | 4   5 | [IO] AREF/PB0   \n                 +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
   },
-  "esp8266": {
-    "name": "NodeMCU ESP8266 Dev Board (ESP-12E)",
-    "description": "Massively popular, low-cost Wi-Fi enabled development board. Ideal for basic IoT prototyping.",
-    "ascii_art": "\n                             \u001b[1mNodeMCU ESP8266 (Top View Pinout)\u001b[0m\n                            +-------------------+\n                    [ USB ] | [ ] ADC0/A0       [ ] VIN (5V)|\n                            | [ ] RSV           [ ] GND     |\n                            | [ ] RSV           [ ] RST     |\n                            | [ ] SD3/GPIO10    [ ] EN      |\n                            | [ ] SD2/GPIO9     [ ] 3V3     |\n                            | [ ] SD1/MOSI      [ ] GND     |\n                            | [ ] CMD/CS        [ ] TXD0/D0 |\n                            | [ ] SD0/MISO      [ ] RXD0/D1 |\n                            | [ ] CLK/SCLK      [ ] GPIO15  |\n                            | [ ] GND           [ ] GPIO13  |\n                            | [ ] 3V3           [ ] GPIO12  |\n                            | [ ] EN            [ ] GPIO14  |\n                            | [ ] RST           [ ] GND     |\n                            | [ ] GND           [ ] 3V3     |\n                            | [ ] VIN           [ ] GPIO1   |\n                            +-------------------+\n        "
+  "rp2040": {
+    "schema_version": 2,
+    "name": "RP2040 (QFN-56 + exposed pad)",
+    "description": "Dual Cortex-M0+ microcontroller with PIO.",
+    "category": "microcontrollers",
+    "package": "QFN-56 + exposed pad",
+    "voltage": "IOVDD 1.8-3.3 V; core 1.1 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "IOVDD",
+        "kind": "power",
+        "description": "IOVDD power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "GPIO0",
+        "kind": "digital",
+        "description": "GPIO0 bidirectional.",
+        "functions": [
+          "PWM0A",
+          "I2C0 SDA",
+          "SPI0 RX (MISO)",
+          "UART0 TX"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "GPIO1",
+        "kind": "digital",
+        "description": "GPIO1 bidirectional.",
+        "functions": [
+          "PWM0B",
+          "I2C0 SCL",
+          "SPI0 CSn",
+          "UART0 RX"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "GPIO2",
+        "kind": "digital",
+        "description": "GPIO2 bidirectional.",
+        "functions": [
+          "PWM1A",
+          "I2C1 SDA",
+          "SPI0 SCK"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "GPIO3",
+        "kind": "digital",
+        "description": "GPIO3 bidirectional.",
+        "functions": [
+          "PWM1B",
+          "I2C1 SCL",
+          "SPI0 TX (MOSI)"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "GPIO4",
+        "kind": "digital",
+        "description": "GPIO4 bidirectional.",
+        "functions": [
+          "PWM2A",
+          "I2C0 SDA",
+          "SPI0 RX (MISO)",
+          "UART1 TX"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "GPIO5",
+        "kind": "digital",
+        "description": "GPIO5 bidirectional.",
+        "functions": [
+          "PWM2B",
+          "I2C0 SCL",
+          "SPI0 CSn",
+          "UART1 RX"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "GPIO6",
+        "kind": "digital",
+        "description": "GPIO6 bidirectional.",
+        "functions": [
+          "PWM3A",
+          "I2C1 SDA",
+          "SPI0 SCK"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "GPIO7",
+        "kind": "digital",
+        "description": "GPIO7 bidirectional.",
+        "functions": [
+          "PWM3B",
+          "I2C1 SCL",
+          "SPI0 TX (MOSI)"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "IOVDD",
+        "kind": "power",
+        "description": "IOVDD passive.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "GPIO8",
+        "kind": "digital",
+        "description": "GPIO8 bidirectional.",
+        "functions": [
+          "PWM4A",
+          "I2C0 SDA",
+          "SPI1 RX (MISO)",
+          "UART0 TX"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "GPIO9",
+        "kind": "digital",
+        "description": "GPIO9 bidirectional.",
+        "functions": [
+          "PWM4B",
+          "I2C0 SCL",
+          "SPI1 CSn",
+          "UART0 RX"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "GPIO10",
+        "kind": "digital",
+        "description": "GPIO10 bidirectional.",
+        "functions": [
+          "PWM5A",
+          "I2C1 SDA",
+          "SPI1 SCK"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "GPIO11",
+        "kind": "digital",
+        "description": "GPIO11 bidirectional.",
+        "functions": [
+          "PWM5B",
+          "I2C1 SCL",
+          "SPI1 TX (MOSI)"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "GPIO12",
+        "kind": "digital",
+        "description": "GPIO12 bidirectional.",
+        "functions": [
+          "PWM6A",
+          "I2C0 SDA",
+          "SPI1 RX (MISO)",
+          "UART1 TX"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "GPIO13",
+        "kind": "digital",
+        "description": "GPIO13 bidirectional.",
+        "functions": [
+          "PWM6B",
+          "I2C0 SCL",
+          "SPI1 CSn",
+          "UART1 RX"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "17",
+        "name": "GPIO14",
+        "kind": "digital",
+        "description": "GPIO14 bidirectional.",
+        "functions": [
+          "PWM7A",
+          "I2C1 SDA",
+          "SPI1 SCK"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "18",
+        "name": "GPIO15",
+        "kind": "digital",
+        "description": "GPIO15 bidirectional.",
+        "functions": [
+          "PWM7B",
+          "I2C1 SCL",
+          "SPI1 TX (MOSI)"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "19",
+        "name": "TESTEN",
+        "kind": "control",
+        "description": "TESTEN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "20",
+        "name": "XIN",
+        "kind": "digital",
+        "description": "XIN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "21",
+        "name": "XOUT",
+        "kind": "digital",
+        "description": "XOUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "22",
+        "name": "IOVDD",
+        "kind": "power",
+        "description": "IOVDD passive.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "23",
+        "name": "DVDD",
+        "kind": "power",
+        "description": "DVDD power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "24",
+        "name": "SWCLK",
+        "kind": "communication",
+        "description": "SWCLK input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "25",
+        "name": "SWDIO",
+        "kind": "communication",
+        "description": "SWDIO bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "26",
+        "name": "RUN",
+        "kind": "control",
+        "description": "RUN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "27",
+        "name": "GPIO16",
+        "kind": "digital",
+        "description": "GPIO16 bidirectional.",
+        "functions": [
+          "PWM0A",
+          "I2C0 SDA",
+          "SPI0 RX (MISO)",
+          "UART0 TX"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "28",
+        "name": "GPIO17",
+        "kind": "digital",
+        "description": "GPIO17 bidirectional.",
+        "functions": [
+          "PWM0B",
+          "I2C0 SCL",
+          "SPI0 CSn",
+          "UART0 RX"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "29",
+        "name": "GPIO18",
+        "kind": "digital",
+        "description": "GPIO18 bidirectional.",
+        "functions": [
+          "PWM1A",
+          "I2C1 SDA",
+          "SPI0 SCK"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "30",
+        "name": "GPIO19",
+        "kind": "digital",
+        "description": "GPIO19 bidirectional.",
+        "functions": [
+          "PWM1B",
+          "I2C1 SCL",
+          "SPI0 TX (MOSI)"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "31",
+        "name": "GPIO20",
+        "kind": "digital",
+        "description": "GPIO20 bidirectional.",
+        "functions": [
+          "PWM2A",
+          "I2C0 SDA",
+          "SPI0 RX (MISO)",
+          "UART1 TX"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "32",
+        "name": "GPIO21",
+        "kind": "digital",
+        "description": "GPIO21 bidirectional.",
+        "functions": [
+          "PWM2B",
+          "I2C0 SCL",
+          "SPI0 CSn",
+          "UART1 RX"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "33",
+        "name": "IOVDD",
+        "kind": "power",
+        "description": "IOVDD passive.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "34",
+        "name": "GPIO22",
+        "kind": "digital",
+        "description": "GPIO22 bidirectional.",
+        "functions": [
+          "PWM3A",
+          "I2C1 SDA",
+          "SPI0 SCK"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "35",
+        "name": "GPIO23",
+        "kind": "digital",
+        "description": "GPIO23 bidirectional.",
+        "functions": [
+          "PWM3B",
+          "I2C1 SCL",
+          "SPI0 TX (MOSI)"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "36",
+        "name": "GPIO24",
+        "kind": "digital",
+        "description": "GPIO24 bidirectional.",
+        "functions": [
+          "PWM4A",
+          "I2C0 SDA",
+          "SPI1 RX (MISO)",
+          "UART0 TX"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "37",
+        "name": "GPIO25",
+        "kind": "digital",
+        "description": "GPIO25 bidirectional.",
+        "functions": [
+          "PWM4B",
+          "I2C0 SCL",
+          "SPI1 CSn",
+          "UART0 RX"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "38",
+        "name": "GPIO26/ADC0",
+        "kind": "analog",
+        "description": "GPIO26/ADC0 bidirectional.",
+        "functions": [
+          "PWM5A",
+          "I2C1 SDA",
+          "SPI1 SCK",
+          "ADC0"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "39",
+        "name": "GPIO27/ADC1",
+        "kind": "analog",
+        "description": "GPIO27/ADC1 bidirectional.",
+        "functions": [
+          "PWM5B",
+          "I2C1 SCL",
+          "SPI1 TX (MOSI)",
+          "ADC1"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "40",
+        "name": "GPIO28/ADC2",
+        "kind": "analog",
+        "description": "GPIO28/ADC2 bidirectional.",
+        "functions": [
+          "PWM6A",
+          "I2C0 SDA",
+          "SPI1 RX (MISO)",
+          "UART1 TX",
+          "ADC2"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "41",
+        "name": "GPIO29/ADC3",
+        "kind": "analog",
+        "description": "GPIO29/ADC3 bidirectional.",
+        "functions": [
+          "PWM6B",
+          "I2C0 SCL",
+          "SPI1 CSn",
+          "UART1 RX",
+          "ADC3"
+        ],
+        "voltage": "IOVDD; normally 3.3 V, not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "42",
+        "name": "IOVDD",
+        "kind": "power",
+        "description": "IOVDD passive.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "43",
+        "name": "ADC_AVDD",
+        "kind": "power",
+        "description": "ADC_AVDD power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "44",
+        "name": "VREG_VIN",
+        "kind": "power",
+        "description": "VREG_VIN power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "45",
+        "name": "VREG_VOUT",
+        "kind": "power",
+        "description": "VREG_VOUT power out.",
+        "functions": [],
+        "voltage": "1.1 V nominal internal regulator output",
+        "notes": []
+      },
+      {
+        "number": "46",
+        "name": "USB_DM",
+        "kind": "communication",
+        "description": "USB_DM bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "47",
+        "name": "USB_DP",
+        "kind": "communication",
+        "description": "USB_DP bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "48",
+        "name": "USB_VDD",
+        "kind": "power",
+        "description": "USB_VDD power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "49",
+        "name": "IOVDD",
+        "kind": "power",
+        "description": "IOVDD passive.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "50",
+        "name": "DVDD",
+        "kind": "power",
+        "description": "DVDD passive.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "51",
+        "name": "QSPI_SD3",
+        "kind": "digital",
+        "description": "QSPI_SD3 bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "52",
+        "name": "QSPI_SCLK",
+        "kind": "communication",
+        "description": "QSPI_SCLK output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "53",
+        "name": "QSPI_SD0",
+        "kind": "digital",
+        "description": "QSPI_SD0 bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "54",
+        "name": "QSPI_SD2",
+        "kind": "digital",
+        "description": "QSPI_SD2 bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "55",
+        "name": "QSPI_SD1",
+        "kind": "digital",
+        "description": "QSPI_SD1 bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "56",
+        "name": "/QSPI_SS",
+        "kind": "digital",
+        "description": "/QSPI_SS output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "57",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf"
+    ],
+    "notes": [
+      "The exposed pad is ground. USB_VDD and ADC_AVDD require 3.3 V for normal USB and ADC operation."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Physical QFN pad numbers; not Pico board header numbers."
+    },
+    "electrical": {
+      "Supply": "IOVDD 1.8-3.3 V; core 1.1 V"
+    },
+    "ascii_art": "RP2040 (QFN-56 + exposed pad) [rp2040]\nDual Cortex-M0+ microcontroller with PIO.\nPackage: QFN-56 + exposed pad | Supply: IOVDD 1.8-3.3 V; core 1.1 V\nPhysical QFN pad numbers; not Pico board header numbers.\n\n 1 [PWR] IOVDD\n 2 [IO] GPIO0\n 3 [IO] GPIO1\n 4 [IO] GPIO2\n 5 [IO] GPIO3\n 6 [IO] GPIO4\n 7 [IO] GPIO5\n 8 [IO] GPIO6\n 9 [IO] GPIO7\n10 [PWR] IOVDD\n11 [IO] GPIO8\n12 [IO] GPIO9\n13 [IO] GPIO10\n14 [IO] GPIO11\n15 [IO] GPIO12\n16 [IO] GPIO13\n17 [IO] GPIO14\n18 [IO] GPIO15\n19 [CTL] TESTEN\n20 [IO] XIN\n21 [IO] XOUT\n22 [PWR] IOVDD\n23 [PWR] DVDD\n24 [BUS] SWCLK\n25 [BUS] SWDIO\n26 [CTL] RUN\n27 [IO] GPIO16\n28 [IO] GPIO17\n29 [IO] GPIO18\n30 [IO] GPIO19\n31 [IO] GPIO20\n32 [IO] GPIO21\n33 [PWR] IOVDD\n34 [IO] GPIO22\n35 [IO] GPIO23\n36 [IO] GPIO24\n37 [IO] GPIO25\n38 [ANA] GPIO26/ADC0\n39 [ANA] GPIO27/ADC1\n40 [ANA] GPIO28/ADC2\n41 [ANA] GPIO29/ADC3\n42 [PWR] IOVDD\n43 [PWR] ADC_AVDD\n44 [PWR] VREG_VIN\n45 [PWR] VREG_VOUT\n46 [BUS] USB_DM\n47 [BUS] USB_DP\n48 [PWR] USB_VDD\n49 [PWR] IOVDD\n50 [PWR] DVDD\n51 [IO] QSPI_SD3\n52 [BUS] QSPI_SCLK\n53 [IO] QSPI_SD0\n54 [IO] QSPI_SD2\n55 [IO] QSPI_SD1\n56 [IO] /QSPI_SS\n57 [GND] GND\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
   },
-  "pico": {
-    "name": "Raspberry Pi Pico (RP2040 Chip Dual-Row Board)",
-    "description": "Low-cost, high-performance microcontroller board built using the custom RP2040 silicon chip designed by Raspberry Pi.",
-    "ascii_art": "\n                                \u001b[1mRaspberry Pi Pico (Top View)\u001b[0m\n                              +-----------------------------+\n               GP0 (UART0 TX) | 1                         40 | VBUS (USB Power, 5V Input)\n               GP1 (UART0 RX) | 2                         39 | VSYS (System Power Input)\n                          GND | 3                         38 | GND\n               GP2            | 4                         37 | 3V3_EN (Regulator Enable)\n               GP3            | 5                         36 | 3V3 (3.3V Output, Max 300mA)\n               GP4 (I2C1 SDA) | 6                         35 | ADC_VREF\n               GP5 (I2C1 SCL) | 7     \u001b[36mRP2040\u001b[0m              34 | GP28 (ADC2)\n                          GND | 8     \u001b[36mSilicon\u001b[0m             33 | GND\n               GP6            | 9                         32 | GP27 (ADC1)\n               GP7            | 10                        31 | GP26 (ADC0)\n               GP8            | 11                        30 | RUN (Reset, Active Low)\n               GP9            | 12                        29 | GP22\n                          GND | 13                        28 | GND\n              GP10            | 14                        27 | GP21\n              GP11            | 15                        26 | GP20\n              GP12            | 16                        25 | GP19 (SPI0 MOSI)\n              GP13            | 17                        24 | GP18 (SPI0 MISO)\n                          GND | 18                        23 | GND\n              GP14            | 19                        22 | GP17 (SPI0 CS)\n              GP15            | 20                        21 | GP16 (SPI0 SCK)\n                              +--[ DEBUG ]------------------+\n        "
-  },
-  "stm32": {
-    "name": "STM32F103C8T6 ARM Cortex-M3 Dev Board ('Blue Pill')",
-    "description": "Affordable 32-bit ARM Cortex-M3 microcontroller board. Widely used for teaching professional embedded engineering systems.",
-    "ascii_art": "\n                            \u001b[1mSTM32 Blue Pill (Top View Pinout)\u001b[0m\n                           +---------------------------------+\n                       B12 | [ ]                         [ ] | GND\n                       B13 | [ ]                         [ ] | GND\n                       B14 | [ ]                         [ ] | 3V3\n                       B15 | [ ]                         [ ] | R (Reset)\n                        A8 | [ ]                         [ ] | B11\n                        A9 | [ ]  (TX1)                  [ ] | B10 (I2C2 SCL)\n                       A10 | [ ]  (RX1)                  [ ] | B1  (ADC9)\n                       A11 | [ ]  (USB D-)               [ ] | B0  (ADC8)\n                       A12 | [ ]  (USB D+)               [ ] | A7  (SPI1 MOSI)\n                       A15 | [ ]                         [ ] | A6  (SPI1 MISO)\n                        B3 | [ ]                         [ ] | A5  (SPI1 SCK)\n                        B4 | [ ]                         [ ] | A4  (SPI1 NSS)\n                        B5 | [ ]                         [ ] | A3  (ADC3)\n                        B6 | [ ]  (I2C1 SCL)             [ ] | A2  (ADC2 / TX2)\n                        B7 | [ ]  (I2C1 SDA)             [ ] | A1  (ADC1 / RX2)\n                        B8 | [ ]                         [ ] | A0  (ADC0 / Wakeup)\n                        B9 | [ ]                         [ ] | C15 (OSC Out)\n                        5V | [ ]                         [ ] | C14 (OSC In)\n                       GND | [ ]                         [ ] | C13 (Built-in LED)\n                       3V3 | [ ]                         [ ] | VBAT (RTC Backup Power)\n                           +-------------[ USB ]-------------+\n        "
+  "stm32f103c8t6": {
+    "schema_version": 2,
+    "name": "STM32F103C8T6 (LQFP-48)",
+    "description": "Cortex-M3 device used on Blue Pill boards.",
+    "category": "microcontrollers",
+    "package": "LQFP-48",
+    "voltage": "2.0-3.6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "VBAT",
+        "kind": "power",
+        "description": "VBAT power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "PC13",
+        "kind": "digital",
+        "description": "PC13 bidirectional.",
+        "functions": [
+          "LED active low"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "PC14",
+        "kind": "digital",
+        "description": "PC14 bidirectional.",
+        "functions": [
+          "LSE oscillator input"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "PC15",
+        "kind": "digital",
+        "description": "PC15 bidirectional.",
+        "functions": [
+          "LSE oscillator output"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "PD0",
+        "kind": "digital",
+        "description": "PD0 bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "PD1",
+        "kind": "digital",
+        "description": "PD1 bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "NRST",
+        "kind": "control",
+        "description": "NRST input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "VSSA",
+        "kind": "power",
+        "description": "VSSA power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "VDDA",
+        "kind": "power",
+        "description": "VDDA power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "PA0",
+        "kind": "analog",
+        "description": "PA0 bidirectional.",
+        "functions": [
+          "ADC0",
+          "Wakeup"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "PA1",
+        "kind": "analog",
+        "description": "PA1 bidirectional.",
+        "functions": [
+          "ADC1"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "PA2",
+        "kind": "analog",
+        "description": "PA2 bidirectional.",
+        "functions": [
+          "ADC2",
+          "UART2 TX"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "PA3",
+        "kind": "analog",
+        "description": "PA3 bidirectional.",
+        "functions": [
+          "ADC3",
+          "UART2 RX"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "PA4",
+        "kind": "analog",
+        "description": "PA4 bidirectional.",
+        "functions": [
+          "ADC4",
+          "SPI1 NSS"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "PA5",
+        "kind": "analog",
+        "description": "PA5 bidirectional.",
+        "functions": [
+          "ADC5",
+          "SPI1 SCK"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "PA6",
+        "kind": "analog",
+        "description": "PA6 bidirectional.",
+        "functions": [
+          "ADC6",
+          "SPI1 MISO",
+          "PWM TIM3_CH1"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "17",
+        "name": "PA7",
+        "kind": "analog",
+        "description": "PA7 bidirectional.",
+        "functions": [
+          "ADC7",
+          "SPI1 MOSI",
+          "PWM TIM3_CH2"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "18",
+        "name": "PB0",
+        "kind": "analog",
+        "description": "PB0 bidirectional.",
+        "functions": [
+          "ADC8",
+          "PWM TIM3_CH3"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "19",
+        "name": "PB1",
+        "kind": "analog",
+        "description": "PB1 bidirectional.",
+        "functions": [
+          "ADC9",
+          "PWM TIM3_CH4"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "20",
+        "name": "PB2",
+        "kind": "digital",
+        "description": "PB2 bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "21",
+        "name": "PB10",
+        "kind": "digital",
+        "description": "PB10 bidirectional.",
+        "functions": [
+          "I2C2 SCL",
+          "UART3 TX"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "22",
+        "name": "PB11",
+        "kind": "digital",
+        "description": "PB11 bidirectional.",
+        "functions": [
+          "I2C2 SDA",
+          "UART3 RX"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "23",
+        "name": "VSS",
+        "kind": "ground",
+        "description": "VSS power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "24",
+        "name": "VDD",
+        "kind": "power",
+        "description": "VDD power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "25",
+        "name": "PB12",
+        "kind": "digital",
+        "description": "PB12 bidirectional.",
+        "functions": [
+          "SPI2 NSS"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "26",
+        "name": "PB13",
+        "kind": "digital",
+        "description": "PB13 bidirectional.",
+        "functions": [
+          "SPI2 SCK"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "27",
+        "name": "PB14",
+        "kind": "digital",
+        "description": "PB14 bidirectional.",
+        "functions": [
+          "SPI2 MISO"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "28",
+        "name": "PB15",
+        "kind": "digital",
+        "description": "PB15 bidirectional.",
+        "functions": [
+          "SPI2 MOSI"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "29",
+        "name": "PA8",
+        "kind": "digital",
+        "description": "PA8 bidirectional.",
+        "functions": [
+          "PWM TIM1_CH1"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "30",
+        "name": "PA9",
+        "kind": "digital",
+        "description": "PA9 bidirectional.",
+        "functions": [
+          "UART1 TX",
+          "PWM TIM1_CH2"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "31",
+        "name": "PA10",
+        "kind": "digital",
+        "description": "PA10 bidirectional.",
+        "functions": [
+          "UART1 RX",
+          "PWM TIM1_CH3"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "32",
+        "name": "PA11",
+        "kind": "digital",
+        "description": "PA11 bidirectional.",
+        "functions": [
+          "USB D-"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "33",
+        "name": "PA12",
+        "kind": "digital",
+        "description": "PA12 bidirectional.",
+        "functions": [
+          "USB D+"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "34",
+        "name": "PA13",
+        "kind": "communication",
+        "description": "PA13 bidirectional.",
+        "functions": [
+          "SWDIO",
+          "JTAG JTMS"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "35",
+        "name": "VSS",
+        "kind": "ground",
+        "description": "VSS passive.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "36",
+        "name": "VDD",
+        "kind": "power",
+        "description": "VDD power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "37",
+        "name": "PA14",
+        "kind": "communication",
+        "description": "PA14 bidirectional.",
+        "functions": [
+          "SWCLK",
+          "JTAG JTCK"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "38",
+        "name": "PA15",
+        "kind": "digital",
+        "description": "PA15 bidirectional.",
+        "functions": [
+          "JTAG JTDI"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "39",
+        "name": "PB3",
+        "kind": "digital",
+        "description": "PB3 bidirectional.",
+        "functions": [
+          "JTAG JTDO"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "40",
+        "name": "PB4",
+        "kind": "digital",
+        "description": "PB4 bidirectional.",
+        "functions": [
+          "JTAG NJTRST"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "41",
+        "name": "PB5",
+        "kind": "digital",
+        "description": "PB5 bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "42",
+        "name": "PB6",
+        "kind": "digital",
+        "description": "PB6 bidirectional.",
+        "functions": [
+          "I2C1 SCL",
+          "PWM TIM4_CH1"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "43",
+        "name": "PB7",
+        "kind": "digital",
+        "description": "PB7 bidirectional.",
+        "functions": [
+          "I2C1 SDA",
+          "PWM TIM4_CH2"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "44",
+        "name": "BOOT0",
+        "kind": "control",
+        "description": "BOOT0 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "45",
+        "name": "PB8",
+        "kind": "digital",
+        "description": "PB8 bidirectional.",
+        "functions": [
+          "PWM TIM4_CH3"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "46",
+        "name": "PB9",
+        "kind": "digital",
+        "description": "PB9 bidirectional.",
+        "functions": [
+          "PWM TIM4_CH4"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "47",
+        "name": "VSS",
+        "kind": "ground",
+        "description": "VSS passive.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "48",
+        "name": "VDD",
+        "kind": "power",
+        "description": "VDD power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.st.com/resource/en/datasheet/stm32f103c8.pdf"
+    ],
+    "notes": [
+      "Only pins marked FT in the datasheet are 5 V tolerant. Analog inputs are limited to VDDA."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Physical LQFP pad numbers; consult the top-view package drawing."
+    },
+    "electrical": {
+      "Supply": "2.0-3.6 V"
+    },
+    "ascii_art": "STM32F103C8T6 (LQFP-48) [stm32f103c8t6]\nCortex-M3 device used on Blue Pill boards.\nPackage: LQFP-48 | Supply: 2.0-3.6 V\nPhysical LQFP pad numbers; consult the top-view package drawing.\n\n 1 [PWR] VBAT\n 2 [IO] PC13\n 3 [IO] PC14\n 4 [IO] PC15\n 5 [IO] PD0\n 6 [IO] PD1\n 7 [CTL] NRST\n 8 [PWR] VSSA\n 9 [PWR] VDDA\n10 [ANA] PA0\n11 [ANA] PA1\n12 [ANA] PA2\n13 [ANA] PA3\n14 [ANA] PA4\n15 [ANA] PA5\n16 [ANA] PA6\n17 [ANA] PA7\n18 [ANA] PB0\n19 [ANA] PB1\n20 [IO] PB2\n21 [IO] PB10\n22 [IO] PB11\n23 [GND] VSS\n24 [PWR] VDD\n25 [IO] PB12\n26 [IO] PB13\n27 [IO] PB14\n28 [IO] PB15\n29 [IO] PA8\n30 [IO] PA9\n31 [IO] PA10\n32 [IO] PA11\n33 [IO] PA12\n34 [BUS] PA13\n35 [GND] VSS\n36 [PWR] VDD\n37 [BUS] PA14\n38 [IO] PA15\n39 [IO] PB3\n40 [IO] PB4\n41 [IO] PB5\n42 [IO] PB6\n43 [IO] PB7\n44 [CTL] BOOT0\n45 [IO] PB8\n46 [IO] PB9\n47 [GND] VSS\n48 [PWR] VDD\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
   }
 }

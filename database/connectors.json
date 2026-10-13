@@ -1,0 +1,1770 @@
+{
+  "usb-a": {
+    "schema_version": 2,
+    "name": "USB Type-A (USB 2.0)",
+    "description": "Standard connector signal reference.",
+    "category": "connectors",
+    "package": "4 contacts",
+    "voltage": "VBUS nominal 5 V",
+    "aliases": [
+      "usb-type-a"
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "VBUS",
+        "kind": "power",
+        "description": "VBUS connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "D-",
+        "kind": "communication",
+        "description": "D- connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "D+",
+        "kind": "communication",
+        "description": "D+ connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.usb.org/document-library/usb-20-specification"
+    ],
+    "notes": [
+      "USB 3.x Type-A adds five contacts; this is the four-contact USB 2.0 map."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Contact numbers per USB specification; mating-side views of plugs and receptacles are mirrored."
+    },
+    "electrical": {
+      "Supply": "VBUS nominal 5 V"
+    },
+    "ascii_art": "USB Type-A (USB 2.0) [usb-a]\nStandard connector signal reference.\nPackage: 4 contacts | Supply: VBUS nominal 5 V\nContact numbers per USB specification; mating-side views of plugs and receptacles are mirrored.\n\n1 [PWR] VBUS\n2 [BUS] D-\n3 [BUS] D+\n4 [GND] GND\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "usb-b": {
+    "schema_version": 2,
+    "name": "USB Type-B (USB 2.0)",
+    "description": "Standard connector signal reference.",
+    "category": "connectors",
+    "package": "4 contacts",
+    "voltage": "VBUS nominal 5 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "VBUS",
+        "kind": "power",
+        "description": "VBUS connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "D-",
+        "kind": "communication",
+        "description": "D- connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "D+",
+        "kind": "communication",
+        "description": "D+ connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.usb.org/document-library/usb-20-specification"
+    ],
+    "notes": [],
+    "layout": {
+      "type": "table",
+      "orientation": "Contact numbers per USB specification; refer to connector mating-face drawing."
+    },
+    "electrical": {
+      "Supply": "VBUS nominal 5 V"
+    },
+    "ascii_art": "USB Type-B (USB 2.0) [usb-b]\nStandard connector signal reference.\nPackage: 4 contacts | Supply: VBUS nominal 5 V\nContact numbers per USB specification; refer to connector mating-face drawing.\n\n1 [PWR] VBUS\n2 [BUS] D-\n3 [BUS] D+\n4 [GND] GND\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "usb-micro-b": {
+    "schema_version": 2,
+    "name": "USB Micro-B (USB 2.0)",
+    "description": "Standard connector signal reference.",
+    "category": "connectors",
+    "package": "5 contacts",
+    "voltage": "VBUS nominal 5 V",
+    "aliases": [
+      "micro-usb"
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "VBUS",
+        "kind": "power",
+        "description": "VBUS connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "D-",
+        "kind": "communication",
+        "description": "D- connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "D+",
+        "kind": "communication",
+        "description": "D+ connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "ID",
+        "kind": "digital",
+        "description": "ID connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.usb.org/document-library/usb-20-specification"
+    ],
+    "notes": [
+      "ID is normally unconnected for a Micro-B plug."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Specification contact numbers, not arbitrary breakout order."
+    },
+    "electrical": {
+      "Supply": "VBUS nominal 5 V"
+    },
+    "ascii_art": "USB Micro-B (USB 2.0) [usb-micro-b]\nStandard connector signal reference.\nPackage: 5 contacts | Supply: VBUS nominal 5 V\nSpecification contact numbers, not arbitrary breakout order.\n\n1 [PWR] VBUS\n2 [BUS] D-\n3 [BUS] D+\n4 [IO] ID\n5 [GND] GND\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "usb-c": {
+    "schema_version": 2,
+    "name": "USB Type-C receptacle (24 contacts)",
+    "description": "Full-featured USB-C receptacle logical contact mapping.",
+    "category": "connectors",
+    "package": "24-contact receptacle",
+    "voltage": "VBUS 5 V initially; higher voltages require valid PD negotiation",
+    "aliases": [
+      "usb-type-c",
+      "type-c"
+    ],
+    "pins": [
+      {
+        "number": "A1",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "A2",
+        "name": "TX1+",
+        "kind": "communication",
+        "description": "TX1+ interface signal.",
+        "functions": [
+          "SuperSpeed"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "A3",
+        "name": "TX1-",
+        "kind": "communication",
+        "description": "TX1- interface signal.",
+        "functions": [
+          "SuperSpeed"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "A4",
+        "name": "VBUS",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "5 V before PD negotiation",
+        "notes": []
+      },
+      {
+        "number": "A5",
+        "name": "CC1",
+        "kind": "communication",
+        "description": "CC1 interface signal.",
+        "functions": [
+          "Configuration / PD"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "A6",
+        "name": "D+",
+        "kind": "communication",
+        "description": "D+ interface signal.",
+        "functions": [
+          "USB 2.0"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "A7",
+        "name": "D-",
+        "kind": "communication",
+        "description": "D- interface signal.",
+        "functions": [
+          "USB 2.0"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "A8",
+        "name": "SBU1",
+        "kind": "communication",
+        "description": "SBU1 interface signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "A9",
+        "name": "VBUS",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "5 V before PD negotiation",
+        "notes": []
+      },
+      {
+        "number": "A10",
+        "name": "RX2-",
+        "kind": "communication",
+        "description": "RX2- interface signal.",
+        "functions": [
+          "SuperSpeed"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "A11",
+        "name": "RX2+",
+        "kind": "communication",
+        "description": "RX2+ interface signal.",
+        "functions": [
+          "SuperSpeed"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "A12",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "B1",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "B2",
+        "name": "TX2+",
+        "kind": "communication",
+        "description": "TX2+ interface signal.",
+        "functions": [
+          "SuperSpeed"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "B3",
+        "name": "TX2-",
+        "kind": "communication",
+        "description": "TX2- interface signal.",
+        "functions": [
+          "SuperSpeed"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "B4",
+        "name": "VBUS",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "5 V before PD negotiation",
+        "notes": []
+      },
+      {
+        "number": "B5",
+        "name": "CC2",
+        "kind": "communication",
+        "description": "CC2 interface signal.",
+        "functions": [
+          "Configuration / PD"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "B6",
+        "name": "D+",
+        "kind": "communication",
+        "description": "D+ interface signal.",
+        "functions": [
+          "USB 2.0"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "B7",
+        "name": "D-",
+        "kind": "communication",
+        "description": "D- interface signal.",
+        "functions": [
+          "USB 2.0"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "B8",
+        "name": "SBU2",
+        "kind": "communication",
+        "description": "SBU2 interface signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "B9",
+        "name": "VBUS",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "5 V before PD negotiation",
+        "notes": []
+      },
+      {
+        "number": "B10",
+        "name": "RX1-",
+        "kind": "communication",
+        "description": "RX1- interface signal.",
+        "functions": [
+          "SuperSpeed"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "B11",
+        "name": "RX1+",
+        "kind": "communication",
+        "description": "RX1+ interface signal.",
+        "functions": [
+          "SuperSpeed"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "B12",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.usb.org/document-library/usb-type-cr-cable-and-connector-specification-release-24"
+    ],
+    "notes": [
+      "For a USB 2.0 device, tie duplicated D+/D- contacts as specified and provide separate Rd resistors on CC1/CC2. USB-C plugs have a different contact assignment; do not use this map for a plug."
+    ],
+    "layout": {
+      "type": "dual",
+      "rows": [
+        [
+          "A1",
+          "B1"
+        ],
+        [
+          "A2",
+          "B2"
+        ],
+        [
+          "A3",
+          "B3"
+        ],
+        [
+          "A4",
+          "B4"
+        ],
+        [
+          "A5",
+          "B5"
+        ],
+        [
+          "A6",
+          "B6"
+        ],
+        [
+          "A7",
+          "B7"
+        ],
+        [
+          "A8",
+          "B8"
+        ],
+        [
+          "A9",
+          "B9"
+        ],
+        [
+          "A10",
+          "B10"
+        ],
+        [
+          "A11",
+          "B11"
+        ],
+        [
+          "A12",
+          "B12"
+        ]
+      ],
+      "orientation": "Logical A/B contact pairs; not a physical mating-face diagram. Consult connector drawing for footprint geometry."
+    },
+    "electrical": {
+      "Supply": "VBUS 5 V initially; higher voltages require valid PD negotiation"
+    },
+    "ascii_art": "USB Type-C receptacle (24 contacts) [usb-c]\nFull-featured USB-C receptacle logical contact mapping.\nPackage: 24-contact receptacle | Supply: VBUS 5 V initially; higher voltages require valid PD\nnegotiation\nLogical A/B contact pairs; not a physical mating-face diagram. Consult connector drawing for\nfootprint geometry.\n\n           +-----------+\n [GND] GND |  A1   B1  | [GND] GND \n[BUS] TX1+ |  A2   B2  | [BUS] TX2+\n[BUS] TX1- |  A3   B3  | [BUS] TX2-\n[PWR] VBUS |  A4   B4  | [PWR] VBUS\n [BUS] CC1 |  A5   B5  | [BUS] CC2 \n  [BUS] D+ |  A6   B6  | [BUS] D+  \n  [BUS] D- |  A7   B7  | [BUS] D-  \n[BUS] SBU1 |  A8   B8  | [BUS] SBU2\n[PWR] VBUS |  A9   B9  | [PWR] VBUS\n[BUS] RX2- | A10   B10 | [BUS] RX1-\n[BUS] RX2+ | A11   B11 | [BUS] RX1+\n [GND] GND | A12   B12 | [GND] GND \n           +-----------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "swd": {
+    "schema_version": 2,
+    "name": "ARM Cortex debug SWD (10-pin)",
+    "description": "Standard connector signal reference.",
+    "category": "connectors",
+    "package": "10 contacts",
+    "voltage": "Signal-specific",
+    "aliases": [
+      "swd-10",
+      "cortex-debug"
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "VTref",
+        "kind": "power",
+        "description": "VTref connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "SWDIO",
+        "kind": "communication",
+        "description": "SWDIO connector signal.",
+        "functions": [
+          "SWD data"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "SWCLK",
+        "kind": "communication",
+        "description": "SWCLK connector signal.",
+        "functions": [
+          "SWD clock"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "SWO",
+        "kind": "digital",
+        "description": "SWO connector signal.",
+        "functions": [
+          "Trace"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "KEY",
+        "kind": "nc",
+        "description": "KEY connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "NC",
+        "kind": "nc",
+        "description": "NC connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "GNDDetect",
+        "kind": "ground",
+        "description": "GNDDetect connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "nRESET",
+        "kind": "control",
+        "description": "nRESET connector signal.",
+        "functions": [
+          "Reset"
+        ],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://developer.arm.com/documentation/101416/latest/"
+    ],
+    "notes": [
+      "VTref is target voltage reference, not a guaranteed probe power output. Pin 7 is the key position, normally absent. Pin 8 is NC in SWD mode."
+    ],
+    "layout": {
+      "type": "header",
+      "rows": [
+        [
+          "1",
+          "2"
+        ],
+        [
+          "3",
+          "4"
+        ],
+        [
+          "5",
+          "6"
+        ],
+        [
+          "7",
+          "8"
+        ],
+        [
+          "9",
+          "10"
+        ]
+      ],
+      "orientation": "Target header viewed from mating side: odd pins left, even pins right; pin 1 upper left."
+    },
+    "electrical": {
+      "Supply": "Signal-specific"
+    },
+    "ascii_art": "ARM Cortex debug SWD (10-pin) [swd]\nStandard connector signal reference.\nPackage: 10 contacts | Supply: Signal-specific\nTarget header viewed from mating side: odd pins left, even pins right; pin 1 upper left.\n\n                +---------+\n    [PWR] VTref |  1   2  | [BUS] SWDIO    \n      [GND] GND |  3   4  | [BUS] SWCLK    \n      [GND] GND |  5   6  | [IO] SWO       \n       [NC] KEY |  7   8  | [NC] NC        \n[GND] GNDDetect |  9   10 | [CTL] nRESET   \n                +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "jtag-10": {
+    "schema_version": 2,
+    "name": "ARM Cortex debug JTAG (10-pin)",
+    "description": "Standard connector signal reference.",
+    "category": "connectors",
+    "package": "10 contacts",
+    "voltage": "Signal-specific",
+    "aliases": [
+      "jtag"
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "VTref",
+        "kind": "power",
+        "description": "VTref connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "TMS",
+        "kind": "communication",
+        "description": "TMS connector signal.",
+        "functions": [
+          "JTAG mode select"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "TCK",
+        "kind": "communication",
+        "description": "TCK connector signal.",
+        "functions": [
+          "JTAG clock"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "TDO",
+        "kind": "communication",
+        "description": "TDO connector signal.",
+        "functions": [
+          "JTAG target output"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "KEY",
+        "kind": "nc",
+        "description": "KEY connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "TDI",
+        "kind": "communication",
+        "description": "TDI connector signal.",
+        "functions": [
+          "JTAG target input"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "GNDDetect",
+        "kind": "ground",
+        "description": "GNDDetect connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "nRESET",
+        "kind": "control",
+        "description": "nRESET connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://developer.arm.com/documentation/101416/latest/"
+    ],
+    "notes": [
+      "Connector convention is ARM Cortex 10-pin, not every JTAG connector."
+    ],
+    "layout": {
+      "type": "header",
+      "rows": [
+        [
+          "1",
+          "2"
+        ],
+        [
+          "3",
+          "4"
+        ],
+        [
+          "5",
+          "6"
+        ],
+        [
+          "7",
+          "8"
+        ],
+        [
+          "9",
+          "10"
+        ]
+      ],
+      "orientation": "Target header mating side: odd pins left, pin 1 upper left."
+    },
+    "electrical": {
+      "Supply": "Signal-specific"
+    },
+    "ascii_art": "ARM Cortex debug JTAG (10-pin) [jtag-10]\nStandard connector signal reference.\nPackage: 10 contacts | Supply: Signal-specific\nTarget header mating side: odd pins left, pin 1 upper left.\n\n                +---------+\n    [PWR] VTref |  1   2  | [BUS] TMS      \n      [GND] GND |  3   4  | [BUS] TCK      \n      [GND] GND |  5   6  | [BUS] TDO      \n       [NC] KEY |  7   8  | [BUS] TDI      \n[GND] GNDDetect |  9   10 | [CTL] nRESET   \n                +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "jtag-20": {
+    "schema_version": 2,
+    "name": "ARM legacy JTAG (20-pin)",
+    "description": "Standard connector signal reference.",
+    "category": "connectors",
+    "package": "20 contacts",
+    "voltage": "Signal-specific",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "VTref",
+        "kind": "power",
+        "description": "VTref connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "Vsupply",
+        "kind": "power",
+        "description": "Vsupply connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "nTRST",
+        "kind": "control",
+        "description": "nTRST connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "TDI",
+        "kind": "communication",
+        "description": "TDI connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "TMS",
+        "kind": "communication",
+        "description": "TMS connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "TCK",
+        "kind": "communication",
+        "description": "TCK connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "RTCK",
+        "kind": "communication",
+        "description": "RTCK connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "TDO",
+        "kind": "communication",
+        "description": "TDO connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "nRESET",
+        "kind": "control",
+        "description": "nRESET connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "17",
+        "name": "DBGRQ",
+        "kind": "digital",
+        "description": "DBGRQ connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "18",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "19",
+        "name": "DBGACK",
+        "kind": "digital",
+        "description": "DBGACK connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "20",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.segger.com/products/debug-probes/j-link/technology/interface-description/"
+    ],
+    "notes": [
+      "Pin 2 availability depends on the probe. DBGRQ/DBGACK are legacy optional signals."
+    ],
+    "layout": {
+      "type": "header",
+      "rows": [
+        [
+          "1",
+          "2"
+        ],
+        [
+          "3",
+          "4"
+        ],
+        [
+          "5",
+          "6"
+        ],
+        [
+          "7",
+          "8"
+        ],
+        [
+          "9",
+          "10"
+        ],
+        [
+          "11",
+          "12"
+        ],
+        [
+          "13",
+          "14"
+        ],
+        [
+          "15",
+          "16"
+        ],
+        [
+          "17",
+          "18"
+        ],
+        [
+          "19",
+          "20"
+        ]
+      ],
+      "orientation": "Target header mating side; odd pins left and pin 1 upper left."
+    },
+    "electrical": {
+      "Supply": "Signal-specific"
+    },
+    "ascii_art": "ARM legacy JTAG (20-pin) [jtag-20]\nStandard connector signal reference.\nPackage: 20 contacts | Supply: Signal-specific\nTarget header mating side; odd pins left and pin 1 upper left.\n\n              +---------+\n  [PWR] VTref |  1   2  | [PWR] Vsupply\n  [CTL] nTRST |  3   4  | [GND] GND    \n    [BUS] TDI |  5   6  | [GND] GND    \n    [BUS] TMS |  7   8  | [GND] GND    \n    [BUS] TCK |  9   10 | [GND] GND    \n   [BUS] RTCK | 11   12 | [GND] GND    \n    [BUS] TDO | 13   14 | [GND] GND    \n [CTL] nRESET | 15   16 | [GND] GND    \n   [IO] DBGRQ | 17   18 | [GND] GND    \n  [IO] DBGACK | 19   20 | [GND] GND    \n              +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "avr-icsp": {
+    "schema_version": 2,
+    "name": "AVR ISP / Arduino ICSP (6-pin)",
+    "description": "Standard connector signal reference.",
+    "category": "connectors",
+    "package": "6 contacts",
+    "voltage": "Signal-specific",
+    "aliases": [
+      "icsp",
+      "isp",
+      "avr-isp"
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "MISO",
+        "kind": "communication",
+        "description": "MISO connector signal.",
+        "functions": [
+          "SPI MISO"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "SCK",
+        "kind": "communication",
+        "description": "SCK connector signal.",
+        "functions": [
+          "SPI SCK"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "MOSI",
+        "kind": "communication",
+        "description": "MOSI connector signal.",
+        "functions": [
+          "SPI MOSI"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "RESET",
+        "kind": "control",
+        "description": "RESET connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.microchip.com/en-us/development-tool/atavrisp2"
+    ],
+    "notes": [
+      "VCC is target supply/reference; check whether the programmer supplies power."
+    ],
+    "layout": {
+      "type": "header",
+      "rows": [
+        [
+          "1",
+          "2"
+        ],
+        [
+          "3",
+          "4"
+        ],
+        [
+          "5",
+          "6"
+        ]
+      ],
+      "orientation": "Target header top/mating view: 1/2 first row, 3/4 second row, 5/6 third row."
+    },
+    "electrical": {
+      "Supply": "Signal-specific"
+    },
+    "ascii_art": "AVR ISP / Arduino ICSP (6-pin) [avr-icsp]\nStandard connector signal reference.\nPackage: 6 contacts | Supply: Signal-specific\nTarget header top/mating view: 1/2 first row, 3/4 second row, 5/6 third row.\n\n            +-------+\n [BUS] MISO | 1   2 | [PWR] VCC  \n  [BUS] SCK | 3   4 | [BUS] MOSI \n[CTL] RESET | 5   6 | [GND] GND  \n            +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "pic-icsp": {
+    "schema_version": 2,
+    "name": "Microchip PIC ICSP (6-pin)",
+    "description": "Standard connector signal reference.",
+    "category": "connectors",
+    "package": "6 contacts",
+    "voltage": "Signal-specific",
+    "aliases": [
+      "pic-isp"
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "MCLR/VPP",
+        "kind": "control",
+        "description": "MCLR/VPP connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "VDD",
+        "kind": "power",
+        "description": "VDD connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "VSS",
+        "kind": "ground",
+        "description": "VSS connector signal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "PGD",
+        "kind": "digital",
+        "description": "PGD connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "PGC",
+        "kind": "digital",
+        "description": "PGC connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "PGM",
+        "kind": "digital",
+        "description": "PGM connector signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.microchip.com/en-us/development-tool/PG164150"
+    ],
+    "notes": [
+      "Pin 6 is auxiliary/low-voltage-programming dependent on target and programmer. Programming voltage on VPP is target-dependent."
+    ],
+    "layout": {
+      "type": "header",
+      "rows": [
+        [
+          "1",
+          "2"
+        ],
+        [
+          "3",
+          "4"
+        ],
+        [
+          "5",
+          "6"
+        ]
+      ],
+      "orientation": "Logical sequential six-pin programming connector; consult target board orientation."
+    },
+    "electrical": {
+      "Supply": "Signal-specific"
+    },
+    "ascii_art": "Microchip PIC ICSP (6-pin) [pic-icsp]\nStandard connector signal reference.\nPackage: 6 contacts | Supply: Signal-specific\nLogical sequential six-pin programming connector; consult target board orientation.\n\n               +-------+\n[CTL] MCLR/VPP | 1   2 | [PWR] VDD     \n     [GND] VSS | 3   4 | [IO] PGD      \n      [IO] PGC | 5   6 | [IO] PGM      \n               +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "raspberry-pi-40": {
+    "schema_version": 2,
+    "name": "Raspberry Pi 40-pin GPIO header",
+    "description": "Physical header numbers with BCM GPIO names.",
+    "category": "connectors",
+    "package": "2x20 2.54 mm header",
+    "voltage": "3.3 V GPIO; dedicated 5 V power pins",
+    "aliases": [
+      "rpi",
+      "rpi40",
+      "raspberry-pi",
+      "gpio40"
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "3V3",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "3.3 V rail",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "5V",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "5 V rail",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "GPIO2",
+        "kind": "digital",
+        "description": "GPIO2 digital signal.",
+        "functions": [
+          "I2C1 SDA"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "5V",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "5 V rail",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "GPIO3",
+        "kind": "digital",
+        "description": "GPIO3 digital signal.",
+        "functions": [
+          "I2C1 SCL"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "GPIO4",
+        "kind": "digital",
+        "description": "GPIO4 digital signal.",
+        "functions": [],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "GPIO14",
+        "kind": "digital",
+        "description": "GPIO14 digital signal.",
+        "functions": [
+          "UART TX"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "GPIO15",
+        "kind": "digital",
+        "description": "GPIO15 digital signal.",
+        "functions": [
+          "UART RX"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "GPIO17",
+        "kind": "digital",
+        "description": "GPIO17 digital signal.",
+        "functions": [],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "GPIO18",
+        "kind": "digital",
+        "description": "GPIO18 digital signal.",
+        "functions": [
+          "PWM0",
+          "PCM CLK"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "GPIO27",
+        "kind": "digital",
+        "description": "GPIO27 digital signal.",
+        "functions": [],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "GPIO22",
+        "kind": "digital",
+        "description": "GPIO22 digital signal.",
+        "functions": [],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "GPIO23",
+        "kind": "digital",
+        "description": "GPIO23 digital signal.",
+        "functions": [],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "17",
+        "name": "3V3",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "3.3 V rail",
+        "notes": []
+      },
+      {
+        "number": "18",
+        "name": "GPIO24",
+        "kind": "digital",
+        "description": "GPIO24 digital signal.",
+        "functions": [],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "19",
+        "name": "GPIO10",
+        "kind": "digital",
+        "description": "GPIO10 digital signal.",
+        "functions": [
+          "SPI0 MOSI"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "20",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "21",
+        "name": "GPIO9",
+        "kind": "digital",
+        "description": "GPIO9 digital signal.",
+        "functions": [
+          "SPI0 MISO"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "22",
+        "name": "GPIO25",
+        "kind": "digital",
+        "description": "GPIO25 digital signal.",
+        "functions": [],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "23",
+        "name": "GPIO11",
+        "kind": "digital",
+        "description": "GPIO11 digital signal.",
+        "functions": [
+          "SPI0 SCLK"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "24",
+        "name": "GPIO8",
+        "kind": "digital",
+        "description": "GPIO8 digital signal.",
+        "functions": [
+          "SPI0 CE0"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "25",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "26",
+        "name": "GPIO7",
+        "kind": "digital",
+        "description": "GPIO7 digital signal.",
+        "functions": [
+          "SPI0 CE1"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "27",
+        "name": "GPIO0",
+        "kind": "digital",
+        "description": "GPIO0 digital signal.",
+        "functions": [
+          "HAT ID SDA"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Reserved for HAT identification; avoid general use."
+        ]
+      },
+      {
+        "number": "28",
+        "name": "GPIO1",
+        "kind": "digital",
+        "description": "GPIO1 digital signal.",
+        "functions": [
+          "HAT ID SCL"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Reserved for HAT identification; avoid general use."
+        ]
+      },
+      {
+        "number": "29",
+        "name": "GPIO5",
+        "kind": "digital",
+        "description": "GPIO5 digital signal.",
+        "functions": [],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "30",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "31",
+        "name": "GPIO6",
+        "kind": "digital",
+        "description": "GPIO6 digital signal.",
+        "functions": [],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "32",
+        "name": "GPIO12",
+        "kind": "digital",
+        "description": "GPIO12 digital signal.",
+        "functions": [
+          "PWM0"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "33",
+        "name": "GPIO13",
+        "kind": "digital",
+        "description": "GPIO13 digital signal.",
+        "functions": [
+          "PWM1"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "34",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "35",
+        "name": "GPIO19",
+        "kind": "digital",
+        "description": "GPIO19 digital signal.",
+        "functions": [
+          "PWM1",
+          "PCM FS"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "36",
+        "name": "GPIO16",
+        "kind": "digital",
+        "description": "GPIO16 digital signal.",
+        "functions": [],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "37",
+        "name": "GPIO26",
+        "kind": "digital",
+        "description": "GPIO26 digital signal.",
+        "functions": [],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "38",
+        "name": "GPIO20",
+        "kind": "digital",
+        "description": "GPIO20 digital signal.",
+        "functions": [
+          "PCM DIN"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "39",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "40",
+        "name": "GPIO21",
+        "kind": "digital",
+        "description": "GPIO21 digital signal.",
+        "functions": [
+          "PCM DOUT"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#gpio"
+    ],
+    "notes": [
+      "GPIO numbers are BCM numbers, not physical header numbers. Alternate function availability depends on the Pi model and software configuration."
+    ],
+    "layout": {
+      "type": "header",
+      "rows": [
+        [
+          "1",
+          "2"
+        ],
+        [
+          "3",
+          "4"
+        ],
+        [
+          "5",
+          "6"
+        ],
+        [
+          "7",
+          "8"
+        ],
+        [
+          "9",
+          "10"
+        ],
+        [
+          "11",
+          "12"
+        ],
+        [
+          "13",
+          "14"
+        ],
+        [
+          "15",
+          "16"
+        ],
+        [
+          "17",
+          "18"
+        ],
+        [
+          "19",
+          "20"
+        ],
+        [
+          "21",
+          "22"
+        ],
+        [
+          "23",
+          "24"
+        ],
+        [
+          "25",
+          "26"
+        ],
+        [
+          "27",
+          "28"
+        ],
+        [
+          "29",
+          "30"
+        ],
+        [
+          "31",
+          "32"
+        ],
+        [
+          "33",
+          "34"
+        ],
+        [
+          "35",
+          "36"
+        ],
+        [
+          "37",
+          "38"
+        ],
+        [
+          "39",
+          "40"
+        ]
+      ],
+      "orientation": "Header mating/top view; pin 1 marked 3V3, odd-numbered pins in left column."
+    },
+    "electrical": {
+      "Supply": "3.3 V GPIO; dedicated 5 V power pins"
+    },
+    "ascii_art": "Raspberry Pi 40-pin GPIO header [raspberry-pi-40]\nPhysical header numbers with BCM GPIO names.\nPackage: 2x20 2.54 mm header | Supply: 3.3 V GPIO; dedicated 5 V power pins\nHeader mating/top view; pin 1 marked 3V3, odd-numbered pins in left column.\n\n            +---------+\n  [PWR] 3V3 |  1   2  | [PWR] 5V   \n [IO] GPIO2 |  3   4  | [PWR] 5V   \n [IO] GPIO3 |  5   6  | [GND] GND  \n [IO] GPIO4 |  7   8  | [IO] GPIO14\n  [GND] GND |  9   10 | [IO] GPIO15\n[IO] GPIO17 | 11   12 | [IO] GPIO18\n[IO] GPIO27 | 13   14 | [GND] GND  \n[IO] GPIO22 | 15   16 | [IO] GPIO23\n  [PWR] 3V3 | 17   18 | [IO] GPIO24\n[IO] GPIO10 | 19   20 | [GND] GND  \n [IO] GPIO9 | 21   22 | [IO] GPIO25\n[IO] GPIO11 | 23   24 | [IO] GPIO8 \n  [GND] GND | 25   26 | [IO] GPIO7 \n [IO] GPIO0 | 27   28 | [IO] GPIO1 \n [IO] GPIO5 | 29   30 | [GND] GND  \n [IO] GPIO6 | 31   32 | [IO] GPIO12\n[IO] GPIO13 | 33   34 | [GND] GND  \n[IO] GPIO19 | 35   36 | [IO] GPIO16\n[IO] GPIO26 | 37   38 | [IO] GPIO20\n  [GND] GND | 39   40 | [IO] GPIO21\n            +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  }
+}

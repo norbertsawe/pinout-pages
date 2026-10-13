@@ -1,0 +1,4568 @@
+{
+  "uno": {
+    "schema_version": 2,
+    "name": "Arduino Uno R3",
+    "description": "ATmega328P board; main headers including R3 SDA/SCL.",
+    "category": "boards",
+    "package": "Uno R3 headers",
+    "voltage": "5 V logic; 7-12 V VIN recommended",
+    "aliases": [
+      "arduino",
+      "arduino-uno",
+      "uno-r3"
+    ],
+    "pins": [
+      {
+        "number": "D0",
+        "name": "D0",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "UART RX"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "D1",
+        "name": "D1",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "UART TX"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "D2",
+        "name": "D2",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "INT0"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "D3",
+        "name": "D3",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "PWM",
+          "INT1"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "D4",
+        "name": "D4",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "D5",
+        "name": "D5",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "PWM"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "D6",
+        "name": "D6",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "PWM"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "D7",
+        "name": "D7",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "D8",
+        "name": "D8",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "D9",
+        "name": "D9",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "PWM"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "D10",
+        "name": "D10",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "PWM",
+          "SPI SS"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "D11",
+        "name": "D11",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "PWM",
+          "SPI MOSI"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "D12",
+        "name": "D12",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "SPI MISO"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "D13",
+        "name": "D13",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "SPI SCK",
+          "LED"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "A0",
+        "name": "A0",
+        "kind": "analog",
+        "description": "A0 analog signal.",
+        "functions": [
+          "ADC0"
+        ],
+        "voltage": "0-5 V with default reference",
+        "notes": []
+      },
+      {
+        "number": "A1",
+        "name": "A1",
+        "kind": "analog",
+        "description": "A1 analog signal.",
+        "functions": [
+          "ADC1"
+        ],
+        "voltage": "0-5 V with default reference",
+        "notes": []
+      },
+      {
+        "number": "A2",
+        "name": "A2",
+        "kind": "analog",
+        "description": "A2 analog signal.",
+        "functions": [
+          "ADC2"
+        ],
+        "voltage": "0-5 V with default reference",
+        "notes": []
+      },
+      {
+        "number": "A3",
+        "name": "A3",
+        "kind": "analog",
+        "description": "A3 analog signal.",
+        "functions": [
+          "ADC3"
+        ],
+        "voltage": "0-5 V with default reference",
+        "notes": []
+      },
+      {
+        "number": "A4",
+        "name": "A4",
+        "kind": "analog",
+        "description": "A4 analog signal.",
+        "functions": [
+          "ADC4",
+          "I2C SDA"
+        ],
+        "voltage": "0-5 V with default reference",
+        "notes": []
+      },
+      {
+        "number": "A5",
+        "name": "A5",
+        "kind": "analog",
+        "description": "A5 analog signal.",
+        "functions": [
+          "ADC5",
+          "I2C SCL"
+        ],
+        "voltage": "0-5 V with default reference",
+        "notes": []
+      },
+      {
+        "number": "POWER1",
+        "name": "NC",
+        "kind": "nc",
+        "description": "Not connected; leave unused.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "POWER2",
+        "name": "IOREF",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "5 V",
+        "notes": []
+      },
+      {
+        "number": "POWER3",
+        "name": "RESET",
+        "kind": "control",
+        "description": "RESET control signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "POWER4",
+        "name": "3V3",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "3.3 V output",
+        "notes": []
+      },
+      {
+        "number": "POWER5",
+        "name": "5V",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "5 V rail",
+        "notes": []
+      },
+      {
+        "number": "POWER6",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "POWER7",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "POWER8",
+        "name": "VIN",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "7-12 V recommended input",
+        "notes": []
+      },
+      {
+        "number": "AREF",
+        "name": "AREF",
+        "kind": "analog",
+        "description": "External ADC reference; configure analogReference before applying an external reference.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "GND",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "SDA",
+        "name": "SDA",
+        "kind": "communication",
+        "description": "SDA interface signal.",
+        "functions": [
+          "I2C SDA"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "SCL",
+        "name": "SCL",
+        "kind": "communication",
+        "description": "SCL interface signal.",
+        "functions": [
+          "I2C SCL"
+        ],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://docs.arduino.cc/resources/pinouts/A000066-full-pinout.pdf"
+    ],
+    "notes": [
+      "D0/D1 share the USB serial interface. ICSP is documented separately as avr-icsp. This map excludes the separate ATmega16U2 programming header."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Header silkscreen IDs; POWER1-8 follows the official power header numbering."
+    },
+    "electrical": {
+      "Digital I/O": "20 mA recommended per pin; aggregate limits also apply.",
+      "3V3 output": "50 mA maximum."
+    },
+    "ascii_art": "Arduino Uno R3 [uno]\nATmega328P board; main headers including R3 SDA/SCL.\nPackage: Uno R3 headers | Supply: 5 V logic; 7-12 V VIN recommended\nHeader silkscreen IDs; POWER1-8 follows the official power header numbering.\n\n    D0 [IO] D0\n    D1 [IO] D1\n    D2 [IO] D2\n    D3 [IO] D3\n    D4 [IO] D4\n    D5 [IO] D5\n    D6 [IO] D6\n    D7 [IO] D7\n    D8 [IO] D8\n    D9 [IO] D9\n   D10 [IO] D10\n   D11 [IO] D11\n   D12 [IO] D12\n   D13 [IO] D13\n    A0 [ANA] A0\n    A1 [ANA] A1\n    A2 [ANA] A2\n    A3 [ANA] A3\n    A4 [ANA] A4\n    A5 [ANA] A5\nPOWER1 [NC] NC\nPOWER2 [PWR] IOREF\nPOWER3 [CTL] RESET\nPOWER4 [PWR] 3V3\nPOWER5 [PWR] 5V\nPOWER6 [GND] GND\nPOWER7 [GND] GND\nPOWER8 [PWR] VIN\n  AREF [ANA] AREF\n   GND [GND] GND\n   SDA [BUS] SDA\n   SCL [BUS] SCL\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "nano": {
+    "schema_version": 2,
+    "name": "Arduino Nano (classic ATmega328P)",
+    "description": "Classic 30-pin Nano; distinct from Nano Every and Nano 33.",
+    "category": "boards",
+    "package": "2x15 board headers",
+    "voltage": "5 V logic; VIN 7-12 V recommended",
+    "aliases": [
+      "arduino-nano"
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "D1",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "UART TX"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "D0",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "UART RX"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "RESET",
+        "kind": "control",
+        "description": "RESET control signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "D2",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "INT0"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "D3",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "PWM",
+          "INT1"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "D4",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "D5",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "PWM"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "D6",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "PWM"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "D7",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "D8",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "D9",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "PWM"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "D10",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "PWM",
+          "SPI SS"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "D11",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "PWM",
+          "SPI MOSI"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "D12",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "SPI MISO"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "D13",
+        "kind": "digital",
+        "description": "Digital header connected to ATmega328P.",
+        "functions": [
+          "SPI SCK",
+          "LED"
+        ],
+        "voltage": "5 V logic",
+        "notes": []
+      },
+      {
+        "number": "17",
+        "name": "3V3",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "3.3 V output",
+        "notes": []
+      },
+      {
+        "number": "18",
+        "name": "AREF",
+        "kind": "analog",
+        "description": "External ADC reference; configure analogReference before applying an external reference.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "19",
+        "name": "A0",
+        "kind": "analog",
+        "description": "A0 analog signal.",
+        "functions": [
+          "ADC0"
+        ],
+        "voltage": "0-5 V with default reference",
+        "notes": []
+      },
+      {
+        "number": "20",
+        "name": "A1",
+        "kind": "analog",
+        "description": "A1 analog signal.",
+        "functions": [
+          "ADC1"
+        ],
+        "voltage": "0-5 V with default reference",
+        "notes": []
+      },
+      {
+        "number": "21",
+        "name": "A2",
+        "kind": "analog",
+        "description": "A2 analog signal.",
+        "functions": [
+          "ADC2"
+        ],
+        "voltage": "0-5 V with default reference",
+        "notes": []
+      },
+      {
+        "number": "22",
+        "name": "A3",
+        "kind": "analog",
+        "description": "A3 analog signal.",
+        "functions": [
+          "ADC3"
+        ],
+        "voltage": "0-5 V with default reference",
+        "notes": []
+      },
+      {
+        "number": "23",
+        "name": "A4",
+        "kind": "analog",
+        "description": "A4 analog signal.",
+        "functions": [
+          "ADC4",
+          "I2C SDA"
+        ],
+        "voltage": "0-5 V with default reference",
+        "notes": []
+      },
+      {
+        "number": "24",
+        "name": "A5",
+        "kind": "analog",
+        "description": "A5 analog signal.",
+        "functions": [
+          "ADC5",
+          "I2C SCL"
+        ],
+        "voltage": "0-5 V with default reference",
+        "notes": []
+      },
+      {
+        "number": "25",
+        "name": "A6",
+        "kind": "analog",
+        "description": "A6 analog signal.",
+        "functions": [
+          "ADC6"
+        ],
+        "voltage": "0-5 V",
+        "notes": [
+          "Analog input only; not digital GPIO."
+        ]
+      },
+      {
+        "number": "26",
+        "name": "A7",
+        "kind": "analog",
+        "description": "A7 analog signal.",
+        "functions": [
+          "ADC7"
+        ],
+        "voltage": "0-5 V",
+        "notes": [
+          "Analog input only; not digital GPIO."
+        ]
+      },
+      {
+        "number": "27",
+        "name": "5V",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "5 V rail",
+        "notes": []
+      },
+      {
+        "number": "28",
+        "name": "RESET",
+        "kind": "control",
+        "description": "RESET control signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "29",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "30",
+        "name": "VIN",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "7-12 V recommended input",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://docs.arduino.cc/resources/pinouts/A000005-full-pinout.pdf"
+    ],
+    "notes": [
+      "A6/A7 are analog-only. RESET appears on both sides."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view with USB at top; pin 1 D1 at upper left, pin 30 VIN upper right."
+    },
+    "electrical": {
+      "Supply": "5 V logic; VIN 7-12 V recommended"
+    },
+    "ascii_art": "Arduino Nano (classic ATmega328P) [nano]\nClassic 30-pin Nano; distinct from Nano Every and Nano 33.\nPackage: 2x15 board headers | Supply: 5 V logic; VIN 7-12 V recommended\nTop view with USB at top; pin 1 D1 at upper left, pin 30 VIN upper right.\n\n            +---------+\n    [IO] D1 |  1   30 | [PWR] VIN  \n    [IO] D0 |  2   29 | [GND] GND  \n[CTL] RESET |  3   28 | [CTL] RESET\n  [GND] GND |  4   27 | [PWR] 5V   \n    [IO] D2 |  5   26 | [ANA] A7   \n    [IO] D3 |  6   25 | [ANA] A6   \n    [IO] D4 |  7   24 | [ANA] A5   \n    [IO] D5 |  8   23 | [ANA] A4   \n    [IO] D6 |  9   22 | [ANA] A3   \n    [IO] D7 | 10   21 | [ANA] A2   \n    [IO] D8 | 11   20 | [ANA] A1   \n    [IO] D9 | 12   19 | [ANA] A0   \n   [IO] D10 | 13   18 | [ANA] AREF \n   [IO] D11 | 14   17 | [PWR] 3V3  \n   [IO] D12 | 15   16 | [IO] D13   \n            +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "pico": {
+    "schema_version": 2,
+    "name": "Raspberry Pi Pico (RP2040)",
+    "description": "Original Pico with 40 castellated header pins.",
+    "category": "boards",
+    "package": "2x20 board headers",
+    "voltage": "3.3 V I/O; VSYS 1.8-5.5 V",
+    "aliases": [
+      "raspberry-pi-pico",
+      "pico-h"
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "GP0",
+        "kind": "digital",
+        "description": "GP0 digital signal.",
+        "functions": [
+          "PWM0A",
+          "I2C0 SDA",
+          "SPI0 RX (MISO)",
+          "UART0 TX"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "GP1",
+        "kind": "digital",
+        "description": "GP1 digital signal.",
+        "functions": [
+          "PWM0B",
+          "I2C0 SCL",
+          "SPI0 CSn",
+          "UART0 RX"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "GP2",
+        "kind": "digital",
+        "description": "GP2 digital signal.",
+        "functions": [
+          "PWM1A",
+          "I2C1 SDA",
+          "SPI0 SCK"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "GP3",
+        "kind": "digital",
+        "description": "GP3 digital signal.",
+        "functions": [
+          "PWM1B",
+          "I2C1 SCL",
+          "SPI0 TX (MOSI)"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "GP4",
+        "kind": "digital",
+        "description": "GP4 digital signal.",
+        "functions": [
+          "PWM2A",
+          "I2C0 SDA",
+          "SPI0 RX (MISO)",
+          "UART1 TX"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "GP5",
+        "kind": "digital",
+        "description": "GP5 digital signal.",
+        "functions": [
+          "PWM2B",
+          "I2C0 SCL",
+          "SPI0 CSn",
+          "UART1 RX"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "GP6",
+        "kind": "digital",
+        "description": "GP6 digital signal.",
+        "functions": [
+          "PWM3A",
+          "I2C1 SDA",
+          "SPI0 SCK"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "GP7",
+        "kind": "digital",
+        "description": "GP7 digital signal.",
+        "functions": [
+          "PWM3B",
+          "I2C1 SCL",
+          "SPI0 TX (MOSI)"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "GP8",
+        "kind": "digital",
+        "description": "GP8 digital signal.",
+        "functions": [
+          "PWM4A",
+          "I2C0 SDA",
+          "SPI1 RX (MISO)",
+          "UART0 TX"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "GP9",
+        "kind": "digital",
+        "description": "GP9 digital signal.",
+        "functions": [
+          "PWM4B",
+          "I2C0 SCL",
+          "SPI1 CSn",
+          "UART0 RX"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "GP10",
+        "kind": "digital",
+        "description": "GP10 digital signal.",
+        "functions": [
+          "PWM5A",
+          "I2C1 SDA",
+          "SPI1 SCK"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "GP11",
+        "kind": "digital",
+        "description": "GP11 digital signal.",
+        "functions": [
+          "PWM5B",
+          "I2C1 SCL",
+          "SPI1 TX (MOSI)"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "GP12",
+        "kind": "digital",
+        "description": "GP12 digital signal.",
+        "functions": [
+          "PWM6A",
+          "I2C0 SDA",
+          "SPI1 RX (MISO)",
+          "UART1 TX"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "17",
+        "name": "GP13",
+        "kind": "digital",
+        "description": "GP13 digital signal.",
+        "functions": [
+          "PWM6B",
+          "I2C0 SCL",
+          "SPI1 CSn",
+          "UART1 RX"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "18",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "19",
+        "name": "GP14",
+        "kind": "digital",
+        "description": "GP14 digital signal.",
+        "functions": [
+          "PWM7A",
+          "I2C1 SDA",
+          "SPI1 SCK"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "20",
+        "name": "GP15",
+        "kind": "digital",
+        "description": "GP15 digital signal.",
+        "functions": [
+          "PWM7B",
+          "I2C1 SCL",
+          "SPI1 TX (MOSI)"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "21",
+        "name": "GP16",
+        "kind": "digital",
+        "description": "GP16 digital signal.",
+        "functions": [
+          "PWM0A",
+          "I2C0 SDA",
+          "SPI0 RX (MISO)",
+          "UART0 TX"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "22",
+        "name": "GP17",
+        "kind": "digital",
+        "description": "GP17 digital signal.",
+        "functions": [
+          "PWM0B",
+          "I2C0 SCL",
+          "SPI0 CSn",
+          "UART0 RX"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "23",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "24",
+        "name": "GP18",
+        "kind": "digital",
+        "description": "GP18 digital signal.",
+        "functions": [
+          "PWM1A",
+          "I2C1 SDA",
+          "SPI0 SCK"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "25",
+        "name": "GP19",
+        "kind": "digital",
+        "description": "GP19 digital signal.",
+        "functions": [
+          "PWM1B",
+          "I2C1 SCL",
+          "SPI0 TX (MOSI)"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "26",
+        "name": "GP20",
+        "kind": "digital",
+        "description": "GP20 digital signal.",
+        "functions": [
+          "PWM2A",
+          "I2C0 SDA",
+          "SPI0 RX (MISO)",
+          "UART1 TX"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "27",
+        "name": "GP21",
+        "kind": "digital",
+        "description": "GP21 digital signal.",
+        "functions": [
+          "PWM2B",
+          "I2C0 SCL",
+          "SPI0 CSn",
+          "UART1 RX"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "28",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "29",
+        "name": "GP22",
+        "kind": "digital",
+        "description": "GP22 digital signal.",
+        "functions": [
+          "PWM3A",
+          "I2C1 SDA",
+          "SPI0 SCK"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "30",
+        "name": "RUN",
+        "kind": "control",
+        "description": "RUN control signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": [
+          "Pull low to disable/reset; do not apply 5 V."
+        ]
+      },
+      {
+        "number": "31",
+        "name": "GP26",
+        "kind": "analog",
+        "description": "GP26 analog signal.",
+        "functions": [
+          "PWM5A",
+          "I2C1 SDA",
+          "SPI1 SCK",
+          "ADC0"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "32",
+        "name": "GP27",
+        "kind": "analog",
+        "description": "GP27 analog signal.",
+        "functions": [
+          "PWM5B",
+          "I2C1 SCL",
+          "SPI1 TX (MOSI)",
+          "ADC1"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "33",
+        "name": "AGND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "34",
+        "name": "GP28",
+        "kind": "analog",
+        "description": "GP28 analog signal.",
+        "functions": [
+          "PWM6A",
+          "I2C0 SDA",
+          "SPI1 RX (MISO)",
+          "UART1 TX",
+          "ADC2"
+        ],
+        "voltage": "3.3 V logic; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "35",
+        "name": "ADC_VREF",
+        "kind": "analog",
+        "description": "ADC_VREF analog signal.",
+        "functions": [],
+        "voltage": "3.3 V nominal ADC reference",
+        "notes": []
+      },
+      {
+        "number": "36",
+        "name": "3V3",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "3.3 V regulator output",
+        "notes": []
+      },
+      {
+        "number": "37",
+        "name": "3V3_EN",
+        "kind": "control",
+        "description": "3V3_EN control signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": [
+          "Pull low to disable/reset; do not apply 5 V."
+        ]
+      },
+      {
+        "number": "38",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "39",
+        "name": "VSYS",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "1.8-5.5 V system input",
+        "notes": []
+      },
+      {
+        "number": "40",
+        "name": "VBUS",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "5 V USB bus",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf"
+    ],
+    "notes": [
+      "Separate three-pad SWD debug interface is not part of the 40-pin map. GP25 drives the onboard LED."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; USB at top. Pin 1 GP0 upper left, pin 40 VBUS upper right."
+    },
+    "electrical": {
+      "Supply": "3.3 V I/O; VSYS 1.8-5.5 V"
+    },
+    "ascii_art": "Raspberry Pi Pico (RP2040) [pico]\nOriginal Pico with 40 castellated header pins.\nPackage: 2x20 board headers | Supply: 3.3 V I/O; VSYS 1.8-5.5 V\nTop view; USB at top. Pin 1 GP0 upper left, pin 40 VBUS upper right.\n\n               +---------+\n      [IO] GP0 |  1   40 | [PWR] VBUS    \n      [IO] GP1 |  2   39 | [PWR] VSYS    \n     [GND] GND |  3   38 | [GND] GND     \n      [IO] GP2 |  4   37 | [CTL] 3V3_EN  \n      [IO] GP3 |  5   36 | [PWR] 3V3     \n      [IO] GP4 |  6   35 | [ANA] ADC_VREF\n      [IO] GP5 |  7   34 | [ANA] GP28    \n     [GND] GND |  8   33 | [GND] AGND    \n      [IO] GP6 |  9   32 | [ANA] GP27    \n      [IO] GP7 | 10   31 | [ANA] GP26    \n      [IO] GP8 | 11   30 | [CTL] RUN     \n      [IO] GP9 | 12   29 | [IO] GP22     \n     [GND] GND | 13   28 | [GND] GND     \n     [IO] GP10 | 14   27 | [IO] GP21     \n     [IO] GP11 | 15   26 | [IO] GP20     \n     [IO] GP12 | 16   25 | [IO] GP19     \n     [IO] GP13 | 17   24 | [IO] GP18     \n     [GND] GND | 18   23 | [GND] GND     \n     [IO] GP14 | 19   22 | [IO] GP17     \n     [IO] GP15 | 20   21 | [IO] GP16     \n               +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "esp32": {
+    "schema_version": 2,
+    "name": "ESP32-DevKitC V4 (ESP32-WROOM-32E)",
+    "description": "Wi-Fi development board with package-specific numbered headers.",
+    "category": "boards",
+    "package": "2x19 board headers",
+    "voltage": "3.3 V GPIO; USB/5V supply",
+    "aliases": [
+      "esp32-devkitc",
+      "esp32-devkitc-v4"
+    ],
+    "pins": [
+      {
+        "number": "J2.1",
+        "name": "3V3",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "3.3 V rail",
+        "notes": []
+      },
+      {
+        "number": "J2.2",
+        "name": "EN",
+        "kind": "control",
+        "description": "EN control signal.",
+        "functions": [],
+        "voltage": "3.3 V enable; pull low to reset",
+        "notes": []
+      },
+      {
+        "number": "J2.3",
+        "name": "GPIO36",
+        "kind": "analog",
+        "description": "GPIO36 analog signal.",
+        "functions": [
+          "ADC1_CH0",
+          "Input only"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "No internal pull-up/down; input only."
+        ]
+      },
+      {
+        "number": "J2.4",
+        "name": "GPIO39",
+        "kind": "analog",
+        "description": "GPIO39 analog signal.",
+        "functions": [
+          "ADC1_CH3",
+          "Input only"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "No internal pull-up/down; input only."
+        ]
+      },
+      {
+        "number": "J2.5",
+        "name": "GPIO34",
+        "kind": "analog",
+        "description": "GPIO34 analog signal.",
+        "functions": [
+          "ADC1_CH6",
+          "Input only"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "No internal pull-up/down; input only."
+        ]
+      },
+      {
+        "number": "J2.6",
+        "name": "GPIO35",
+        "kind": "analog",
+        "description": "GPIO35 analog signal.",
+        "functions": [
+          "ADC1_CH7",
+          "Input only"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "No internal pull-up/down; input only."
+        ]
+      },
+      {
+        "number": "J2.7",
+        "name": "GPIO32",
+        "kind": "analog",
+        "description": "GPIO32 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC1_CH4"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J2.8",
+        "name": "GPIO33",
+        "kind": "analog",
+        "description": "GPIO33 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC1_CH5"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J2.9",
+        "name": "GPIO25",
+        "kind": "analog",
+        "description": "GPIO25 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH8",
+          "DAC1"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "ADC2 use conflicts with active Wi-Fi."
+        ]
+      },
+      {
+        "number": "J2.10",
+        "name": "GPIO26",
+        "kind": "analog",
+        "description": "GPIO26 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH9",
+          "DAC2"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "ADC2 use conflicts with active Wi-Fi."
+        ]
+      },
+      {
+        "number": "J2.11",
+        "name": "GPIO27",
+        "kind": "analog",
+        "description": "GPIO27 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH7"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "ADC2 use conflicts with active Wi-Fi."
+        ]
+      },
+      {
+        "number": "J2.12",
+        "name": "GPIO14",
+        "kind": "analog",
+        "description": "GPIO14 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH6"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "ADC2 use conflicts with active Wi-Fi."
+        ]
+      },
+      {
+        "number": "J2.13",
+        "name": "GPIO12",
+        "kind": "analog",
+        "description": "GPIO12 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH5"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "ADC2 use conflicts with active Wi-Fi.",
+          "Boot strapping pin: external levels affect boot configuration."
+        ]
+      },
+      {
+        "number": "J2.14",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "J2.15",
+        "name": "GPIO13",
+        "kind": "analog",
+        "description": "GPIO13 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH4"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "ADC2 use conflicts with active Wi-Fi."
+        ]
+      },
+      {
+        "number": "J2.16",
+        "name": "GPIO9",
+        "kind": "control",
+        "description": "GPIO9 control signal.",
+        "functions": [
+          "Flash bus"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Reserved for internal flash; do not use as normal GPIO."
+        ]
+      },
+      {
+        "number": "J2.17",
+        "name": "GPIO10",
+        "kind": "control",
+        "description": "GPIO10 control signal.",
+        "functions": [
+          "Flash bus"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Reserved for internal flash; do not use as normal GPIO."
+        ]
+      },
+      {
+        "number": "J2.18",
+        "name": "GPIO11",
+        "kind": "control",
+        "description": "GPIO11 control signal.",
+        "functions": [
+          "Flash bus"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Reserved for internal flash; do not use as normal GPIO."
+        ]
+      },
+      {
+        "number": "J2.19",
+        "name": "5V",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "5 V power input",
+        "notes": []
+      },
+      {
+        "number": "J3.1",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "J3.2",
+        "name": "GPIO23",
+        "kind": "digital",
+        "description": "GPIO23 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "VSPI MOSI"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.3",
+        "name": "GPIO22",
+        "kind": "digital",
+        "description": "GPIO22 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "I2C SCL (common)"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.4",
+        "name": "GPIO1",
+        "kind": "digital",
+        "description": "GPIO1 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "UART0 TX"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.5",
+        "name": "GPIO3",
+        "kind": "digital",
+        "description": "GPIO3 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "UART0 RX"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.6",
+        "name": "GPIO21",
+        "kind": "digital",
+        "description": "GPIO21 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "I2C SDA (common)"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.7",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "J3.8",
+        "name": "GPIO19",
+        "kind": "digital",
+        "description": "GPIO19 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "VSPI MISO"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.9",
+        "name": "GPIO18",
+        "kind": "digital",
+        "description": "GPIO18 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "VSPI SCK"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.10",
+        "name": "GPIO5",
+        "kind": "digital",
+        "description": "GPIO5 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "VSPI CS"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Boot strapping pin: external levels affect boot configuration."
+        ]
+      },
+      {
+        "number": "J3.11",
+        "name": "GPIO17",
+        "kind": "digital",
+        "description": "GPIO17 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Reserved for PSRAM on WROVER; this entry targets WROOM-32E."
+        ]
+      },
+      {
+        "number": "J3.12",
+        "name": "GPIO16",
+        "kind": "digital",
+        "description": "GPIO16 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Reserved for PSRAM on WROVER; this entry targets WROOM-32E."
+        ]
+      },
+      {
+        "number": "J3.13",
+        "name": "GPIO4",
+        "kind": "analog",
+        "description": "GPIO4 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH0"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "ADC2 use conflicts with active Wi-Fi."
+        ]
+      },
+      {
+        "number": "J3.14",
+        "name": "GPIO0",
+        "kind": "analog",
+        "description": "GPIO0 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH1"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "ADC2 use conflicts with active Wi-Fi.",
+          "Boot strapping pin: external levels affect boot configuration."
+        ]
+      },
+      {
+        "number": "J3.15",
+        "name": "GPIO2",
+        "kind": "analog",
+        "description": "GPIO2 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH2"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "ADC2 use conflicts with active Wi-Fi.",
+          "Boot strapping pin: external levels affect boot configuration."
+        ]
+      },
+      {
+        "number": "J3.16",
+        "name": "GPIO15",
+        "kind": "analog",
+        "description": "GPIO15 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH3"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "ADC2 use conflicts with active Wi-Fi.",
+          "Boot strapping pin: external levels affect boot configuration."
+        ]
+      },
+      {
+        "number": "J3.17",
+        "name": "GPIO8",
+        "kind": "control",
+        "description": "GPIO8 control signal.",
+        "functions": [
+          "Flash bus"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Reserved for internal flash; do not use as normal GPIO."
+        ]
+      },
+      {
+        "number": "J3.18",
+        "name": "GPIO7",
+        "kind": "control",
+        "description": "GPIO7 control signal.",
+        "functions": [
+          "Flash bus"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Reserved for internal flash; do not use as normal GPIO."
+        ]
+      },
+      {
+        "number": "J3.19",
+        "name": "GPIO6",
+        "kind": "control",
+        "description": "GPIO6 control signal.",
+        "functions": [
+          "Flash bus"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Reserved for internal flash; do not use as normal GPIO."
+        ]
+      }
+    ],
+    "sources": [
+      "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32/esp32-devkitc/user_guide.html"
+    ],
+    "notes": [
+      "Use one approved supply method. Signal routing through the GPIO matrix does not mean every alternate function can run simultaneously."
+    ],
+    "layout": {
+      "type": "dual",
+      "rows": [
+        [
+          "J2.1",
+          "J3.1"
+        ],
+        [
+          "J2.2",
+          "J3.2"
+        ],
+        [
+          "J2.3",
+          "J3.3"
+        ],
+        [
+          "J2.4",
+          "J3.4"
+        ],
+        [
+          "J2.5",
+          "J3.5"
+        ],
+        [
+          "J2.6",
+          "J3.6"
+        ],
+        [
+          "J2.7",
+          "J3.7"
+        ],
+        [
+          "J2.8",
+          "J3.8"
+        ],
+        [
+          "J2.9",
+          "J3.9"
+        ],
+        [
+          "J2.10",
+          "J3.10"
+        ],
+        [
+          "J2.11",
+          "J3.11"
+        ],
+        [
+          "J2.12",
+          "J3.12"
+        ],
+        [
+          "J2.13",
+          "J3.13"
+        ],
+        [
+          "J2.14",
+          "J3.14"
+        ],
+        [
+          "J2.15",
+          "J3.15"
+        ],
+        [
+          "J2.16",
+          "J3.16"
+        ],
+        [
+          "J2.17",
+          "J3.17"
+        ],
+        [
+          "J2.18",
+          "J3.18"
+        ],
+        [
+          "J2.19",
+          "J3.19"
+        ]
+      ],
+      "orientation": "Top/component view; antenna at top and USB at bottom. Header IDs follow the vendor schematic."
+    },
+    "electrical": {
+      "Supply": "3.3 V GPIO; USB/5V supply"
+    },
+    "ascii_art": "ESP32-DevKitC V4 (ESP32-WROOM-32E) [esp32]\nWi-Fi development board with package-specific numbered headers.\nPackage: 2x19 board headers | Supply: 3.3 V GPIO; USB/5V supply\nTop/component view; antenna at top and USB at bottom. Header IDs follow the vendor schematic.\n\n             +---------------+\n   [PWR] 3V3 |  J2.1   J3.1  | [GND] GND   \n    [CTL] EN |  J2.2   J3.2  | [IO] GPIO23 \n[ANA] GPIO36 |  J2.3   J3.3  | [IO] GPIO22 \n[ANA] GPIO39 |  J2.4   J3.4  | [IO] GPIO1  \n[ANA] GPIO34 |  J2.5   J3.5  | [IO] GPIO3  \n[ANA] GPIO35 |  J2.6   J3.6  | [IO] GPIO21 \n[ANA] GPIO32 |  J2.7   J3.7  | [GND] GND   \n[ANA] GPIO33 |  J2.8   J3.8  | [IO] GPIO19 \n[ANA] GPIO25 |  J2.9   J3.9  | [IO] GPIO18 \n[ANA] GPIO26 | J2.10   J3.10 | [IO] GPIO5  \n[ANA] GPIO27 | J2.11   J3.11 | [IO] GPIO17 \n[ANA] GPIO14 | J2.12   J3.12 | [IO] GPIO16 \n[ANA] GPIO12 | J2.13   J3.13 | [ANA] GPIO4 \n   [GND] GND | J2.14   J3.14 | [ANA] GPIO0 \n[ANA] GPIO13 | J2.15   J3.15 | [ANA] GPIO2 \n [CTL] GPIO9 | J2.16   J3.16 | [ANA] GPIO15\n[CTL] GPIO10 | J2.17   J3.17 | [CTL] GPIO8 \n[CTL] GPIO11 | J2.18   J3.18 | [CTL] GPIO7 \n    [PWR] 5V | J2.19   J3.19 | [CTL] GPIO6 \n             +---------------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "esp32s3": {
+    "schema_version": 2,
+    "name": "ESP32-S3-DevKitC-1 v1.0 (WROOM-1)",
+    "description": "Wi-Fi development board with package-specific numbered headers.",
+    "category": "boards",
+    "package": "2x22 board headers",
+    "voltage": "3.3 V GPIO; USB/5V supply",
+    "aliases": [
+      "esp32-s3",
+      "esp32-s3-devkitc-1"
+    ],
+    "pins": [
+      {
+        "number": "J1.1",
+        "name": "3V3",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "3.3 V rail",
+        "notes": []
+      },
+      {
+        "number": "J1.2",
+        "name": "3V3",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "3.3 V rail",
+        "notes": []
+      },
+      {
+        "number": "J1.3",
+        "name": "RST",
+        "kind": "control",
+        "description": "RST control signal.",
+        "functions": [],
+        "voltage": "3.3 V enable; pull low to reset",
+        "notes": []
+      },
+      {
+        "number": "J1.4",
+        "name": "GPIO4",
+        "kind": "analog",
+        "description": "GPIO4 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC1_CH3"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.5",
+        "name": "GPIO5",
+        "kind": "analog",
+        "description": "GPIO5 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC1_CH4"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.6",
+        "name": "GPIO6",
+        "kind": "analog",
+        "description": "GPIO6 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC1_CH5"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.7",
+        "name": "GPIO7",
+        "kind": "analog",
+        "description": "GPIO7 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC1_CH6"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.8",
+        "name": "GPIO15",
+        "kind": "analog",
+        "description": "GPIO15 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH4"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.9",
+        "name": "GPIO16",
+        "kind": "analog",
+        "description": "GPIO16 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH5"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.10",
+        "name": "GPIO17",
+        "kind": "analog",
+        "description": "GPIO17 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH6"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.11",
+        "name": "GPIO18",
+        "kind": "analog",
+        "description": "GPIO18 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH7"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.12",
+        "name": "GPIO8",
+        "kind": "analog",
+        "description": "GPIO8 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC1_CH7"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.13",
+        "name": "GPIO3",
+        "kind": "analog",
+        "description": "GPIO3 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC1_CH2"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Boot strapping pin."
+        ]
+      },
+      {
+        "number": "J1.14",
+        "name": "GPIO46",
+        "kind": "digital",
+        "description": "GPIO46 digital signal.",
+        "functions": [
+          "Digital input",
+          "Boot strap"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Boot strapping pin.",
+          "Input-only GPIO."
+        ]
+      },
+      {
+        "number": "J1.15",
+        "name": "GPIO9",
+        "kind": "analog",
+        "description": "GPIO9 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC1_CH8"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.16",
+        "name": "GPIO10",
+        "kind": "analog",
+        "description": "GPIO10 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC1_CH9"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.17",
+        "name": "GPIO11",
+        "kind": "analog",
+        "description": "GPIO11 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH0"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.18",
+        "name": "GPIO12",
+        "kind": "analog",
+        "description": "GPIO12 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH1"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.19",
+        "name": "GPIO13",
+        "kind": "analog",
+        "description": "GPIO13 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH2"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.20",
+        "name": "GPIO14",
+        "kind": "analog",
+        "description": "GPIO14 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH3"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.21",
+        "name": "5V",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "5 V power input",
+        "notes": []
+      },
+      {
+        "number": "J1.22",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "J3.1",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "J3.2",
+        "name": "GPIO43",
+        "kind": "digital",
+        "description": "GPIO43 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "UART0 TX"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.3",
+        "name": "GPIO44",
+        "kind": "digital",
+        "description": "GPIO44 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "UART0 RX"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.4",
+        "name": "GPIO1",
+        "kind": "analog",
+        "description": "GPIO1 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC1_CH0"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.5",
+        "name": "GPIO2",
+        "kind": "analog",
+        "description": "GPIO2 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC1_CH1"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.6",
+        "name": "GPIO42",
+        "kind": "digital",
+        "description": "GPIO42 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "JTAG TMS"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.7",
+        "name": "GPIO41",
+        "kind": "digital",
+        "description": "GPIO41 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "JTAG TDI"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.8",
+        "name": "GPIO40",
+        "kind": "digital",
+        "description": "GPIO40 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "JTAG TDO"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.9",
+        "name": "GPIO39",
+        "kind": "digital",
+        "description": "GPIO39 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "JTAG TCK"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.10",
+        "name": "GPIO38",
+        "kind": "digital",
+        "description": "GPIO38 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.11",
+        "name": "GPIO37",
+        "kind": "digital",
+        "description": "GPIO37 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Unavailable on module variants using octal flash/PSRAM; check module ordering code."
+        ]
+      },
+      {
+        "number": "J3.12",
+        "name": "GPIO36",
+        "kind": "digital",
+        "description": "GPIO36 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Unavailable on module variants using octal flash/PSRAM; check module ordering code."
+        ]
+      },
+      {
+        "number": "J3.13",
+        "name": "GPIO35",
+        "kind": "digital",
+        "description": "GPIO35 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Unavailable on module variants using octal flash/PSRAM; check module ordering code."
+        ]
+      },
+      {
+        "number": "J3.14",
+        "name": "GPIO0",
+        "kind": "digital",
+        "description": "GPIO0 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Boot strapping pin."
+        ]
+      },
+      {
+        "number": "J3.15",
+        "name": "GPIO45",
+        "kind": "digital",
+        "description": "GPIO45 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Boot strapping pin."
+        ]
+      },
+      {
+        "number": "J3.16",
+        "name": "GPIO48",
+        "kind": "digital",
+        "description": "GPIO48 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "RGB LED (v1.0)"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.17",
+        "name": "GPIO47",
+        "kind": "digital",
+        "description": "GPIO47 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.18",
+        "name": "GPIO21",
+        "kind": "digital",
+        "description": "GPIO21 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.19",
+        "name": "GPIO20",
+        "kind": "analog",
+        "description": "GPIO20 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH9",
+          "USB D+"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.20",
+        "name": "GPIO19",
+        "kind": "analog",
+        "description": "GPIO19 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH8",
+          "USB D-"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.21",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "J3.22",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://docs.espressif.com/projects/esp-idf/en/v4.4.3/esp32s3/hw-reference/esp32s3/user-guide-devkitc-1.html"
+    ],
+    "notes": [
+      "Use one approved supply method. Signal routing through the GPIO matrix does not mean every alternate function can run simultaneously."
+    ],
+    "layout": {
+      "type": "dual",
+      "rows": [
+        [
+          "J1.1",
+          "J3.1"
+        ],
+        [
+          "J1.2",
+          "J3.2"
+        ],
+        [
+          "J1.3",
+          "J3.3"
+        ],
+        [
+          "J1.4",
+          "J3.4"
+        ],
+        [
+          "J1.5",
+          "J3.5"
+        ],
+        [
+          "J1.6",
+          "J3.6"
+        ],
+        [
+          "J1.7",
+          "J3.7"
+        ],
+        [
+          "J1.8",
+          "J3.8"
+        ],
+        [
+          "J1.9",
+          "J3.9"
+        ],
+        [
+          "J1.10",
+          "J3.10"
+        ],
+        [
+          "J1.11",
+          "J3.11"
+        ],
+        [
+          "J1.12",
+          "J3.12"
+        ],
+        [
+          "J1.13",
+          "J3.13"
+        ],
+        [
+          "J1.14",
+          "J3.14"
+        ],
+        [
+          "J1.15",
+          "J3.15"
+        ],
+        [
+          "J1.16",
+          "J3.16"
+        ],
+        [
+          "J1.17",
+          "J3.17"
+        ],
+        [
+          "J1.18",
+          "J3.18"
+        ],
+        [
+          "J1.19",
+          "J3.19"
+        ],
+        [
+          "J1.20",
+          "J3.20"
+        ],
+        [
+          "J1.21",
+          "J3.21"
+        ],
+        [
+          "J1.22",
+          "J3.22"
+        ]
+      ],
+      "orientation": "Top/component view; antenna at top and USB at bottom. Header IDs follow the vendor schematic."
+    },
+    "electrical": {
+      "Supply": "3.3 V GPIO; USB/5V supply"
+    },
+    "ascii_art": "ESP32-S3-DevKitC-1 v1.0 (WROOM-1) [esp32s3]\nWi-Fi development board with package-specific numbered headers.\nPackage: 2x22 board headers | Supply: 3.3 V GPIO; USB/5V supply\nTop/component view; antenna at top and USB at bottom. Header IDs follow the vendor schematic.\n\n             +---------------+\n   [PWR] 3V3 |  J1.1   J3.1  | [GND] GND   \n   [PWR] 3V3 |  J1.2   J3.2  | [IO] GPIO43 \n   [CTL] RST |  J1.3   J3.3  | [IO] GPIO44 \n [ANA] GPIO4 |  J1.4   J3.4  | [ANA] GPIO1 \n [ANA] GPIO5 |  J1.5   J3.5  | [ANA] GPIO2 \n [ANA] GPIO6 |  J1.6   J3.6  | [IO] GPIO42 \n [ANA] GPIO7 |  J1.7   J3.7  | [IO] GPIO41 \n[ANA] GPIO15 |  J1.8   J3.8  | [IO] GPIO40 \n[ANA] GPIO16 |  J1.9   J3.9  | [IO] GPIO39 \n[ANA] GPIO17 | J1.10   J3.10 | [IO] GPIO38 \n[ANA] GPIO18 | J1.11   J3.11 | [IO] GPIO37 \n [ANA] GPIO8 | J1.12   J3.12 | [IO] GPIO36 \n [ANA] GPIO3 | J1.13   J3.13 | [IO] GPIO35 \n [IO] GPIO46 | J1.14   J3.14 | [IO] GPIO0  \n [ANA] GPIO9 | J1.15   J3.15 | [IO] GPIO45 \n[ANA] GPIO10 | J1.16   J3.16 | [IO] GPIO48 \n[ANA] GPIO11 | J1.17   J3.17 | [IO] GPIO47 \n[ANA] GPIO12 | J1.18   J3.18 | [IO] GPIO21 \n[ANA] GPIO13 | J1.19   J3.19 | [ANA] GPIO20\n[ANA] GPIO14 | J1.20   J3.20 | [ANA] GPIO19\n    [PWR] 5V | J1.21   J3.21 | [GND] GND   \n   [GND] GND | J1.22   J3.22 | [GND] GND   \n             +---------------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "esp32c3": {
+    "schema_version": 2,
+    "name": "ESP32-C3-DevKitM-1",
+    "description": "Wi-Fi development board with package-specific numbered headers.",
+    "category": "boards",
+    "package": "2x15 board headers",
+    "voltage": "3.3 V GPIO; USB/5V supply",
+    "aliases": [
+      "esp32-c3",
+      "esp32-c3-devkitm-1"
+    ],
+    "pins": [
+      {
+        "number": "J1.1",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "J1.2",
+        "name": "3V3",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "3.3 V rail",
+        "notes": []
+      },
+      {
+        "number": "J1.3",
+        "name": "3V3",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "3.3 V rail",
+        "notes": []
+      },
+      {
+        "number": "J1.4",
+        "name": "GPIO2",
+        "kind": "analog",
+        "description": "GPIO2 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC1_CH2"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Boot strapping pin."
+        ]
+      },
+      {
+        "number": "J1.5",
+        "name": "GPIO3",
+        "kind": "analog",
+        "description": "GPIO3 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC1_CH3"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.6",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "J1.7",
+        "name": "RST",
+        "kind": "control",
+        "description": "RST control signal.",
+        "functions": [],
+        "voltage": "3.3 V enable; pull low to reset",
+        "notes": []
+      },
+      {
+        "number": "J1.8",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "J1.9",
+        "name": "GPIO0",
+        "kind": "analog",
+        "description": "GPIO0 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC1_CH0"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.10",
+        "name": "GPIO1",
+        "kind": "analog",
+        "description": "GPIO1 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC1_CH1"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.11",
+        "name": "GPIO10",
+        "kind": "digital",
+        "description": "GPIO10 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J1.12",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "J1.13",
+        "name": "5V",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "5 V power input",
+        "notes": []
+      },
+      {
+        "number": "J1.14",
+        "name": "5V",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "5 V power input",
+        "notes": []
+      },
+      {
+        "number": "J1.15",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "J3.1",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "J3.2",
+        "name": "GPIO21",
+        "kind": "digital",
+        "description": "GPIO21 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "UART0 TX"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.3",
+        "name": "GPIO20",
+        "kind": "digital",
+        "description": "GPIO20 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "UART0 RX"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.4",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "J3.5",
+        "name": "GPIO9",
+        "kind": "digital",
+        "description": "GPIO9 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Boot strapping pin."
+        ]
+      },
+      {
+        "number": "J3.6",
+        "name": "GPIO8",
+        "kind": "digital",
+        "description": "GPIO8 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "RGB LED"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Boot strapping pin."
+        ]
+      },
+      {
+        "number": "J3.7",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "J3.8",
+        "name": "GPIO7",
+        "kind": "digital",
+        "description": "GPIO7 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "JTAG TDO"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.9",
+        "name": "GPIO6",
+        "kind": "digital",
+        "description": "GPIO6 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "JTAG TCK"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.10",
+        "name": "GPIO5",
+        "kind": "analog",
+        "description": "GPIO5 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC2_CH0",
+          "JTAG TDI"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.11",
+        "name": "GPIO4",
+        "kind": "analog",
+        "description": "GPIO4 analog signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "ADC1_CH4",
+          "JTAG TMS"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.12",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "J3.13",
+        "name": "GPIO18",
+        "kind": "digital",
+        "description": "GPIO18 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "USB D-"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.14",
+        "name": "GPIO19",
+        "kind": "digital",
+        "description": "GPIO19 digital signal.",
+        "functions": [
+          "GPIO",
+          "PWM",
+          "I2C (matrix)",
+          "SPI (matrix)",
+          "UART (matrix)",
+          "USB D+"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "J3.15",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c3/esp32-c3-devkitm-1/user_guide.html"
+    ],
+    "notes": [
+      "Use one approved supply method. Signal routing through the GPIO matrix does not mean every alternate function can run simultaneously."
+    ],
+    "layout": {
+      "type": "dual",
+      "rows": [
+        [
+          "J1.1",
+          "J3.1"
+        ],
+        [
+          "J1.2",
+          "J3.2"
+        ],
+        [
+          "J1.3",
+          "J3.3"
+        ],
+        [
+          "J1.4",
+          "J3.4"
+        ],
+        [
+          "J1.5",
+          "J3.5"
+        ],
+        [
+          "J1.6",
+          "J3.6"
+        ],
+        [
+          "J1.7",
+          "J3.7"
+        ],
+        [
+          "J1.8",
+          "J3.8"
+        ],
+        [
+          "J1.9",
+          "J3.9"
+        ],
+        [
+          "J1.10",
+          "J3.10"
+        ],
+        [
+          "J1.11",
+          "J3.11"
+        ],
+        [
+          "J1.12",
+          "J3.12"
+        ],
+        [
+          "J1.13",
+          "J3.13"
+        ],
+        [
+          "J1.14",
+          "J3.14"
+        ],
+        [
+          "J1.15",
+          "J3.15"
+        ]
+      ],
+      "orientation": "Top/component view; antenna at top and USB at bottom. Header IDs follow the vendor schematic."
+    },
+    "electrical": {
+      "Supply": "3.3 V GPIO; USB/5V supply"
+    },
+    "ascii_art": "ESP32-C3-DevKitM-1 [esp32c3]\nWi-Fi development board with package-specific numbered headers.\nPackage: 2x15 board headers | Supply: 3.3 V GPIO; USB/5V supply\nTop/component view; antenna at top and USB at bottom. Header IDs follow the vendor schematic.\n\n            +---------------+\n  [GND] GND |  J1.1   J3.1  | [GND] GND  \n  [PWR] 3V3 |  J1.2   J3.2  | [IO] GPIO21\n  [PWR] 3V3 |  J1.3   J3.3  | [IO] GPIO20\n[ANA] GPIO2 |  J1.4   J3.4  | [GND] GND  \n[ANA] GPIO3 |  J1.5   J3.5  | [IO] GPIO9 \n  [GND] GND |  J1.6   J3.6  | [IO] GPIO8 \n  [CTL] RST |  J1.7   J3.7  | [GND] GND  \n  [GND] GND |  J1.8   J3.8  | [IO] GPIO7 \n[ANA] GPIO0 |  J1.9   J3.9  | [IO] GPIO6 \n[ANA] GPIO1 | J1.10   J3.10 | [ANA] GPIO5\n[IO] GPIO10 | J1.11   J3.11 | [ANA] GPIO4\n  [GND] GND | J1.12   J3.12 | [GND] GND  \n   [PWR] 5V | J1.13   J3.13 | [IO] GPIO18\n   [PWR] 5V | J1.14   J3.14 | [IO] GPIO19\n  [GND] GND | J1.15   J3.15 | [GND] GND  \n            +---------------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "stm32": {
+    "schema_version": 2,
+    "name": "STM32F103C8T6 Blue Pill",
+    "description": "Common Blue Pill main headers; clone regulator and resistor values vary.",
+    "category": "boards",
+    "package": "2x20 board headers",
+    "voltage": "3.3 V logic; 5 V USB/regulator input",
+    "aliases": [
+      "bluepill",
+      "blue-pill",
+      "stm32-bluepill"
+    ],
+    "pins": [
+      {
+        "number": "L1",
+        "name": "PB12",
+        "kind": "digital",
+        "description": "PB12 digital signal.",
+        "functions": [
+          "SPI2 NSS"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "L2",
+        "name": "PB13",
+        "kind": "digital",
+        "description": "PB13 digital signal.",
+        "functions": [
+          "SPI2 SCK"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "L3",
+        "name": "PB14",
+        "kind": "digital",
+        "description": "PB14 digital signal.",
+        "functions": [
+          "SPI2 MISO"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "L4",
+        "name": "PB15",
+        "kind": "digital",
+        "description": "PB15 digital signal.",
+        "functions": [
+          "SPI2 MOSI"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "L5",
+        "name": "PA8",
+        "kind": "digital",
+        "description": "PA8 digital signal.",
+        "functions": [
+          "PWM TIM1_CH1"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "L6",
+        "name": "PA9",
+        "kind": "digital",
+        "description": "PA9 digital signal.",
+        "functions": [
+          "UART1 TX",
+          "PWM TIM1_CH2"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "L7",
+        "name": "PA10",
+        "kind": "digital",
+        "description": "PA10 digital signal.",
+        "functions": [
+          "UART1 RX",
+          "PWM TIM1_CH3"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "L8",
+        "name": "PA11",
+        "kind": "digital",
+        "description": "PA11 digital signal.",
+        "functions": [
+          "USB D-"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "L9",
+        "name": "PA12",
+        "kind": "digital",
+        "description": "PA12 digital signal.",
+        "functions": [
+          "USB D+"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "L10",
+        "name": "PA15",
+        "kind": "digital",
+        "description": "PA15 digital signal.",
+        "functions": [
+          "JTAG JTDI"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "L11",
+        "name": "PB3",
+        "kind": "digital",
+        "description": "PB3 digital signal.",
+        "functions": [
+          "JTAG JTDO"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "L12",
+        "name": "PB4",
+        "kind": "digital",
+        "description": "PB4 digital signal.",
+        "functions": [
+          "JTAG NJTRST"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "L13",
+        "name": "PB5",
+        "kind": "digital",
+        "description": "PB5 digital signal.",
+        "functions": [],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "L14",
+        "name": "PB6",
+        "kind": "digital",
+        "description": "PB6 digital signal.",
+        "functions": [
+          "I2C1 SCL",
+          "PWM TIM4_CH1"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "L15",
+        "name": "PB7",
+        "kind": "digital",
+        "description": "PB7 digital signal.",
+        "functions": [
+          "I2C1 SDA",
+          "PWM TIM4_CH2"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "L16",
+        "name": "PB8",
+        "kind": "digital",
+        "description": "PB8 digital signal.",
+        "functions": [
+          "PWM TIM4_CH3"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "L17",
+        "name": "PB9",
+        "kind": "digital",
+        "description": "PB9 digital signal.",
+        "functions": [
+          "PWM TIM4_CH4"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "L18",
+        "name": "5V",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "L19",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "L20",
+        "name": "3V3",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "R1",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "R2",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "R3",
+        "name": "3V3",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "R4",
+        "name": "NRST",
+        "kind": "control",
+        "description": "NRST control signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "R5",
+        "name": "PB11",
+        "kind": "digital",
+        "description": "PB11 digital signal.",
+        "functions": [
+          "I2C2 SDA",
+          "UART3 RX"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "R6",
+        "name": "PB10",
+        "kind": "digital",
+        "description": "PB10 digital signal.",
+        "functions": [
+          "I2C2 SCL",
+          "UART3 TX"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "R7",
+        "name": "PB1",
+        "kind": "analog",
+        "description": "PB1 analog signal.",
+        "functions": [
+          "ADC9",
+          "PWM TIM3_CH4"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "R8",
+        "name": "PB0",
+        "kind": "analog",
+        "description": "PB0 analog signal.",
+        "functions": [
+          "ADC8",
+          "PWM TIM3_CH3"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "R9",
+        "name": "PA7",
+        "kind": "analog",
+        "description": "PA7 analog signal.",
+        "functions": [
+          "ADC7",
+          "SPI1 MOSI",
+          "PWM TIM3_CH2"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "R10",
+        "name": "PA6",
+        "kind": "analog",
+        "description": "PA6 analog signal.",
+        "functions": [
+          "ADC6",
+          "SPI1 MISO",
+          "PWM TIM3_CH1"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "R11",
+        "name": "PA5",
+        "kind": "analog",
+        "description": "PA5 analog signal.",
+        "functions": [
+          "ADC5",
+          "SPI1 SCK"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "R12",
+        "name": "PA4",
+        "kind": "analog",
+        "description": "PA4 analog signal.",
+        "functions": [
+          "ADC4",
+          "SPI1 NSS"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "R13",
+        "name": "PA3",
+        "kind": "analog",
+        "description": "PA3 analog signal.",
+        "functions": [
+          "ADC3",
+          "UART2 RX"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "R14",
+        "name": "PA2",
+        "kind": "analog",
+        "description": "PA2 analog signal.",
+        "functions": [
+          "ADC2",
+          "UART2 TX"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "R15",
+        "name": "PA1",
+        "kind": "analog",
+        "description": "PA1 analog signal.",
+        "functions": [
+          "ADC1"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "R16",
+        "name": "PA0",
+        "kind": "analog",
+        "description": "PA0 analog signal.",
+        "functions": [
+          "ADC0",
+          "Wakeup"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "R17",
+        "name": "PC15",
+        "kind": "digital",
+        "description": "PC15 digital signal.",
+        "functions": [
+          "LSE oscillator output"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "R18",
+        "name": "PC14",
+        "kind": "digital",
+        "description": "PC14 digital signal.",
+        "functions": [
+          "LSE oscillator input"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "R19",
+        "name": "PC13",
+        "kind": "digital",
+        "description": "PC13 digital signal.",
+        "functions": [
+          "LED active low"
+        ],
+        "voltage": "3.3 V I/O",
+        "notes": [
+          "5 V tolerance is pin- and mode-dependent; analog mode is not 5 V tolerant."
+        ]
+      },
+      {
+        "number": "R20",
+        "name": "VBAT",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://github.com/rogerclarkmelbourne/STM32duino-bootloader/tree/master/hardware"
+    ],
+    "notes": [
+      "Separate SWD header normally exposes 3V3, SWDIO (PA13), SWCLK (PA14), GND; verify clone silkscreen."
+    ],
+    "layout": {
+      "type": "dual",
+      "rows": [
+        [
+          "L1",
+          "R1"
+        ],
+        [
+          "L2",
+          "R2"
+        ],
+        [
+          "L3",
+          "R3"
+        ],
+        [
+          "L4",
+          "R4"
+        ],
+        [
+          "L5",
+          "R5"
+        ],
+        [
+          "L6",
+          "R6"
+        ],
+        [
+          "L7",
+          "R7"
+        ],
+        [
+          "L8",
+          "R8"
+        ],
+        [
+          "L9",
+          "R9"
+        ],
+        [
+          "L10",
+          "R10"
+        ],
+        [
+          "L11",
+          "R11"
+        ],
+        [
+          "L12",
+          "R12"
+        ],
+        [
+          "L13",
+          "R13"
+        ],
+        [
+          "L14",
+          "R14"
+        ],
+        [
+          "L15",
+          "R15"
+        ],
+        [
+          "L16",
+          "R16"
+        ],
+        [
+          "L17",
+          "R17"
+        ],
+        [
+          "L18",
+          "R18"
+        ],
+        [
+          "L19",
+          "R19"
+        ],
+        [
+          "L20",
+          "R20"
+        ]
+      ],
+      "orientation": "Top view; USB at bottom. L/R labels are row positions top to bottom, not chip pad numbers."
+    },
+    "electrical": {
+      "Supply": "3.3 V logic; 5 V USB/regulator input"
+    },
+    "ascii_art": "STM32F103C8T6 Blue Pill [stm32]\nCommon Blue Pill main headers; clone regulator and resistor values vary.\nPackage: 2x20 board headers | Supply: 3.3 V logic; 5 V USB/regulator input\nTop view; USB at bottom. L/R labels are row positions top to bottom, not chip pad numbers.\n\n           +-----------+\n [IO] PB12 |  L1   R1  | [GND] GND \n [IO] PB13 |  L2   R2  | [GND] GND \n [IO] PB14 |  L3   R3  | [PWR] 3V3 \n [IO] PB15 |  L4   R4  | [CTL] NRST\n  [IO] PA8 |  L5   R5  | [IO] PB11 \n  [IO] PA9 |  L6   R6  | [IO] PB10 \n [IO] PA10 |  L7   R7  | [ANA] PB1 \n [IO] PA11 |  L8   R8  | [ANA] PB0 \n [IO] PA12 |  L9   R9  | [ANA] PA7 \n [IO] PA15 | L10   R10 | [ANA] PA6 \n  [IO] PB3 | L11   R11 | [ANA] PA5 \n  [IO] PB4 | L12   R12 | [ANA] PA4 \n  [IO] PB5 | L13   R13 | [ANA] PA3 \n  [IO] PB6 | L14   R14 | [ANA] PA2 \n  [IO] PB7 | L15   R15 | [ANA] PA1 \n  [IO] PB8 | L16   R16 | [ANA] PA0 \n  [IO] PB9 | L17   R17 | [IO] PC15 \n  [PWR] 5V | L18   R18 | [IO] PC14 \n [GND] GND | L19   R19 | [IO] PC13 \n [PWR] 3V3 | L20   R20 | [PWR] VBAT\n           +-----------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "nucleo-f401re": {
+    "schema_version": 2,
+    "name": "STM32 NUCLEO-F401RE Arduino headers",
+    "description": "Nucleo-64 MB1136 Arduino-compatible CN5/CN6/CN8/CN9 connectors.",
+    "category": "boards",
+    "package": "Arduino headers (34 pins)",
+    "voltage": "3.3 V I/O; supply depends on jumper configuration",
+    "aliases": [
+      "nucleo",
+      "stm32-nucleo"
+    ],
+    "pins": [
+      {
+        "number": "CN9.1",
+        "name": "D0",
+        "kind": "digital",
+        "description": "D0 digital signal.",
+        "functions": [
+          "PA3",
+          "UART2 RX"
+        ],
+        "voltage": "3.3 V GPIO",
+        "notes": []
+      },
+      {
+        "number": "CN9.2",
+        "name": "D1",
+        "kind": "digital",
+        "description": "D1 digital signal.",
+        "functions": [
+          "PA2",
+          "UART2 TX"
+        ],
+        "voltage": "3.3 V GPIO",
+        "notes": []
+      },
+      {
+        "number": "CN9.3",
+        "name": "D2",
+        "kind": "digital",
+        "description": "D2 digital signal.",
+        "functions": [
+          "PA10"
+        ],
+        "voltage": "3.3 V GPIO",
+        "notes": []
+      },
+      {
+        "number": "CN9.4",
+        "name": "D3",
+        "kind": "digital",
+        "description": "D3 digital signal.",
+        "functions": [
+          "PB3",
+          "PWM"
+        ],
+        "voltage": "3.3 V GPIO",
+        "notes": []
+      },
+      {
+        "number": "CN9.5",
+        "name": "D4",
+        "kind": "digital",
+        "description": "D4 digital signal.",
+        "functions": [
+          "PB5"
+        ],
+        "voltage": "3.3 V GPIO",
+        "notes": []
+      },
+      {
+        "number": "CN9.6",
+        "name": "D5",
+        "kind": "digital",
+        "description": "D5 digital signal.",
+        "functions": [
+          "PB4",
+          "PWM"
+        ],
+        "voltage": "3.3 V GPIO",
+        "notes": []
+      },
+      {
+        "number": "CN9.7",
+        "name": "D6",
+        "kind": "digital",
+        "description": "D6 digital signal.",
+        "functions": [
+          "PB10",
+          "PWM"
+        ],
+        "voltage": "3.3 V GPIO",
+        "notes": []
+      },
+      {
+        "number": "CN9.8",
+        "name": "D7",
+        "kind": "digital",
+        "description": "D7 digital signal.",
+        "functions": [
+          "PA8"
+        ],
+        "voltage": "3.3 V GPIO",
+        "notes": []
+      },
+      {
+        "number": "CN5.1",
+        "name": "D8",
+        "kind": "digital",
+        "description": "D8 digital signal.",
+        "functions": [
+          "PA9"
+        ],
+        "voltage": "3.3 V GPIO",
+        "notes": []
+      },
+      {
+        "number": "CN5.2",
+        "name": "D9",
+        "kind": "digital",
+        "description": "D9 digital signal.",
+        "functions": [
+          "PC7",
+          "PWM"
+        ],
+        "voltage": "3.3 V GPIO",
+        "notes": []
+      },
+      {
+        "number": "CN5.3",
+        "name": "D10",
+        "kind": "digital",
+        "description": "D10 digital signal.",
+        "functions": [
+          "PB6",
+          "PWM",
+          "SPI1 NSS"
+        ],
+        "voltage": "3.3 V GPIO",
+        "notes": []
+      },
+      {
+        "number": "CN5.4",
+        "name": "D11",
+        "kind": "digital",
+        "description": "D11 digital signal.",
+        "functions": [
+          "PA7",
+          "PWM",
+          "SPI1 MOSI"
+        ],
+        "voltage": "3.3 V GPIO",
+        "notes": []
+      },
+      {
+        "number": "CN5.5",
+        "name": "D12",
+        "kind": "digital",
+        "description": "D12 digital signal.",
+        "functions": [
+          "PA6",
+          "SPI1 MISO"
+        ],
+        "voltage": "3.3 V GPIO",
+        "notes": []
+      },
+      {
+        "number": "CN5.6",
+        "name": "D13",
+        "kind": "digital",
+        "description": "D13 digital signal.",
+        "functions": [
+          "PA5",
+          "SPI1 SCK",
+          "LED"
+        ],
+        "voltage": "3.3 V GPIO",
+        "notes": []
+      },
+      {
+        "number": "CN5.9",
+        "name": "D14",
+        "kind": "digital",
+        "description": "D14 digital signal.",
+        "functions": [
+          "PB9",
+          "I2C1 SDA"
+        ],
+        "voltage": "3.3 V GPIO",
+        "notes": []
+      },
+      {
+        "number": "CN5.10",
+        "name": "D15",
+        "kind": "digital",
+        "description": "D15 digital signal.",
+        "functions": [
+          "PB8",
+          "I2C1 SCL"
+        ],
+        "voltage": "3.3 V GPIO",
+        "notes": []
+      },
+      {
+        "number": "CN5.7",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "CN5.8",
+        "name": "AREF",
+        "kind": "analog",
+        "description": "AREF analog signal.",
+        "functions": [],
+        "voltage": "AVDD reference",
+        "notes": []
+      },
+      {
+        "number": "CN8.1",
+        "name": "A0",
+        "kind": "analog",
+        "description": "A0 analog signal.",
+        "functions": [
+          "PA0",
+          "ADC0"
+        ],
+        "voltage": "0-3.3 V",
+        "notes": []
+      },
+      {
+        "number": "CN8.2",
+        "name": "A1",
+        "kind": "analog",
+        "description": "A1 analog signal.",
+        "functions": [
+          "PA1",
+          "ADC1"
+        ],
+        "voltage": "0-3.3 V",
+        "notes": []
+      },
+      {
+        "number": "CN8.3",
+        "name": "A2",
+        "kind": "analog",
+        "description": "A2 analog signal.",
+        "functions": [
+          "PA4",
+          "ADC4"
+        ],
+        "voltage": "0-3.3 V",
+        "notes": []
+      },
+      {
+        "number": "CN8.4",
+        "name": "A3",
+        "kind": "analog",
+        "description": "A3 analog signal.",
+        "functions": [
+          "PB0",
+          "ADC8"
+        ],
+        "voltage": "0-3.3 V",
+        "notes": []
+      },
+      {
+        "number": "CN8.5",
+        "name": "A4",
+        "kind": "analog",
+        "description": "A4 analog signal.",
+        "functions": [
+          "PC1",
+          "ADC11"
+        ],
+        "voltage": "0-3.3 V",
+        "notes": []
+      },
+      {
+        "number": "CN8.6",
+        "name": "A5",
+        "kind": "analog",
+        "description": "A5 analog signal.",
+        "functions": [
+          "PC0",
+          "ADC10"
+        ],
+        "voltage": "0-3.3 V",
+        "notes": []
+      },
+      {
+        "number": "CN6.1",
+        "name": "NC",
+        "kind": "nc",
+        "description": "Not connected; leave unused.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "CN6.2",
+        "name": "IOREF",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "3.3 V",
+        "notes": []
+      },
+      {
+        "number": "CN6.3",
+        "name": "NRST",
+        "kind": "control",
+        "description": "NRST control signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "CN6.4",
+        "name": "3V3",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "3.3 V",
+        "notes": []
+      },
+      {
+        "number": "CN6.5",
+        "name": "5V",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "CN6.6",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "CN6.7",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "CN6.8",
+        "name": "VIN",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "7-12 V input",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.st.com/resource/en/user_manual/um1724-stm32-nucleo64-boards-mb1136-stmicroelectronics.pdf"
+    ],
+    "notes": [
+      "A4/A5 I2C routing depends on solder bridges; use D14/D15 for the default I2C1 mapping."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Connector.pin IDs per UM1724. ST Morpho CN7/CN10 and ST-LINK connectors are excluded."
+    },
+    "electrical": {
+      "Supply": "3.3 V I/O; supply depends on jumper configuration"
+    },
+    "ascii_art": "STM32 NUCLEO-F401RE Arduino headers [nucleo-f401re]\nNucleo-64 MB1136 Arduino-compatible CN5/CN6/CN8/CN9 connectors.\nPackage: Arduino headers (34 pins) | Supply: 3.3 V I/O; supply depends on jumper configuration\nConnector.pin IDs per UM1724. ST Morpho CN7/CN10 and ST-LINK connectors are excluded.\n\n CN9.1 [IO] D0\n CN9.2 [IO] D1\n CN9.3 [IO] D2\n CN9.4 [IO] D3\n CN9.5 [IO] D4\n CN9.6 [IO] D5\n CN9.7 [IO] D6\n CN9.8 [IO] D7\n CN5.1 [IO] D8\n CN5.2 [IO] D9\n CN5.3 [IO] D10\n CN5.4 [IO] D11\n CN5.5 [IO] D12\n CN5.6 [IO] D13\n CN5.9 [IO] D14\nCN5.10 [IO] D15\n CN5.7 [GND] GND\n CN5.8 [ANA] AREF\n CN8.1 [ANA] A0\n CN8.2 [ANA] A1\n CN8.3 [ANA] A2\n CN8.4 [ANA] A3\n CN8.5 [ANA] A4\n CN8.6 [ANA] A5\n CN6.1 [NC] NC\n CN6.2 [PWR] IOREF\n CN6.3 [CTL] NRST\n CN6.4 [PWR] 3V3\n CN6.5 [PWR] 5V\n CN6.6 [GND] GND\n CN6.7 [GND] GND\n CN6.8 [PWR] VIN\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "esp8266": {
+    "schema_version": 2,
+    "name": "NodeMCU 1.0 ESP8266 (ESP-12E)",
+    "description": "Thirty-pin NodeMCU reference development board.",
+    "category": "boards",
+    "package": "2x15 headers",
+    "voltage": "3.3 V GPIO; USB 5 V",
+    "aliases": [
+      "nodemcu",
+      "esp8266-nodemcu"
+    ],
+    "pins": [
+      {
+        "number": "L1",
+        "name": "A0",
+        "kind": "analog",
+        "description": "A0 analog signal.",
+        "functions": [
+          "ADC0"
+        ],
+        "voltage": "0-3.3 V on reference board divider; bare ESP8266 ADC limit is 1.0 V",
+        "notes": []
+      },
+      {
+        "number": "L2",
+        "name": "RSV",
+        "kind": "nc",
+        "description": "Not connected; leave unused.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "L3",
+        "name": "RSV",
+        "kind": "nc",
+        "description": "Not connected; leave unused.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "L4",
+        "name": "SD3",
+        "kind": "control",
+        "description": "SD3 control signal.",
+        "functions": [
+          "Flash bus"
+        ],
+        "voltage": "",
+        "notes": [
+          "Reserved for internal flash."
+        ]
+      },
+      {
+        "number": "L5",
+        "name": "SD2",
+        "kind": "control",
+        "description": "SD2 control signal.",
+        "functions": [
+          "Flash bus"
+        ],
+        "voltage": "",
+        "notes": [
+          "Reserved for internal flash."
+        ]
+      },
+      {
+        "number": "L6",
+        "name": "SD1",
+        "kind": "control",
+        "description": "SD1 control signal.",
+        "functions": [
+          "Flash bus"
+        ],
+        "voltage": "",
+        "notes": [
+          "Reserved for internal flash."
+        ]
+      },
+      {
+        "number": "L7",
+        "name": "CMD",
+        "kind": "control",
+        "description": "CMD control signal.",
+        "functions": [
+          "Flash bus"
+        ],
+        "voltage": "",
+        "notes": [
+          "Reserved for internal flash."
+        ]
+      },
+      {
+        "number": "L8",
+        "name": "SD0",
+        "kind": "control",
+        "description": "SD0 control signal.",
+        "functions": [
+          "Flash bus"
+        ],
+        "voltage": "",
+        "notes": [
+          "Reserved for internal flash."
+        ]
+      },
+      {
+        "number": "L9",
+        "name": "CLK",
+        "kind": "control",
+        "description": "CLK control signal.",
+        "functions": [
+          "Flash bus"
+        ],
+        "voltage": "",
+        "notes": [
+          "Reserved for internal flash."
+        ]
+      },
+      {
+        "number": "L10",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "L11",
+        "name": "3V3",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "L12",
+        "name": "EN",
+        "kind": "control",
+        "description": "EN control signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "L13",
+        "name": "RST",
+        "kind": "control",
+        "description": "RST control signal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "L14",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "L15",
+        "name": "VIN",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "R1",
+        "name": "D0",
+        "kind": "digital",
+        "description": "D0 digital signal.",
+        "functions": [
+          "GPIO16"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Special RTC GPIO; connect to RST for deep-sleep wakeup."
+        ]
+      },
+      {
+        "number": "R2",
+        "name": "D1",
+        "kind": "digital",
+        "description": "D1 digital signal.",
+        "functions": [
+          "GPIO5",
+          "Software PWM",
+          "I2C SCL (common)"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "R3",
+        "name": "D2",
+        "kind": "digital",
+        "description": "D2 digital signal.",
+        "functions": [
+          "GPIO4",
+          "Software PWM",
+          "I2C SDA (common)"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "R4",
+        "name": "D3",
+        "kind": "digital",
+        "description": "D3 digital signal.",
+        "functions": [
+          "GPIO0",
+          "Software PWM"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Boot strapping pin."
+        ]
+      },
+      {
+        "number": "R5",
+        "name": "D4",
+        "kind": "digital",
+        "description": "D4 digital signal.",
+        "functions": [
+          "GPIO2",
+          "Software PWM"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Boot strapping pin."
+        ]
+      },
+      {
+        "number": "R6",
+        "name": "3V3",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "R7",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "R8",
+        "name": "D5",
+        "kind": "digital",
+        "description": "D5 digital signal.",
+        "functions": [
+          "GPIO14",
+          "Software PWM",
+          "HSPI SCK"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "R9",
+        "name": "D6",
+        "kind": "digital",
+        "description": "D6 digital signal.",
+        "functions": [
+          "GPIO12",
+          "Software PWM",
+          "HSPI MISO"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "R10",
+        "name": "D7",
+        "kind": "digital",
+        "description": "D7 digital signal.",
+        "functions": [
+          "GPIO13",
+          "Software PWM",
+          "HSPI MOSI"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "R11",
+        "name": "D8",
+        "kind": "digital",
+        "description": "D8 digital signal.",
+        "functions": [
+          "GPIO15",
+          "Software PWM",
+          "HSPI CS"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": [
+          "Boot strapping pin."
+        ]
+      },
+      {
+        "number": "R12",
+        "name": "RX",
+        "kind": "digital",
+        "description": "RX digital signal.",
+        "functions": [
+          "GPIO3",
+          "Software PWM",
+          "UART0 RX"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "R13",
+        "name": "TX",
+        "kind": "digital",
+        "description": "TX digital signal.",
+        "functions": [
+          "GPIO1",
+          "Software PWM",
+          "UART0 TX"
+        ],
+        "voltage": "3.3 V; not 5 V tolerant",
+        "notes": []
+      },
+      {
+        "number": "R14",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "R15",
+        "name": "3V3",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://github.com/nodemcu/nodemcu-devkit-v1.0"
+    ],
+    "notes": [
+      "Clone VIN paths and A0 resistor dividers vary; confirm board schematic."
+    ],
+    "layout": {
+      "type": "dual",
+      "rows": [
+        [
+          "L1",
+          "R1"
+        ],
+        [
+          "L2",
+          "R2"
+        ],
+        [
+          "L3",
+          "R3"
+        ],
+        [
+          "L4",
+          "R4"
+        ],
+        [
+          "L5",
+          "R5"
+        ],
+        [
+          "L6",
+          "R6"
+        ],
+        [
+          "L7",
+          "R7"
+        ],
+        [
+          "L8",
+          "R8"
+        ],
+        [
+          "L9",
+          "R9"
+        ],
+        [
+          "L10",
+          "R10"
+        ],
+        [
+          "L11",
+          "R11"
+        ],
+        [
+          "L12",
+          "R12"
+        ],
+        [
+          "L13",
+          "R13"
+        ],
+        [
+          "L14",
+          "R14"
+        ],
+        [
+          "L15",
+          "R15"
+        ]
+      ],
+      "orientation": "Top/component view; antenna at top, USB at bottom. L/R positions run top to bottom."
+    },
+    "electrical": {
+      "Supply": "3.3 V GPIO; USB 5 V"
+    },
+    "ascii_art": "NodeMCU 1.0 ESP8266 (ESP-12E) [esp8266]\nThirty-pin NodeMCU reference development board.\nPackage: 2x15 headers | Supply: 3.3 V GPIO; USB 5 V\nTop/component view; antenna at top, USB at bottom. L/R positions run top to bottom.\n\n          +-----------+\n [ANA] A0 |  L1   R1  | [IO] D0  \n [NC] RSV |  L2   R2  | [IO] D1  \n [NC] RSV |  L3   R3  | [IO] D2  \n[CTL] SD3 |  L4   R4  | [IO] D3  \n[CTL] SD2 |  L5   R5  | [IO] D4  \n[CTL] SD1 |  L6   R6  | [PWR] 3V3\n[CTL] CMD |  L7   R7  | [GND] GND\n[CTL] SD0 |  L8   R8  | [IO] D5  \n[CTL] CLK |  L9   R9  | [IO] D6  \n[GND] GND | L10   R10 | [IO] D7  \n[PWR] 3V3 | L11   R11 | [IO] D8  \n [CTL] EN | L12   R12 | [IO] RX  \n[CTL] RST | L13   R13 | [IO] TX  \n[GND] GND | L14   R14 | [GND] GND\n[PWR] VIN | L15   R15 | [PWR] 3V3\n          +-----------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  }
+}

@@ -1,17 +1,2295 @@
 {
-  "lm741": {
-    "name": "LM741 Operational Amplifier (PDIP-8)",
-    "description": "Classic single operational amplifier used for analog signal conditioning and filtering.",
-    "ascii_art": "\n            \u001b[1mLM741 Top View\u001b[0m\n             +---\\_/---+\n       OFFSET| 1     8 | NC (No Connect)\n      - INPUT| 2     7 | V+ (Positive Supply, Max +18V)\n      + INPUT| 3     6 | OUTPUT\n           V-| 4     5 | OFFSET\n             +---------+\n        "
+  "ne555": {
+    "schema_version": 2,
+    "name": "NE555 (PDIP-8)",
+    "description": "Single bipolar timer for oscillators and pulse generation.",
+    "category": "analog",
+    "package": "PDIP-8",
+    "voltage": "4.5-16 V",
+    "aliases": [
+      "555",
+      "555timer"
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "TRIG",
+        "kind": "analog",
+        "description": "Trigger input: below approximately 1/3 VCC sets the latch.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "Timer output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "/RST",
+        "kind": "control",
+        "description": "Active-low reset; hold high for normal operation.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "CONT",
+        "kind": "analog",
+        "description": "Control voltage; normally bypass to ground with 10 nF.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "THRES",
+        "kind": "analog",
+        "description": "Threshold input: above approximately 2/3 VCC resets the latch.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "DISCH",
+        "kind": "control",
+        "description": "Open-collector discharge path for timing capacitor.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "VCC",
+        "kind": "power",
+        "description": "Positive supply.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "http://www.ti.com/lit/ds/symlink/ne555.pdf"
+    ],
+    "notes": [
+      "Decouple the supply close to the IC. RESET is active low."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "4.5-16 V"
+    },
+    "ascii_art": "NE555 (PDIP-8) [ne555]\nSingle bipolar timer for oscillators and pulse generation.\nPackage: PDIP-8 | Supply: 4.5-16 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n            +-------+\n  [GND] GND | 1   8 | [PWR] VCC  \n [ANA] TRIG | 2   7 | [CTL] DISCH\n   [IO] OUT | 3   6 | [ANA] THRES\n [CTL] /RST | 4   5 | [ANA] CONT \n            +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "tlc555": {
+    "schema_version": 2,
+    "name": "TLC555 (PDIP-8)",
+    "description": "CMOS timer with lower supply current than bipolar 555 devices.",
+    "category": "analog",
+    "package": "PDIP-8",
+    "voltage": "2-15 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "TRIG",
+        "kind": "control",
+        "description": "TRIG input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "/RST",
+        "kind": "control",
+        "description": "/RST input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "CONT",
+        "kind": "control",
+        "description": "CONT passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "THRES",
+        "kind": "control",
+        "description": "THRES input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "DISCH",
+        "kind": "control",
+        "description": "DISCH input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "http://www.ti.com/lit/ds/symlink/tlc555.pdf"
+    ],
+    "notes": [
+      "Decouple the supply close to the IC. RESET is active low."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-15 V"
+    },
+    "ascii_art": "TLC555 (PDIP-8) [tlc555]\nCMOS timer with lower supply current than bipolar 555 devices.\nPackage: PDIP-8 | Supply: 2-15 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n            +-------+\n  [GND] GND | 1   8 | [PWR] VCC  \n [CTL] TRIG | 2   7 | [CTL] DISCH\n   [IO] OUT | 3   6 | [CTL] THRES\n [CTL] /RST | 4   5 | [CTL] CONT \n            +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "ne556": {
+    "schema_version": 2,
+    "name": "NE556 (PDIP-14)",
+    "description": "Two independent bipolar timer circuits.",
+    "category": "analog",
+    "package": "PDIP-14",
+    "voltage": "4.5-16 V",
+    "aliases": [
+      "556"
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "DISCH",
+        "kind": "control",
+        "description": "DISCH input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "THRES",
+        "kind": "control",
+        "description": "THRES input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "CONT",
+        "kind": "control",
+        "description": "CONT passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "/RST",
+        "kind": "control",
+        "description": "/RST input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "TRIG",
+        "kind": "control",
+        "description": "TRIG input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "TRIG",
+        "kind": "control",
+        "description": "TRIG input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "/RST",
+        "kind": "control",
+        "description": "/RST input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "CONT",
+        "kind": "control",
+        "description": "CONT passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "THRES",
+        "kind": "control",
+        "description": "THRES input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "DISCH",
+        "kind": "control",
+        "description": "DISCH input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "http://www.ti.com/lit/ds/symlink/ne556.pdf"
+    ],
+    "notes": [
+      "Decouple the supply close to the IC. RESET is active low."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "4.5-16 V"
+    },
+    "ascii_art": "NE556 (PDIP-14) [ne556]\nTwo independent bipolar timer circuits.\nPackage: PDIP-14 | Supply: 4.5-16 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n            +---------+\n[CTL] DISCH |  1   14 | [PWR] VCC  \n[CTL] THRES |  2   13 | [CTL] DISCH\n [CTL] CONT |  3   12 | [CTL] THRES\n [CTL] /RST |  4   11 | [CTL] CONT \n   [IO] OUT |  5   10 | [CTL] /RST \n [CTL] TRIG |  6   9  | [IO] OUT   \n  [GND] GND |  7   8  | [CTL] TRIG \n            +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
   },
   "lm358": {
-    "name": "LM358 Dual Operational Amplifier (PDIP-8)",
-    "description": "Low-power dual op-amp. Highly useful because it contains two independent op-amps in a single 8-pin package.",
-    "ascii_art": "\n            \u001b[1mLM358 Top View\u001b[0m\n             +---\\_/---+\n     OUT A   | 1     8 | VCC (Single/Dual Supply, 3V to 32V)\n     -INPUT A| 2     7 | OUT B\n     +INPUT A| 3     6 | -INPUT B\n     GND/V-  | 4     5 | +INPUT B\n             +---------+\n        "
+    "schema_version": 2,
+    "name": "LM358 (PDIP-8)",
+    "description": "Dual general-purpose operational amplifier.",
+    "category": "analog",
+    "package": "PDIP-8",
+    "voltage": "3-30 V total supply",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "OUT A",
+        "kind": "analog",
+        "description": "Amplifier output  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "IN- A",
+        "kind": "analog",
+        "description": "Inverting input  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "IN+ A",
+        "kind": "analog",
+        "description": "Non-inverting input  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "V-",
+        "kind": "power",
+        "description": "Negative supply or ground for single-supply operation.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "IN+ B",
+        "kind": "analog",
+        "description": "Non-inverting input  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "IN- B",
+        "kind": "analog",
+        "description": "Inverting input  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "OUT B",
+        "kind": "analog",
+        "description": "Amplifier output  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "V+",
+        "kind": "power",
+        "description": "Positive supply.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
+    ],
+    "notes": [
+      "Classic LM358 limits; LM358B and other variants have different ratings. Inputs include the negative rail; output is not rail-to-rail."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "3-30 V total supply"
+    },
+    "ascii_art": "LM358 (PDIP-8) [lm358]\nDual general-purpose operational amplifier.\nPackage: PDIP-8 | Supply: 3-30 V total supply\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n            +-------+\n[ANA] OUT A | 1   8 | [PWR] V+   \n[ANA] IN- A | 2   7 | [ANA] OUT B\n[ANA] IN+ A | 3   6 | [ANA] IN- B\n   [PWR] V- | 4   5 | [ANA] IN+ B\n            +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
   },
-  "ne555": {
-    "name": "NE555 Precision Timer IC (PDIP-8)",
-    "description": "Highly versatile timer IC used for creating precise clock pulses, delays, and PWM oscillation.",
-    "ascii_art": "\n            \u001b[1mNE555 Top View\u001b[0m\n            +---\\_/---+\n         GND| 1     8 | VCC (4.5V to 16V)\n     TRIGGER| 2     7 | DISCHARGE\n      OUTPUT| 3     6 | THRESHOLD\n       RESET| 4     5 | CONTROL VOLTAGE\n            +---------+\n        "
+  "lm741": {
+    "schema_version": 2,
+    "name": "LM741 (PDIP-8)",
+    "description": "Single operational amplifier with offset adjustment.",
+    "category": "analog",
+    "package": "PDIP-8",
+    "voltage": "+/-10 to +/-15 V recommended",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "OFFSET1",
+        "kind": "analog",
+        "description": "Offset adjustment terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "IN-",
+        "kind": "analog",
+        "description": "Inverting input .",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "IN+",
+        "kind": "analog",
+        "description": "Non-inverting input .",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "V-",
+        "kind": "power",
+        "description": "Negative supply or ground for single-supply operation.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "OFFSET2",
+        "kind": "analog",
+        "description": "Offset adjustment terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "OUT",
+        "kind": "analog",
+        "description": "Amplifier output .",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "V+",
+        "kind": "power",
+        "description": "Positive supply.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "NC",
+        "kind": "nc",
+        "description": "Not connected.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "http://www.ti.com/lit/ds/symlink/lm741.pdf"
+    ],
+    "notes": [
+      "Not suitable for 3.3 V or 5 V single-supply logic applications."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "+/-10 to +/-15 V recommended"
+    },
+    "ascii_art": "LM741 (PDIP-8) [lm741]\nSingle operational amplifier with offset adjustment.\nPackage: PDIP-8 | Supply: +/-10 to +/-15 V recommended\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n              +-------+\n[ANA] OFFSET1 | 1   8 | [NC] NC      \n    [ANA] IN- | 2   7 | [PWR] V+     \n    [ANA] IN+ | 3   6 | [ANA] OUT    \n     [PWR] V- | 4   5 | [ANA] OFFSET2\n              +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "ne5532": {
+    "schema_version": 2,
+    "name": "NE5532 (PDIP-8)",
+    "description": "Dual low-noise audio operational amplifier.",
+    "category": "analog",
+    "package": "PDIP-8",
+    "voltage": "+/-5 to +/-15 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "OUT A",
+        "kind": "analog",
+        "description": "Amplifier output  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "IN- A",
+        "kind": "analog",
+        "description": "Inverting input  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "IN+ A",
+        "kind": "analog",
+        "description": "Non-inverting input  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "V-",
+        "kind": "power",
+        "description": "Negative supply or ground for single-supply operation.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "IN+ B",
+        "kind": "analog",
+        "description": "Non-inverting input  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "IN- B",
+        "kind": "analog",
+        "description": "Inverting input  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "OUT B",
+        "kind": "analog",
+        "description": "Amplifier output  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "V+",
+        "kind": "power",
+        "description": "Positive supply.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "http://www.ti.com/lit/ds/symlink/ne5532.pdf"
+    ],
+    "notes": [
+      "Input and output require headroom from both supply rails."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "+/-5 to +/-15 V"
+    },
+    "ascii_art": "NE5532 (PDIP-8) [ne5532]\nDual low-noise audio operational amplifier.\nPackage: PDIP-8 | Supply: +/-5 to +/-15 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n            +-------+\n[ANA] OUT A | 1   8 | [PWR] V+   \n[ANA] IN- A | 2   7 | [ANA] OUT B\n[ANA] IN+ A | 3   6 | [ANA] IN- B\n   [PWR] V- | 4   5 | [ANA] IN+ B\n            +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "tl072": {
+    "schema_version": 2,
+    "name": "TL072 (PDIP-8)",
+    "description": "Dual JFET-input operational amplifier.",
+    "category": "analog",
+    "package": "PDIP-8",
+    "voltage": "+/-5 to +/-15 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "OUT A",
+        "kind": "analog",
+        "description": "Amplifier output  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "IN- A",
+        "kind": "analog",
+        "description": "Inverting input  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "IN+ A",
+        "kind": "analog",
+        "description": "Non-inverting input  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "V-",
+        "kind": "power",
+        "description": "Negative supply or ground for single-supply operation.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "IN+ B",
+        "kind": "analog",
+        "description": "Non-inverting input  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "IN- B",
+        "kind": "analog",
+        "description": "Inverting input  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "OUT B",
+        "kind": "analog",
+        "description": "Amplifier output  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "V+",
+        "kind": "power",
+        "description": "Positive supply.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+    ],
+    "notes": [
+      "Classic TL072, not TL072H."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "+/-5 to +/-15 V"
+    },
+    "ascii_art": "TL072 (PDIP-8) [tl072]\nDual JFET-input operational amplifier.\nPackage: PDIP-8 | Supply: +/-5 to +/-15 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n            +-------+\n[ANA] OUT A | 1   8 | [PWR] V+   \n[ANA] IN- A | 2   7 | [ANA] OUT B\n[ANA] IN+ A | 3   6 | [ANA] IN- B\n   [PWR] V- | 4   5 | [ANA] IN+ B\n            +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "tl074": {
+    "schema_version": 2,
+    "name": "TL074 (PDIP-14)",
+    "description": "Quad JFET-input operational amplifier.",
+    "category": "analog",
+    "package": "PDIP-14",
+    "voltage": "+/-5 to +/-15 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "OUT A",
+        "kind": "analog",
+        "description": "Amplifier output  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "IN- A",
+        "kind": "analog",
+        "description": "Inverting input  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "IN+ A",
+        "kind": "analog",
+        "description": "Non-inverting input  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "V+",
+        "kind": "power",
+        "description": "Positive supply.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "IN+ B",
+        "kind": "analog",
+        "description": "Non-inverting input  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "IN- B",
+        "kind": "analog",
+        "description": "Inverting input  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "OUT B",
+        "kind": "analog",
+        "description": "Amplifier output  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "OUT C",
+        "kind": "analog",
+        "description": "Amplifier output  C.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "IN- C",
+        "kind": "analog",
+        "description": "Inverting input  C.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "IN+ C",
+        "kind": "analog",
+        "description": "Non-inverting input  C.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "V-",
+        "kind": "power",
+        "description": "Negative supply or ground for single-supply operation.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "IN+ D",
+        "kind": "analog",
+        "description": "Non-inverting input  D.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "IN- D",
+        "kind": "analog",
+        "description": "Inverting input  D.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "OUT D",
+        "kind": "analog",
+        "description": "Amplifier output  D.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "http://www.ti.com/lit/ds/symlink/tl071.pdf"
+    ],
+    "notes": [
+      "Classic TL074, not TL074H."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "+/-5 to +/-15 V"
+    },
+    "ascii_art": "TL074 (PDIP-14) [tl074]\nQuad JFET-input operational amplifier.\nPackage: PDIP-14 | Supply: +/-5 to +/-15 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n            +---------+\n[ANA] OUT A |  1   14 | [ANA] OUT D\n[ANA] IN- A |  2   13 | [ANA] IN- D\n[ANA] IN+ A |  3   12 | [ANA] IN+ D\n   [PWR] V+ |  4   11 | [PWR] V-   \n[ANA] IN+ B |  5   10 | [ANA] IN+ C\n[ANA] IN- B |  6   9  | [ANA] IN- C\n[ANA] OUT B |  7   8  | [ANA] OUT C\n            +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "lm324": {
+    "schema_version": 2,
+    "name": "LM324 (PDIP-14)",
+    "description": "Quad general-purpose operational amplifier.",
+    "category": "analog",
+    "package": "PDIP-14",
+    "voltage": "3-30 V total supply",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "OUT A",
+        "kind": "analog",
+        "description": "Amplifier output  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "IN- A",
+        "kind": "analog",
+        "description": "Inverting input  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "IN+ A",
+        "kind": "analog",
+        "description": "Non-inverting input  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "V+",
+        "kind": "power",
+        "description": "Positive supply.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "IN+ B",
+        "kind": "analog",
+        "description": "Non-inverting input  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "IN- B",
+        "kind": "analog",
+        "description": "Inverting input  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "OUT B",
+        "kind": "analog",
+        "description": "Amplifier output  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "OUT C",
+        "kind": "analog",
+        "description": "Amplifier output  C.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "IN- C",
+        "kind": "analog",
+        "description": "Inverting input  C.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "IN+ C",
+        "kind": "analog",
+        "description": "Non-inverting input  C.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "V-",
+        "kind": "power",
+        "description": "Negative supply or ground for single-supply operation.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "IN+ D",
+        "kind": "analog",
+        "description": "Non-inverting input  D.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "IN- D",
+        "kind": "analog",
+        "description": "Inverting input  D.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "OUT D",
+        "kind": "analog",
+        "description": "Amplifier output  D.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf"
+    ],
+    "notes": [
+      "Not rail-to-rail at the positive supply."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "3-30 V total supply"
+    },
+    "ascii_art": "LM324 (PDIP-14) [lm324]\nQuad general-purpose operational amplifier.\nPackage: PDIP-14 | Supply: 3-30 V total supply\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n            +---------+\n[ANA] OUT A |  1   14 | [ANA] OUT D\n[ANA] IN- A |  2   13 | [ANA] IN- D\n[ANA] IN+ A |  3   12 | [ANA] IN+ D\n   [PWR] V+ |  4   11 | [PWR] V-   \n[ANA] IN+ B |  5   10 | [ANA] IN+ C\n[ANA] IN- B |  6   9  | [ANA] IN- C\n[ANA] OUT B |  7   8  | [ANA] OUT C\n            +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "mcp6002": {
+    "schema_version": 2,
+    "name": "MCP6002 (PDIP-8)",
+    "description": "Dual rail-to-rail input/output operational amplifier.",
+    "category": "analog",
+    "package": "PDIP-8",
+    "voltage": "1.8-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "OUT A",
+        "kind": "analog",
+        "description": "Amplifier output  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "IN- A",
+        "kind": "analog",
+        "description": "Inverting input  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "IN+ A",
+        "kind": "analog",
+        "description": "Non-inverting input  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "VSS",
+        "kind": "power",
+        "description": "Negative supply or ground for single-supply operation.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "IN+ B",
+        "kind": "analog",
+        "description": "Non-inverting input  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "IN- B",
+        "kind": "analog",
+        "description": "Inverting input  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "OUT B",
+        "kind": "analog",
+        "description": "Amplifier output  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "VDD",
+        "kind": "power",
+        "description": "Positive supply.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf"
+    ],
+    "notes": [],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "1.8-6 V"
+    },
+    "ascii_art": "MCP6002 (PDIP-8) [mcp6002]\nDual rail-to-rail input/output operational amplifier.\nPackage: PDIP-8 | Supply: 1.8-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n            +-------+\n[ANA] OUT A | 1   8 | [PWR] VDD  \n[ANA] IN- A | 2   7 | [ANA] OUT B\n[ANA] IN+ A | 3   6 | [ANA] IN- B\n  [PWR] VSS | 4   5 | [ANA] IN+ B\n            +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "pcm5102a": {
+    "schema_version": 2,
+    "name": "PCM5102A (TSSOP-20)",
+    "description": "Stereo I2S audio DAC with hardware configuration.",
+    "category": "analog",
+    "package": "TSSOP-20",
+    "voltage": "AVDD/CPVDD 3.0-3.6 V; DVDD 1.65-1.95 or 3.0-3.6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "CPVDD",
+        "kind": "power",
+        "description": "Charge-pump supply.",
+        "functions": [],
+        "voltage": "3.0-3.6 V",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "CAPP",
+        "kind": "analog",
+        "description": "Charge-pump flying capacitor positive terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "CPGND",
+        "kind": "ground",
+        "description": "CPGND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "CAPM",
+        "kind": "analog",
+        "description": "Charge-pump flying capacitor negative terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "VNEG",
+        "kind": "analog",
+        "description": "Negative charge-pump output; bypass as specified.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "OUTL",
+        "kind": "analog",
+        "description": "Left channel line-level output.",
+        "functions": [],
+        "voltage": "2.1 Vrms nominal",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "OUTR",
+        "kind": "analog",
+        "description": "Right channel line-level output.",
+        "functions": [],
+        "voltage": "2.1 Vrms nominal",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "AVDD",
+        "kind": "power",
+        "description": "Analog supply.",
+        "functions": [],
+        "voltage": "3.0-3.6 V",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "AGND",
+        "kind": "ground",
+        "description": "AGND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "DEMP",
+        "kind": "control",
+        "description": "44.1 kHz de-emphasis enable.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "FLT",
+        "kind": "control",
+        "description": "Digital filter latency selection.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "SCK",
+        "kind": "communication",
+        "description": "System clock; tie low for supported PLL-based clocking.",
+        "functions": [
+          "I2S / left-justified audio"
+        ],
+        "voltage": "1.8/3.3 V LVCMOS",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "BCK",
+        "kind": "communication",
+        "description": "Serial audio bit clock.",
+        "functions": [
+          "I2S / left-justified audio"
+        ],
+        "voltage": "1.8/3.3 V LVCMOS",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "DIN",
+        "kind": "communication",
+        "description": "Serial audio input data.",
+        "functions": [
+          "I2S / left-justified audio"
+        ],
+        "voltage": "1.8/3.3 V LVCMOS",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "LRCK",
+        "kind": "communication",
+        "description": "Audio left/right frame clock.",
+        "functions": [
+          "I2S / left-justified audio"
+        ],
+        "voltage": "1.8/3.3 V LVCMOS",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "FMT",
+        "kind": "control",
+        "description": "Audio format selection: low I2S, high left-justified.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "17",
+        "name": "XSMT",
+        "kind": "control",
+        "description": "Soft mute: low mutes, high unmutes.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "18",
+        "name": "LDOO",
+        "kind": "power",
+        "description": "Internal regulator output; bypass only, do not power external loads.",
+        "functions": [],
+        "voltage": "1.8 V nominal",
+        "notes": []
+      },
+      {
+        "number": "19",
+        "name": "DGND",
+        "kind": "ground",
+        "description": "DGND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "20",
+        "name": "DVDD",
+        "kind": "power",
+        "description": "Digital supply.",
+        "functions": [],
+        "voltage": "1.65-1.95 or 3.0-3.6 V",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/pcm5102a.pdf"
+    ],
+    "notes": [
+      "Map is the IC TSSOP package, not a six-pin DAC breakout. Follow datasheet charge-pump and regulator capacitor requirements. Outputs are line-level, not speaker drivers."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "AVDD/CPVDD 3.0-3.6 V; DVDD 1.65-1.95 or 3.0-3.6 V"
+    },
+    "ascii_art": "PCM5102A (TSSOP-20) [pcm5102a]\nStereo I2S audio DAC with hardware configuration.\nPackage: TSSOP-20 | Supply: AVDD/CPVDD 3.0-3.6 V; DVDD 1.65-1.95 or 3.0-3.6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n            +---------+\n[PWR] CPVDD |  1   20 | [PWR] DVDD \n [ANA] CAPP |  2   19 | [GND] DGND \n[GND] CPGND |  3   18 | [PWR] LDOO \n [ANA] CAPM |  4   17 | [CTL] XSMT \n [ANA] VNEG |  5   16 | [CTL] FMT  \n [ANA] OUTL |  6   15 | [BUS] LRCK \n [ANA] OUTR |  7   14 | [BUS] DIN  \n [PWR] AVDD |  8   13 | [BUS] BCK  \n [GND] AGND |  9   12 | [BUS] SCK  \n [CTL] DEMP | 10   11 | [CTL] FLT  \n            +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "mcp3008": {
+    "schema_version": 2,
+    "name": "MCP3008 (PDIP-16)",
+    "description": "Eight-channel 10-bit SPI ADC.",
+    "category": "analog",
+    "package": "PDIP-16",
+    "voltage": "2.7-5.5 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "CH0",
+        "kind": "analog",
+        "description": "CH0 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "CH1",
+        "kind": "analog",
+        "description": "CH1 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "CH2",
+        "kind": "analog",
+        "description": "CH2 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "CH3",
+        "kind": "analog",
+        "description": "CH3 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "CH4",
+        "kind": "analog",
+        "description": "CH4 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "CH5",
+        "kind": "analog",
+        "description": "CH5 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "CH6",
+        "kind": "analog",
+        "description": "CH6 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "CH7",
+        "kind": "analog",
+        "description": "CH7 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "DGND",
+        "kind": "ground",
+        "description": "DGND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "/CS/SHDN",
+        "kind": "digital",
+        "description": "/CS/SHDN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "Din",
+        "kind": "digital",
+        "description": "Din input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "Dout",
+        "kind": "digital",
+        "description": "Dout output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "CLK",
+        "kind": "digital",
+        "description": "CLK input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "AGND",
+        "kind": "ground",
+        "description": "AGND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "Vref",
+        "kind": "power",
+        "description": "Vref power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "Vdd",
+        "kind": "power",
+        "description": "Vdd power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.microchip.com/en-us/product/MCP3008"
+    ],
+    "notes": [
+      "Bare IC package, not breakout-board connector order."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view, notch/marker up; pin numbering counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2.7-5.5 V"
+    },
+    "ascii_art": "MCP3008 (PDIP-16) [mcp3008]\nEight-channel 10-bit SPI ADC.\nPackage: PDIP-16 | Supply: 2.7-5.5 V\nTop view, notch/marker up; pin numbering counterclockwise.\n\n              +---------+\n    [ANA] CH0 |  1   16 | [PWR] Vdd    \n    [ANA] CH1 |  2   15 | [PWR] Vref   \n    [ANA] CH2 |  3   14 | [GND] AGND   \n    [ANA] CH3 |  4   13 | [IO] CLK     \n    [ANA] CH4 |  5   12 | [IO] Dout    \n    [ANA] CH5 |  6   11 | [IO] Din     \n    [ANA] CH6 |  7   10 | [IO] /CS/SHDN\n    [ANA] CH7 |  8   9  | [GND] DGND   \n              +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "mcp3208": {
+    "schema_version": 2,
+    "name": "MCP3208 (PDIP-16)",
+    "description": "Eight-channel 12-bit SPI ADC.",
+    "category": "analog",
+    "package": "PDIP-16",
+    "voltage": "2.7-5.5 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "CH0",
+        "kind": "analog",
+        "description": "CH0 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "CH1",
+        "kind": "analog",
+        "description": "CH1 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "CH2",
+        "kind": "analog",
+        "description": "CH2 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "CH3",
+        "kind": "analog",
+        "description": "CH3 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "CH4",
+        "kind": "analog",
+        "description": "CH4 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "CH5",
+        "kind": "analog",
+        "description": "CH5 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "CH6",
+        "kind": "analog",
+        "description": "CH6 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "CH7",
+        "kind": "analog",
+        "description": "CH7 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "DGND",
+        "kind": "ground",
+        "description": "DGND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "/CS/SHDN",
+        "kind": "digital",
+        "description": "/CS/SHDN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "Din",
+        "kind": "digital",
+        "description": "Din input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "Dout",
+        "kind": "digital",
+        "description": "Dout output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "CLK",
+        "kind": "digital",
+        "description": "CLK input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "AGND",
+        "kind": "ground",
+        "description": "AGND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "Vref",
+        "kind": "power",
+        "description": "Vref power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "Vdd",
+        "kind": "power",
+        "description": "Vdd power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.microchip.com/en-us/product/MCP3208"
+    ],
+    "notes": [
+      "Bare IC package, not breakout-board connector order."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view, notch/marker up; pin numbering counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2.7-5.5 V"
+    },
+    "ascii_art": "MCP3208 (PDIP-16) [mcp3208]\nEight-channel 12-bit SPI ADC.\nPackage: PDIP-16 | Supply: 2.7-5.5 V\nTop view, notch/marker up; pin numbering counterclockwise.\n\n              +---------+\n    [ANA] CH0 |  1   16 | [PWR] Vdd    \n    [ANA] CH1 |  2   15 | [PWR] Vref   \n    [ANA] CH2 |  3   14 | [GND] AGND   \n    [ANA] CH3 |  4   13 | [IO] CLK     \n    [ANA] CH4 |  5   12 | [IO] Dout    \n    [ANA] CH5 |  6   11 | [IO] Din     \n    [ANA] CH6 |  7   10 | [IO] /CS/SHDN\n    [ANA] CH7 |  8   9  | [GND] DGND   \n              +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "ads1115": {
+    "schema_version": 2,
+    "name": "ADS1115 (VSSOP-10)",
+    "description": "Four-input 16-bit I2C ADC with programmable gain.",
+    "category": "analog",
+    "package": "VSSOP-10",
+    "voltage": "2.0-5.5 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "ADDR",
+        "kind": "digital",
+        "description": "ADDR input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "ALERT/RDY",
+        "kind": "digital",
+        "description": "ALERT/RDY output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "AIN0",
+        "kind": "analog",
+        "description": "AIN0 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "AIN1",
+        "kind": "analog",
+        "description": "AIN1 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "AIN2",
+        "kind": "analog",
+        "description": "AIN2 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "AIN3",
+        "kind": "analog",
+        "description": "AIN3 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "VDD",
+        "kind": "power",
+        "description": "VDD power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "SDA",
+        "kind": "communication",
+        "description": "SDA bidirectional.",
+        "functions": [
+          "I2C"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "SCL",
+        "kind": "communication",
+        "description": "SCL input.",
+        "functions": [
+          "I2C"
+        ],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/ads1115.pdf"
+    ],
+    "notes": [
+      "Bare IC package, not breakout-board connector order."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view, notch/marker up; pin numbering counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2.0-5.5 V"
+    },
+    "ascii_art": "ADS1115 (VSSOP-10) [ads1115]\nFour-input 16-bit I2C ADC with programmable gain.\nPackage: VSSOP-10 | Supply: 2.0-5.5 V\nTop view, notch/marker up; pin numbering counterclockwise.\n\n               +---------+\n     [IO] ADDR |  1   10 | [BUS] SCL     \n[IO] ALERT/RDY |  2   9  | [BUS] SDA     \n     [GND] GND |  3   8  | [PWR] VDD     \n    [ANA] AIN0 |  4   7  | [ANA] AIN3    \n    [ANA] AIN1 |  5   6  | [ANA] AIN2    \n               +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "mcp4725": {
+    "schema_version": 2,
+    "name": "MCP4725 (SOT-23-6)",
+    "description": "Single-channel 12-bit I2C DAC with EEPROM.",
+    "category": "analog",
+    "package": "SOT-23-6",
+    "voltage": "2.7-5.5 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "VOUT",
+        "kind": "analog",
+        "description": "VOUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "VSS",
+        "kind": "ground",
+        "description": "VSS power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "VDD",
+        "kind": "power",
+        "description": "VDD power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "SDA",
+        "kind": "communication",
+        "description": "SDA bidirectional.",
+        "functions": [
+          "I2C"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "SCL",
+        "kind": "communication",
+        "description": "SCL input.",
+        "functions": [
+          "I2C"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "A0",
+        "kind": "control",
+        "description": "I2C address selection input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.microchip.com/en-us/product/MCP4725"
+    ],
+    "notes": [
+      "Bare IC package, not breakout-board connector order."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Physical package pin numbers; consult manufacturer package drawing."
+    },
+    "electrical": {
+      "Supply": "2.7-5.5 V"
+    },
+    "ascii_art": "MCP4725 (SOT-23-6) [mcp4725]\nSingle-channel 12-bit I2C DAC with EEPROM.\nPackage: SOT-23-6 | Supply: 2.7-5.5 V\nPhysical package pin numbers; consult manufacturer package drawing.\n\n1 [ANA] VOUT\n2 [GND] VSS\n3 [PWR] VDD\n4 [BUS] SDA\n5 [BUS] SCL\n6 [CTL] A0\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "mcp4921": {
+    "schema_version": 2,
+    "name": "MCP4921 (PDIP-8)",
+    "description": "Single-channel 12-bit SPI DAC.",
+    "category": "analog",
+    "package": "PDIP-8",
+    "voltage": "2.7-5.5 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "VDD",
+        "kind": "power",
+        "description": "VDD power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "/CS",
+        "kind": "communication",
+        "description": "/CS input.",
+        "functions": [
+          "SPI"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "SCK",
+        "kind": "communication",
+        "description": "SCK input.",
+        "functions": [
+          "SPI"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "SDI",
+        "kind": "communication",
+        "description": "SDI input.",
+        "functions": [
+          "SPI"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "/LDAC",
+        "kind": "digital",
+        "description": "/LDAC input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "VrefA",
+        "kind": "digital",
+        "description": "VrefA passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "AVSS",
+        "kind": "power",
+        "description": "AVSS power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "VoutA",
+        "kind": "digital",
+        "description": "VoutA passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.microchip.com/en-us/product/MCP4921"
+    ],
+    "notes": [
+      "Bare IC package, not breakout-board connector order."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view, notch/marker up; pin numbering counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2.7-5.5 V"
+    },
+    "ascii_art": "MCP4921 (PDIP-8) [mcp4921]\nSingle-channel 12-bit SPI DAC.\nPackage: PDIP-8 | Supply: 2.7-5.5 V\nTop view, notch/marker up; pin numbering counterclockwise.\n\n           +-------+\n [PWR] VDD | 1   8 | [IO] VoutA\n [BUS] /CS | 2   7 | [PWR] AVSS\n [BUS] SCK | 3   6 | [IO] VrefA\n [BUS] SDI | 4   5 | [IO] /LDAC\n           +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "lm393": {
+    "schema_version": 2,
+    "name": "LM393 (PDIP-8)",
+    "description": "Dual open-collector voltage comparator.",
+    "category": "analog",
+    "package": "PDIP-8",
+    "voltage": "2-30 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "OUT A",
+        "kind": "digital",
+        "description": "Open-collector comparator output; requires pull-up.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "IN- A",
+        "kind": "analog",
+        "description": "Inverting input  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "IN+ A",
+        "kind": "analog",
+        "description": "Non-inverting input  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "V-",
+        "kind": "power",
+        "description": "Negative supply or ground for single-supply operation.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "IN+ B",
+        "kind": "analog",
+        "description": "Non-inverting input  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "IN- B",
+        "kind": "analog",
+        "description": "Inverting input  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "OUT B",
+        "kind": "digital",
+        "description": "Open-collector comparator output; requires pull-up.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "V+",
+        "kind": "power",
+        "description": "Positive supply.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/lm393.pdf"
+    ],
+    "notes": [
+      "Bare IC package, not breakout-board connector order.",
+      "Open-collector outputs require pull-up resistors. Classic device ratings; B variants differ."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view, notch/marker up; pin numbering counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-30 V"
+    },
+    "ascii_art": "LM393 (PDIP-8) [lm393]\nDual open-collector voltage comparator.\nPackage: PDIP-8 | Supply: 2-30 V\nTop view, notch/marker up; pin numbering counterclockwise.\n\n            +-------+\n [IO] OUT A | 1   8 | [PWR] V+   \n[ANA] IN- A | 2   7 | [IO] OUT B \n[ANA] IN+ A | 3   6 | [ANA] IN- B\n   [PWR] V- | 4   5 | [ANA] IN+ B\n            +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "lm339": {
+    "schema_version": 2,
+    "name": "LM339 (PDIP-14)",
+    "description": "Quad open-collector voltage comparator.",
+    "category": "analog",
+    "package": "PDIP-14",
+    "voltage": "2-30 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "OUT B",
+        "kind": "digital",
+        "description": "Open-collector comparator output; requires pull-up.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "OUT A",
+        "kind": "digital",
+        "description": "Open-collector comparator output; requires pull-up.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "V+",
+        "kind": "power",
+        "description": "Positive supply.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "IN- A",
+        "kind": "analog",
+        "description": "Inverting input  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "IN+ A",
+        "kind": "analog",
+        "description": "Non-inverting input  A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "IN- B",
+        "kind": "analog",
+        "description": "Inverting input  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "IN+ B",
+        "kind": "analog",
+        "description": "Non-inverting input  B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "IN- C",
+        "kind": "analog",
+        "description": "Inverting input  C.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "IN+ C",
+        "kind": "analog",
+        "description": "Non-inverting input  C.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "IN- D",
+        "kind": "analog",
+        "description": "Inverting input  D.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "IN+ D",
+        "kind": "analog",
+        "description": "Non-inverting input  D.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "V-",
+        "kind": "power",
+        "description": "Negative supply or ground for single-supply operation.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "OUT D",
+        "kind": "digital",
+        "description": "Open-collector comparator output; requires pull-up.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "OUT C",
+        "kind": "digital",
+        "description": "Open-collector comparator output; requires pull-up.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/lm339.pdf"
+    ],
+    "notes": [
+      "Bare IC package, not breakout-board connector order.",
+      "Open-collector outputs require pull-up resistors. Classic device ratings; B variants differ."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view, notch/marker up; pin numbering counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-30 V"
+    },
+    "ascii_art": "LM339 (PDIP-14) [lm339]\nQuad open-collector voltage comparator.\nPackage: PDIP-14 | Supply: 2-30 V\nTop view, notch/marker up; pin numbering counterclockwise.\n\n            +---------+\n [IO] OUT B |  1   14 | [IO] OUT C \n [IO] OUT A |  2   13 | [IO] OUT D \n   [PWR] V+ |  3   12 | [PWR] V-   \n[ANA] IN- A |  4   11 | [ANA] IN+ D\n[ANA] IN+ A |  5   10 | [ANA] IN- D\n[ANA] IN- B |  6   9  | [ANA] IN+ C\n[ANA] IN+ B |  7   8  | [ANA] IN- C\n            +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "ams1117-3v3": {
+    "schema_version": 2,
+    "name": "AMS1117-3V3 (SOT-223)",
+    "description": "3.3 V linear regulator.",
+    "category": "analog",
+    "package": "SOT-223",
+    "voltage": "Fixed 3.3 V output; observe dropout/input limits",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "VO",
+        "kind": "power",
+        "description": "Regulated output; tab is connected to this terminal.",
+        "functions": [],
+        "voltage": "3.3 V output",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "VI",
+        "kind": "power",
+        "description": "Input supply; requires dropout headroom above 3.3 V.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+    ],
+    "notes": [
+      "Bare IC package, not breakout-board connector order."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Physical package pin numbers; consult manufacturer package drawing."
+    },
+    "electrical": {
+      "Supply": "Fixed 3.3 V output; observe dropout/input limits"
+    },
+    "ascii_art": "AMS1117-3V3 (SOT-223) [ams1117-3v3]\n3.3 V linear regulator.\nPackage: SOT-223 | Supply: Fixed 3.3 V output; observe dropout/input limits\nPhysical package pin numbers; consult manufacturer package drawing.\n\n1 [GND] GND\n2 [PWR] VO\n3 [PWR] VI\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
   }
 }

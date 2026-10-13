@@ -1,27 +1,5292 @@
 {
-  "l293d": {
-    "name": "L293D Dual H-Bridge Motor Driver (PDIP-16)",
-    "description": "High-current driver designed to control bidirectional speed and direction of up to two DC motors.",
-    "ascii_art": "\n           \u001b[1mL293D Top View\u001b[0m\n            +---\\_/---+\n     1,2EN  | 1    16 | VCC1 (Logic Supply, 5V)\n     1A     | 2    15 | 4A\n     1Y     | 3    14 | 4Y\n     GND    | 4    13 | GND\n     GND    | 5    12 | GND\n     2Y     | 6    11 | 3Y\n     2A     | 7    10 | 3A\n     VCC2   | 8     9 | 3,4EN (Motor Power, 4.5V to 36V)\n            +---------+\n        "
-  },
-  "74hc595": {
-    "name": "74HC595 8-Bit Shift Register (PDIP-16)",
-    "description": "Serial-In Parallel-Out shift register. Used to expand limited GPIO pins to control 8 outputs with just 3 MCU pins.",
-    "ascii_art": "\n           \u001b[1m74HC595 Top View\u001b[0m\n         QB  | 1    16 | VCC (2V to 6V)\n         QC  | 2    15 | QA (First Output Bit)\n         QD  | 3    14 | SER (Serial Data Input)\n         QE  | 4    13 | OE (Output Enable, Active Low)\n         QF  | 5    12 | RCLK (Storage Latch/Register Clock)\n         QG  | 6    11 | SRCLK (Shift Register Clock)\n         QH  | 7    10 | SRCLR (Shift Register Clear, Active Low)\n        GND  | 8     9 | QH' (Serial Out, Daisy Chain Link)\n             +---------+\n        "
-  },
   "74hc00": {
-    "name": "74HC00 Quad 2-Input NAND Gate (PDIP-14)",
-    "description": "Four independent NAND gates. A fundamental building block of digital logic systems.",
-    "ascii_art": "\n           \u001b[1m74HC00 Top View\u001b[0m\n             +---\\_/---+\n         1A  | 1    14 | VCC (2V to 6V)\n         1B  | 2    13 | 4B\n         1Y  | 3    12 | 4A\n         2A  | 4    11 | 4Y\n         2B  | 5    10 | 3B\n         2Y  | 6     9 | 3A\n         GND | 7     8 | 3Y\n             +---------+\n        "
+    "schema_version": 2,
+    "name": "74HC00 (PDIP-14)",
+    "description": "Quad two-input NAND gates.",
+    "category": "digital",
+    "package": "PDIP-14",
+    "voltage": "2-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn74hc00.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-6 V"
+    },
+    "ascii_art": "74HC00 (PDIP-14) [74hc00]\nQuad two-input NAND gates.\nPackage: PDIP-14 | Supply: 2-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n          +---------+\n  [IO] IN |  1   14 | [PWR] VCC\n  [IO] IN |  2   13 | [IO] IN  \n [IO] OUT |  3   12 | [IO] IN  \n  [IO] IN |  4   11 | [IO] OUT \n  [IO] IN |  5   10 | [IO] IN  \n [IO] OUT |  6   9  | [IO] IN  \n[GND] GND |  7   8  | [IO] OUT \n          +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "74hc02": {
+    "schema_version": 2,
+    "name": "74HC02 (PDIP-14)",
+    "description": "Quad two-input NOR gates.",
+    "category": "digital",
+    "package": "PDIP-14",
+    "voltage": "2-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn74hc02.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-6 V"
+    },
+    "ascii_art": "74HC02 (PDIP-14) [74hc02]\nQuad two-input NOR gates.\nPackage: PDIP-14 | Supply: 2-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n          +---------+\n [IO] OUT |  1   14 | [PWR] VCC\n  [IO] IN |  2   13 | [IO] OUT \n  [IO] IN |  3   12 | [IO] IN  \n [IO] OUT |  4   11 | [IO] IN  \n  [IO] IN |  5   10 | [IO] OUT \n  [IO] IN |  6   9  | [IO] IN  \n[GND] GND |  7   8  | [IO] IN  \n          +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "74hc04": {
+    "schema_version": 2,
+    "name": "74HC04 (PDIP-14)",
+    "description": "Hex inverters.",
+    "category": "digital",
+    "package": "PDIP-14",
+    "voltage": "2-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn74hc04.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-6 V"
+    },
+    "ascii_art": "74HC04 (PDIP-14) [74hc04]\nHex inverters.\nPackage: PDIP-14 | Supply: 2-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n          +---------+\n  [IO] IN |  1   14 | [PWR] VCC\n [IO] OUT |  2   13 | [IO] IN  \n  [IO] IN |  3   12 | [IO] OUT \n [IO] OUT |  4   11 | [IO] IN  \n  [IO] IN |  5   10 | [IO] OUT \n [IO] OUT |  6   9  | [IO] IN  \n[GND] GND |  7   8  | [IO] OUT \n          +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
   },
   "74hc14": {
-    "name": "74HC14 Hex Inverter with Schmitt Trigger (PDIP-14)",
-    "description": "Six independent NOT gates with hysteresis, perfect for debouncing switches and squaring up noisy signals.",
-    "ascii_art": "\n           \u001b[1m74HC14 Top View\u001b[0m\n             +---\\_/---+\n         1A  | 1    14 | VCC (2V to 6V)\n         1Y  | 2    13 | 6A\n         2A  | 3    12 | 6Y\n         2Y  | 4    11 | 5A\n         3A  | 5    10 | 5Y\n         3Y  | 6     9 | 4A\n         GND | 7     8 | 4Y\n             +---------+\n        "
+    "schema_version": 2,
+    "name": "74HC14 (PDIP-14)",
+    "description": "Hex Schmitt-trigger inverters.",
+    "category": "digital",
+    "package": "PDIP-14",
+    "voltage": "2-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn74hc14.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-6 V"
+    },
+    "ascii_art": "74HC14 (PDIP-14) [74hc14]\nHex Schmitt-trigger inverters.\nPackage: PDIP-14 | Supply: 2-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n          +---------+\n  [IO] IN |  1   14 | [PWR] VCC\n [IO] OUT |  2   13 | [IO] IN  \n  [IO] IN |  3   12 | [IO] OUT \n [IO] OUT |  4   11 | [IO] IN  \n  [IO] IN |  5   10 | [IO] OUT \n [IO] OUT |  6   9  | [IO] IN  \n[GND] GND |  7   8  | [IO] OUT \n          +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "74hc74": {
+    "schema_version": 2,
+    "name": "74HC74 (PDIP-14)",
+    "description": "Dual D flip-flops.",
+    "category": "digital",
+    "package": "PDIP-14",
+    "voltage": "2-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "/R",
+        "kind": "digital",
+        "description": "/R input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "D",
+        "kind": "digital",
+        "description": "D input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "C",
+        "kind": "digital",
+        "description": "C input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "/S",
+        "kind": "digital",
+        "description": "/S input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "Q",
+        "kind": "digital",
+        "description": "Q output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "/Q",
+        "kind": "digital",
+        "description": "/Q output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "/Q",
+        "kind": "digital",
+        "description": "/Q output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "Q",
+        "kind": "digital",
+        "description": "Q output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "/S",
+        "kind": "digital",
+        "description": "/S input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "C",
+        "kind": "digital",
+        "description": "C input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "D",
+        "kind": "digital",
+        "description": "D input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "/R",
+        "kind": "digital",
+        "description": "/R input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn74hc74.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-6 V"
+    },
+    "ascii_art": "74HC74 (PDIP-14) [74hc74]\nDual D flip-flops.\nPackage: PDIP-14 | Supply: 2-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n          +---------+\n  [IO] /R |  1   14 | [PWR] VCC\n   [IO] D |  2   13 | [IO] /R  \n   [IO] C |  3   12 | [IO] D   \n  [IO] /S |  4   11 | [IO] C   \n   [IO] Q |  5   10 | [IO] /S  \n  [IO] /Q |  6   9  | [IO] Q   \n[GND] GND |  7   8  | [IO] /Q  \n          +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "74hc86": {
+    "schema_version": 2,
+    "name": "74HC86 (PDIP-14)",
+    "description": "Quad two-input XOR gates.",
+    "category": "digital",
+    "package": "PDIP-14",
+    "voltage": "2-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "OUT",
+        "kind": "digital",
+        "description": "OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "IN",
+        "kind": "digital",
+        "description": "IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn74hc86.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-6 V"
+    },
+    "ascii_art": "74HC86 (PDIP-14) [74hc86]\nQuad two-input XOR gates.\nPackage: PDIP-14 | Supply: 2-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n          +---------+\n  [IO] IN |  1   14 | [PWR] VCC\n  [IO] IN |  2   13 | [IO] IN  \n [IO] OUT |  3   12 | [IO] IN  \n  [IO] IN |  4   11 | [IO] OUT \n  [IO] IN |  5   10 | [IO] IN  \n [IO] OUT |  6   9  | [IO] IN  \n[GND] GND |  7   8  | [IO] OUT \n          +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "74hc138": {
+    "schema_version": 2,
+    "name": "74HC138 (PDIP-16)",
+    "description": "Three-to-eight decoder.",
+    "category": "digital",
+    "package": "PDIP-16",
+    "voltage": "2-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "A0",
+        "kind": "digital",
+        "description": "A0 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "A1",
+        "kind": "digital",
+        "description": "A1 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "A2",
+        "kind": "digital",
+        "description": "A2 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "/E0",
+        "kind": "digital",
+        "description": "/E0 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "/E1",
+        "kind": "digital",
+        "description": "/E1 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "E2",
+        "kind": "digital",
+        "description": "E2 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "/Y7",
+        "kind": "digital",
+        "description": "/Y7 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "/Y6",
+        "kind": "digital",
+        "description": "/Y6 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "/Y5",
+        "kind": "digital",
+        "description": "/Y5 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "/Y4",
+        "kind": "digital",
+        "description": "/Y4 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "/Y3",
+        "kind": "digital",
+        "description": "/Y3 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "/Y2",
+        "kind": "digital",
+        "description": "/Y2 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "/Y1",
+        "kind": "digital",
+        "description": "/Y1 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "/Y0",
+        "kind": "digital",
+        "description": "/Y0 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn74hc138.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-6 V"
+    },
+    "ascii_art": "74HC138 (PDIP-16) [74hc138]\nThree-to-eight decoder.\nPackage: PDIP-16 | Supply: 2-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n          +---------+\n  [IO] A0 |  1   16 | [PWR] VCC\n  [IO] A1 |  2   15 | [IO] /Y0 \n  [IO] A2 |  3   14 | [IO] /Y1 \n [IO] /E0 |  4   13 | [IO] /Y2 \n [IO] /E1 |  5   12 | [IO] /Y3 \n  [IO] E2 |  6   11 | [IO] /Y4 \n [IO] /Y7 |  7   10 | [IO] /Y5 \n[GND] GND |  8   9  | [IO] /Y6 \n          +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "74hc164": {
+    "schema_version": 2,
+    "name": "74HC164 (PDIP-14)",
+    "description": "Eight-bit serial-input shift register.",
+    "category": "digital",
+    "package": "PDIP-14",
+    "voltage": "2-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "DSA",
+        "kind": "digital",
+        "description": "DSA input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "DSB",
+        "kind": "digital",
+        "description": "DSB input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "Q0",
+        "kind": "digital",
+        "description": "Q0 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "Q1",
+        "kind": "digital",
+        "description": "Q1 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "Q2",
+        "kind": "digital",
+        "description": "Q2 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "Q3",
+        "kind": "digital",
+        "description": "Q3 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "CP",
+        "kind": "digital",
+        "description": "CP input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "/MR",
+        "kind": "digital",
+        "description": "/MR input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "Q4",
+        "kind": "digital",
+        "description": "Q4 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "Q5",
+        "kind": "digital",
+        "description": "Q5 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "Q6",
+        "kind": "digital",
+        "description": "Q6 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "Q7",
+        "kind": "digital",
+        "description": "Q7 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn74hc164.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-6 V"
+    },
+    "ascii_art": "74HC164 (PDIP-14) [74hc164]\nEight-bit serial-input shift register.\nPackage: PDIP-14 | Supply: 2-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n          +---------+\n [IO] DSA |  1   14 | [PWR] VCC\n [IO] DSB |  2   13 | [IO] Q7  \n  [IO] Q0 |  3   12 | [IO] Q6  \n  [IO] Q1 |  4   11 | [IO] Q5  \n  [IO] Q2 |  5   10 | [IO] Q4  \n  [IO] Q3 |  6   9  | [IO] /MR \n[GND] GND |  7   8  | [IO] CP  \n          +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "74hc165": {
+    "schema_version": 2,
+    "name": "74HC165 (PDIP-16)",
+    "description": "Eight-bit parallel-input serial-output shift register.",
+    "category": "digital",
+    "package": "PDIP-16",
+    "voltage": "2-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "/PL",
+        "kind": "digital",
+        "description": "/PL input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "CP",
+        "kind": "digital",
+        "description": "CP input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "D4",
+        "kind": "digital",
+        "description": "D4 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "D5",
+        "kind": "digital",
+        "description": "D5 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "D6",
+        "kind": "digital",
+        "description": "D6 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "D7",
+        "kind": "digital",
+        "description": "D7 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "/Q7",
+        "kind": "digital",
+        "description": "/Q7 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "Q7",
+        "kind": "digital",
+        "description": "Q7 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "DS",
+        "kind": "digital",
+        "description": "DS input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "D0",
+        "kind": "digital",
+        "description": "D0 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "D1",
+        "kind": "digital",
+        "description": "D1 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "D2",
+        "kind": "digital",
+        "description": "D2 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "D3",
+        "kind": "digital",
+        "description": "D3 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "/CE",
+        "kind": "digital",
+        "description": "/CE input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn74hc165.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-6 V"
+    },
+    "ascii_art": "74HC165 (PDIP-16) [74hc165]\nEight-bit parallel-input serial-output shift register.\nPackage: PDIP-16 | Supply: 2-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n          +---------+\n [IO] /PL |  1   16 | [PWR] VCC\n  [IO] CP |  2   15 | [IO] /CE \n  [IO] D4 |  3   14 | [IO] D3  \n  [IO] D5 |  4   13 | [IO] D2  \n  [IO] D6 |  5   12 | [IO] D1  \n  [IO] D7 |  6   11 | [IO] D0  \n [IO] /Q7 |  7   10 | [IO] DS  \n[GND] GND |  8   9  | [IO] Q7  \n          +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "74hc595": {
+    "schema_version": 2,
+    "name": "74HC595 (PDIP-16)",
+    "description": "Eight-bit shift register with output latch.",
+    "category": "digital",
+    "package": "PDIP-16",
+    "voltage": "2-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "QB",
+        "kind": "digital",
+        "description": "Parallel output bit 1.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "QC",
+        "kind": "digital",
+        "description": "Parallel output bit 2.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "QD",
+        "kind": "digital",
+        "description": "Parallel output bit 3.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "QE",
+        "kind": "digital",
+        "description": "Parallel output bit 4.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "QF",
+        "kind": "digital",
+        "description": "Parallel output bit 5.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "QG",
+        "kind": "digital",
+        "description": "Parallel output bit 6.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "QH",
+        "kind": "digital",
+        "description": "Parallel output bit 7.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "QH'",
+        "kind": "communication",
+        "description": "Serial output for cascading to the next shift register.",
+        "functions": [
+          "Serial shift-register interface"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "/SRCLR",
+        "kind": "control",
+        "description": "Active-low asynchronous shift-register clear.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "SRCLK",
+        "kind": "communication",
+        "description": "Shift-register clock; data shifts on rising edge.",
+        "functions": [
+          "Serial shift-register interface"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "RCLK",
+        "kind": "communication",
+        "description": "Output storage-register latch clock; updates on rising edge.",
+        "functions": [
+          "Serial shift-register interface"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "/OE",
+        "kind": "control",
+        "description": "Active-low output enable; high puts parallel outputs in high impedance.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "SER",
+        "kind": "communication",
+        "description": "Serial data input.",
+        "functions": [
+          "Serial shift-register interface"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "QA",
+        "kind": "digital",
+        "description": "Parallel output bit 0.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn74hc595.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet.",
+      "Not an I2C peripheral; clock/latch/data pins are commonly driven by SPI or GPIO."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-6 V"
+    },
+    "ascii_art": "74HC595 (PDIP-16) [74hc595]\nEight-bit shift register with output latch.\nPackage: PDIP-16 | Supply: 2-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n             +---------+\n     [IO] QB |  1   16 | [PWR] VCC   \n     [IO] QC |  2   15 | [IO] QA     \n     [IO] QD |  3   14 | [BUS] SER   \n     [IO] QE |  4   13 | [CTL] /OE   \n     [IO] QF |  5   12 | [BUS] RCLK  \n     [IO] QG |  6   11 | [BUS] SRCLK \n     [IO] QH |  7   10 | [CTL] /SRCLR\n   [GND] GND |  8   9  | [BUS] QH'   \n             +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "74hc245": {
+    "schema_version": 2,
+    "name": "74HC245 (PDIP-20)",
+    "description": "Octal bidirectional bus transceiver.",
+    "category": "digital",
+    "package": "PDIP-20",
+    "voltage": "2-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "A->B",
+        "kind": "digital",
+        "description": "A->B input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "A0",
+        "kind": "digital",
+        "description": "A0 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "A1",
+        "kind": "digital",
+        "description": "A1 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "A2",
+        "kind": "digital",
+        "description": "A2 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "A3",
+        "kind": "digital",
+        "description": "A3 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "A4",
+        "kind": "digital",
+        "description": "A4 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "A5",
+        "kind": "digital",
+        "description": "A5 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "A6",
+        "kind": "digital",
+        "description": "A6 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "A7",
+        "kind": "digital",
+        "description": "A7 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "B7",
+        "kind": "digital",
+        "description": "B7 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "B6",
+        "kind": "digital",
+        "description": "B6 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "B5",
+        "kind": "digital",
+        "description": "B5 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "B4",
+        "kind": "digital",
+        "description": "B4 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "B3",
+        "kind": "digital",
+        "description": "B3 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "B2",
+        "kind": "digital",
+        "description": "B2 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "17",
+        "name": "B1",
+        "kind": "digital",
+        "description": "B1 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "18",
+        "name": "B0",
+        "kind": "digital",
+        "description": "B0 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "19",
+        "name": "CE",
+        "kind": "digital",
+        "description": "CE input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "20",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn74hc245.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-6 V"
+    },
+    "ascii_art": "74HC245 (PDIP-20) [74hc245]\nOctal bidirectional bus transceiver.\nPackage: PDIP-20 | Supply: 2-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n          +---------+\n[IO] A->B |  1   20 | [PWR] VCC\n  [IO] A0 |  2   19 | [IO] CE  \n  [IO] A1 |  3   18 | [IO] B0  \n  [IO] A2 |  4   17 | [IO] B1  \n  [IO] A3 |  5   16 | [IO] B2  \n  [IO] A4 |  6   15 | [IO] B3  \n  [IO] A5 |  7   14 | [IO] B4  \n  [IO] A6 |  8   13 | [IO] B5  \n  [IO] A7 |  9   12 | [IO] B6  \n[GND] GND | 10   11 | [IO] B7  \n          +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "74hc244": {
+    "schema_version": 2,
+    "name": "74HC244 (PDIP-20)",
+    "description": "Octal tri-state buffers.",
+    "category": "digital",
+    "package": "PDIP-20",
+    "voltage": "2-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "1OE",
+        "kind": "control",
+        "description": "1OE input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "1A0",
+        "kind": "digital",
+        "description": "1A0 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "2Y0",
+        "kind": "digital",
+        "description": "2Y0 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "1A1",
+        "kind": "digital",
+        "description": "1A1 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "2Y1",
+        "kind": "digital",
+        "description": "2Y1 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "1A2",
+        "kind": "digital",
+        "description": "1A2 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "2Y2",
+        "kind": "digital",
+        "description": "2Y2 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "1A3",
+        "kind": "digital",
+        "description": "1A3 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "2Y3",
+        "kind": "digital",
+        "description": "2Y3 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "2A3",
+        "kind": "digital",
+        "description": "2A3 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "1Y3",
+        "kind": "digital",
+        "description": "1Y3 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "2A2",
+        "kind": "digital",
+        "description": "2A2 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "1Y2",
+        "kind": "digital",
+        "description": "1Y2 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "2A1",
+        "kind": "digital",
+        "description": "2A1 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "1Y1",
+        "kind": "digital",
+        "description": "1Y1 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "17",
+        "name": "2A0",
+        "kind": "digital",
+        "description": "2A0 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "18",
+        "name": "1Y0",
+        "kind": "digital",
+        "description": "1Y0 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "19",
+        "name": "2OE",
+        "kind": "control",
+        "description": "2OE input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "20",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn74hc244.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-6 V"
+    },
+    "ascii_art": "74HC244 (PDIP-20) [74hc244]\nOctal tri-state buffers.\nPackage: PDIP-20 | Supply: 2-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n          +---------+\n[CTL] 1OE |  1   20 | [PWR] VCC\n [IO] 1A0 |  2   19 | [CTL] 2OE\n [IO] 2Y0 |  3   18 | [IO] 1Y0 \n [IO] 1A1 |  4   17 | [IO] 2A0 \n [IO] 2Y1 |  5   16 | [IO] 1Y1 \n [IO] 1A2 |  6   15 | [IO] 2A1 \n [IO] 2Y2 |  7   14 | [IO] 1Y2 \n [IO] 1A3 |  8   13 | [IO] 2A2 \n [IO] 2Y3 |  9   12 | [IO] 1Y3 \n[GND] GND | 10   11 | [IO] 2A3 \n          +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "74hc373": {
+    "schema_version": 2,
+    "name": "74HC373 (PDIP-20)",
+    "description": "Octal transparent latch.",
+    "category": "digital",
+    "package": "PDIP-20",
+    "voltage": "2-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "OE",
+        "kind": "control",
+        "description": "OE input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "O0",
+        "kind": "digital",
+        "description": "O0 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "D0",
+        "kind": "digital",
+        "description": "D0 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "D1",
+        "kind": "digital",
+        "description": "D1 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "O1",
+        "kind": "digital",
+        "description": "O1 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "O2",
+        "kind": "digital",
+        "description": "O2 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "D2",
+        "kind": "digital",
+        "description": "D2 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "D3",
+        "kind": "digital",
+        "description": "D3 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "O3",
+        "kind": "digital",
+        "description": "O3 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "LE",
+        "kind": "digital",
+        "description": "LE input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "O4",
+        "kind": "digital",
+        "description": "O4 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "D4",
+        "kind": "digital",
+        "description": "D4 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "D5",
+        "kind": "digital",
+        "description": "D5 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "O5",
+        "kind": "digital",
+        "description": "O5 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "O6",
+        "kind": "digital",
+        "description": "O6 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "17",
+        "name": "D6",
+        "kind": "digital",
+        "description": "D6 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "18",
+        "name": "D7",
+        "kind": "digital",
+        "description": "D7 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "19",
+        "name": "O7",
+        "kind": "digital",
+        "description": "O7 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "20",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn74hc373.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-6 V"
+    },
+    "ascii_art": "74HC373 (PDIP-20) [74hc373]\nOctal transparent latch.\nPackage: PDIP-20 | Supply: 2-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n          +---------+\n [CTL] OE |  1   20 | [PWR] VCC\n  [IO] O0 |  2   19 | [IO] O7  \n  [IO] D0 |  3   18 | [IO] D7  \n  [IO] D1 |  4   17 | [IO] D6  \n  [IO] O1 |  5   16 | [IO] O6  \n  [IO] O2 |  6   15 | [IO] O5  \n  [IO] D2 |  7   14 | [IO] D5  \n  [IO] D3 |  8   13 | [IO] D4  \n  [IO] O3 |  9   12 | [IO] O4  \n[GND] GND | 10   11 | [IO] LE  \n          +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "74hc374": {
+    "schema_version": 2,
+    "name": "74HC374 (PDIP-20)",
+    "description": "Octal D flip-flops.",
+    "category": "digital",
+    "package": "PDIP-20",
+    "voltage": "2-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "OE",
+        "kind": "control",
+        "description": "OE input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "O0",
+        "kind": "digital",
+        "description": "O0 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "D0",
+        "kind": "digital",
+        "description": "D0 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "D1",
+        "kind": "digital",
+        "description": "D1 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "O1",
+        "kind": "digital",
+        "description": "O1 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "O2",
+        "kind": "digital",
+        "description": "O2 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "D2",
+        "kind": "digital",
+        "description": "D2 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "D3",
+        "kind": "digital",
+        "description": "D3 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "O3",
+        "kind": "digital",
+        "description": "O3 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "Cp",
+        "kind": "digital",
+        "description": "Cp input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "O4",
+        "kind": "digital",
+        "description": "O4 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "D4",
+        "kind": "digital",
+        "description": "D4 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "D5",
+        "kind": "digital",
+        "description": "D5 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "O5",
+        "kind": "digital",
+        "description": "O5 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "O6",
+        "kind": "digital",
+        "description": "O6 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "17",
+        "name": "D6",
+        "kind": "digital",
+        "description": "D6 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "18",
+        "name": "D7",
+        "kind": "digital",
+        "description": "D7 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "19",
+        "name": "O7",
+        "kind": "digital",
+        "description": "O7 tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "20",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn74hc374.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-6 V"
+    },
+    "ascii_art": "74HC374 (PDIP-20) [74hc374]\nOctal D flip-flops.\nPackage: PDIP-20 | Supply: 2-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n          +---------+\n [CTL] OE |  1   20 | [PWR] VCC\n  [IO] O0 |  2   19 | [IO] O7  \n  [IO] D0 |  3   18 | [IO] D7  \n  [IO] D1 |  4   17 | [IO] D6  \n  [IO] O1 |  5   16 | [IO] O6  \n  [IO] O2 |  6   15 | [IO] O5  \n  [IO] D2 |  7   14 | [IO] D5  \n  [IO] D3 |  8   13 | [IO] D4  \n  [IO] O3 |  9   12 | [IO] O4  \n[GND] GND | 10   11 | [IO] Cp  \n          +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "74hc4051": {
+    "schema_version": 2,
+    "name": "74HC4051 (PDIP-16)",
+    "description": "Eight-channel analog multiplexer.",
+    "category": "digital",
+    "package": "PDIP-16",
+    "voltage": "2-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "A4",
+        "kind": "analog",
+        "description": "A4 passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "A6",
+        "kind": "analog",
+        "description": "A6 passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "A",
+        "kind": "analog",
+        "description": "A passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "A7",
+        "kind": "analog",
+        "description": "A7 passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "A5",
+        "kind": "analog",
+        "description": "A5 passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "/E",
+        "kind": "analog",
+        "description": "/E input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "VEE",
+        "kind": "power",
+        "description": "VEE power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "S2",
+        "kind": "analog",
+        "description": "S2 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "S1",
+        "kind": "analog",
+        "description": "S1 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "S0",
+        "kind": "analog",
+        "description": "S0 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "A3",
+        "kind": "analog",
+        "description": "A3 passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "A0",
+        "kind": "analog",
+        "description": "A0 passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "A1",
+        "kind": "analog",
+        "description": "A1 passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "A2",
+        "kind": "analog",
+        "description": "A2 passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://assets.nexperia.com/documents/data-sheet/74HC_HCT4051.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-6 V"
+    },
+    "ascii_art": "74HC4051 (PDIP-16) [74hc4051]\nEight-channel analog multiplexer.\nPackage: PDIP-16 | Supply: 2-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n          +---------+\n [ANA] A4 |  1   16 | [PWR] VCC\n [ANA] A6 |  2   15 | [ANA] A2 \n  [ANA] A |  3   14 | [ANA] A1 \n [ANA] A7 |  4   13 | [ANA] A0 \n [ANA] A5 |  5   12 | [ANA] A3 \n [ANA] /E |  6   11 | [ANA] S0 \n[PWR] VEE |  7   10 | [ANA] S1 \n[GND] GND |  8   9  | [ANA] S2 \n          +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "74hc4060": {
+    "schema_version": 2,
+    "name": "74HC4060 (PDIP-16)",
+    "description": "Oscillator and binary divider.",
+    "category": "digital",
+    "package": "PDIP-16",
+    "voltage": "2-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "Q12",
+        "kind": "digital",
+        "description": "Q12 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "Q13",
+        "kind": "digital",
+        "description": "Q13 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "Q14",
+        "kind": "digital",
+        "description": "Q14 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "Q6",
+        "kind": "digital",
+        "description": "Q6 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "Q5",
+        "kind": "digital",
+        "description": "Q5 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "Q7",
+        "kind": "digital",
+        "description": "Q7 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "Q4",
+        "kind": "digital",
+        "description": "Q4 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "VSS",
+        "kind": "ground",
+        "description": "VSS power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "/Φ0",
+        "kind": "digital",
+        "description": "/Φ0 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "Φ0",
+        "kind": "digital",
+        "description": "Φ0 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "/Φ1",
+        "kind": "digital",
+        "description": "/Φ1 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "CLR",
+        "kind": "control",
+        "description": "CLR input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "Q9",
+        "kind": "digital",
+        "description": "Q9 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "Q8",
+        "kind": "digital",
+        "description": "Q8 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "Q10",
+        "kind": "digital",
+        "description": "Q10 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "VDD",
+        "kind": "power",
+        "description": "VDD power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn74hc4060.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-6 V"
+    },
+    "ascii_art": "74HC4060 (PDIP-16) [74hc4060]\nOscillator and binary divider.\nPackage: PDIP-16 | Supply: 2-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n          +---------+\n [IO] Q12 |  1   16 | [PWR] VDD\n [IO] Q13 |  2   15 | [IO] Q10 \n [IO] Q14 |  3   14 | [IO] Q8  \n  [IO] Q6 |  4   13 | [IO] Q9  \n  [IO] Q5 |  5   12 | [CTL] CLR\n  [IO] Q7 |  6   11 | [IO] /Φ1 \n  [IO] Q4 |  7   10 | [IO] Φ0  \n[GND] VSS |  8   9  | [IO] /Φ0 \n          +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "74hc193": {
+    "schema_version": 2,
+    "name": "74HC193 (PDIP-16)",
+    "description": "Four-bit up/down counter.",
+    "category": "digital",
+    "package": "PDIP-16",
+    "voltage": "2-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "B",
+        "kind": "digital",
+        "description": "B input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "QB",
+        "kind": "digital",
+        "description": "QB output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "QA",
+        "kind": "digital",
+        "description": "QA output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "DOWN",
+        "kind": "digital",
+        "description": "DOWN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "UP",
+        "kind": "digital",
+        "description": "UP input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "QC",
+        "kind": "digital",
+        "description": "QC output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "QD",
+        "kind": "digital",
+        "description": "QD output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "D",
+        "kind": "digital",
+        "description": "D input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "C",
+        "kind": "digital",
+        "description": "C input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "/LOAD",
+        "kind": "digital",
+        "description": "/LOAD input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "/CO",
+        "kind": "digital",
+        "description": "/CO output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "/BO",
+        "kind": "digital",
+        "description": "/BO output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "CLR",
+        "kind": "control",
+        "description": "CLR input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "A",
+        "kind": "digital",
+        "description": "A input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn74hc193.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2-6 V"
+    },
+    "ascii_art": "74HC193 (PDIP-16) [74hc193]\nFour-bit up/down counter.\nPackage: PDIP-16 | Supply: 2-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n           +---------+\n    [IO] B |  1   16 | [PWR] VCC \n   [IO] QB |  2   15 | [IO] A    \n   [IO] QA |  3   14 | [CTL] CLR \n [IO] DOWN |  4   13 | [IO] /BO  \n   [IO] UP |  5   12 | [IO] /CO  \n   [IO] QC |  6   11 | [IO] /LOAD\n   [IO] QD |  7   10 | [IO] C    \n [GND] GND |  8   9  | [IO] D    \n           +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "74hct595": {
+    "schema_version": 2,
+    "name": "74HCT595 (PDIP-16)",
+    "description": "TTL-input eight-bit shift register with latch.",
+    "category": "digital",
+    "package": "PDIP-16",
+    "voltage": "4.5-5.5 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "QB",
+        "kind": "digital",
+        "description": "Parallel output bit 1.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "QC",
+        "kind": "digital",
+        "description": "Parallel output bit 2.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "QD",
+        "kind": "digital",
+        "description": "Parallel output bit 3.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "QE",
+        "kind": "digital",
+        "description": "Parallel output bit 4.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "QF",
+        "kind": "digital",
+        "description": "Parallel output bit 5.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "QG",
+        "kind": "digital",
+        "description": "Parallel output bit 6.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "QH",
+        "kind": "digital",
+        "description": "Parallel output bit 7.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "QH'",
+        "kind": "communication",
+        "description": "Serial output for cascading to the next shift register.",
+        "functions": [
+          "Serial shift-register interface"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "/SRCLR",
+        "kind": "control",
+        "description": "Active-low asynchronous shift-register clear.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "SRCLK",
+        "kind": "communication",
+        "description": "Shift-register clock; data shifts on rising edge.",
+        "functions": [
+          "Serial shift-register interface"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "RCLK",
+        "kind": "communication",
+        "description": "Output storage-register latch clock; updates on rising edge.",
+        "functions": [
+          "Serial shift-register interface"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "/OE",
+        "kind": "control",
+        "description": "Active-low output enable; high puts parallel outputs in high impedance.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "SER",
+        "kind": "communication",
+        "description": "Serial data input.",
+        "functions": [
+          "Serial shift-register interface"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "QA",
+        "kind": "digital",
+        "description": "Parallel output bit 0.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn74hct595.pdf"
+    ],
+    "notes": [
+      "Supply and logic thresholds depend on the HC/HCT family; check loading and timing in the datasheet.",
+      "Not an I2C peripheral; clock/latch/data pins are commonly driven by SPI or GPIO."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "4.5-5.5 V"
+    },
+    "ascii_art": "74HCT595 (PDIP-16) [74hct595]\nTTL-input eight-bit shift register with latch.\nPackage: PDIP-16 | Supply: 4.5-5.5 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n             +---------+\n     [IO] QB |  1   16 | [PWR] VCC   \n     [IO] QC |  2   15 | [IO] QA     \n     [IO] QD |  3   14 | [BUS] SER   \n     [IO] QE |  4   13 | [CTL] /OE   \n     [IO] QF |  5   12 | [BUS] RCLK  \n     [IO] QG |  6   11 | [BUS] SRCLK \n     [IO] QH |  7   10 | [CTL] /SRCLR\n   [GND] GND |  8   9  | [BUS] QH'   \n             +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
   },
   "cd4017": {
-    "name": "CD4017 CMOS Decade Counter (PDIP-16)",
-    "description": "5-stage Johnson decade counter that produces sequential outputs from 0 to 9 on incoming clock pulses.",
-    "ascii_art": "\n           \u001b[1mCD4017 Top View\u001b[0m\n             +---\\_/---+\n         Q5  | 1    16 | VDD (3V to 15V)\n         Q1  | 2    15 | RESET (Active High)\n         Q0  | 3    14 | CLOCK (Clock Input)\n         Q2  | 4    13 | CLOCK INHIBIT (Active High)\n         Q7  | 5    12 | CARRY OUT (Div-by-10)\n         Q3  | 6    11 | Q9\n         Q8  | 7    10 | Q4\n         GND | 8     9 | Q6\n             +---------+\n        "
+    "schema_version": 2,
+    "name": "CD4017 (PDIP-16)",
+    "description": "Decade counter with ten decoded outputs.",
+    "category": "digital",
+    "package": "PDIP-16",
+    "voltage": "3-18 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "Q5",
+        "kind": "digital",
+        "description": "Q5 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "Q1",
+        "kind": "digital",
+        "description": "Q1 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "Q0",
+        "kind": "digital",
+        "description": "Q0 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "Q2",
+        "kind": "digital",
+        "description": "Q2 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "Q6",
+        "kind": "digital",
+        "description": "Q6 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "Q7",
+        "kind": "digital",
+        "description": "Q7 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "Q3",
+        "kind": "digital",
+        "description": "Q3 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "VSS",
+        "kind": "ground",
+        "description": "VSS power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "Q8",
+        "kind": "digital",
+        "description": "Q8 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "Q4",
+        "kind": "digital",
+        "description": "Q4 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "Q9",
+        "kind": "digital",
+        "description": "Q9 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "Cout",
+        "kind": "digital",
+        "description": "Cout output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "CKEN",
+        "kind": "control",
+        "description": "CKEN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "CLK",
+        "kind": "digital",
+        "description": "CLK input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "Reset",
+        "kind": "control",
+        "description": "Reset input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "VDD",
+        "kind": "power",
+        "description": "VDD power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/cd4017b.pdf"
+    ],
+    "notes": [
+      "Package-specific pin map; breakout boards may use a different connector order."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "3-18 V"
+    },
+    "ascii_art": "CD4017 (PDIP-16) [cd4017]\nDecade counter with ten decoded outputs.\nPackage: PDIP-16 | Supply: 3-18 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n            +---------+\n    [IO] Q5 |  1   16 | [PWR] VDD  \n    [IO] Q1 |  2   15 | [CTL] Reset\n    [IO] Q0 |  3   14 | [IO] CLK   \n    [IO] Q2 |  4   13 | [CTL] CKEN \n    [IO] Q6 |  5   12 | [IO] Cout  \n    [IO] Q7 |  6   11 | [IO] Q9    \n    [IO] Q3 |  7   10 | [IO] Q4    \n  [GND] VSS |  8   9  | [IO] Q8    \n            +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "cd4066": {
+    "schema_version": 2,
+    "name": "CD4066 (PDIP-14)",
+    "description": "Four bilateral analog switches.",
+    "category": "digital",
+    "package": "PDIP-14",
+    "voltage": "3-18 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "A1",
+        "kind": "analog",
+        "description": "Bilateral analog switch A signal terminal 1.",
+        "functions": [],
+        "voltage": "Signal must remain within VSS-VDD",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "A2",
+        "kind": "analog",
+        "description": "Bilateral analog switch A signal terminal 2.",
+        "functions": [],
+        "voltage": "Signal must remain within VSS-VDD",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "B1",
+        "kind": "analog",
+        "description": "Bilateral analog switch B signal terminal 1.",
+        "functions": [],
+        "voltage": "Signal must remain within VSS-VDD",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "B2",
+        "kind": "analog",
+        "description": "Bilateral analog switch B signal terminal 2.",
+        "functions": [],
+        "voltage": "Signal must remain within VSS-VDD",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "EN B",
+        "kind": "control",
+        "description": "Active-high enable for switch B.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "EN C",
+        "kind": "control",
+        "description": "Active-high enable for switch C.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "VSS",
+        "kind": "ground",
+        "description": "VSS power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "C1",
+        "kind": "analog",
+        "description": "Bilateral analog switch C signal terminal 1.",
+        "functions": [],
+        "voltage": "Signal must remain within VSS-VDD",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "C2",
+        "kind": "analog",
+        "description": "Bilateral analog switch C signal terminal 2.",
+        "functions": [],
+        "voltage": "Signal must remain within VSS-VDD",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "D1",
+        "kind": "analog",
+        "description": "Bilateral analog switch D signal terminal 1.",
+        "functions": [],
+        "voltage": "Signal must remain within VSS-VDD",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "D2",
+        "kind": "analog",
+        "description": "Bilateral analog switch D signal terminal 2.",
+        "functions": [],
+        "voltage": "Signal must remain within VSS-VDD",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "EN D",
+        "kind": "control",
+        "description": "Active-high enable for switch D.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "EN A",
+        "kind": "control",
+        "description": "Active-high enable for switch A.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "VDD",
+        "kind": "power",
+        "description": "VDD power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/cd4066b.pdf"
+    ],
+    "notes": [
+      "Package-specific pin map; breakout boards may use a different connector order.",
+      "Signal terminals are bidirectional and must stay within supply rails. Enable high closes the corresponding switch."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "3-18 V"
+    },
+    "ascii_art": "CD4066 (PDIP-14) [cd4066]\nFour bilateral analog switches.\nPackage: PDIP-14 | Supply: 3-18 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n           +---------+\n  [ANA] A1 |  1   14 | [PWR] VDD \n  [ANA] A2 |  2   13 | [CTL] EN A\n  [ANA] B1 |  3   12 | [CTL] EN D\n  [ANA] B2 |  4   11 | [ANA] D2  \n[CTL] EN B |  5   10 | [ANA] D1  \n[CTL] EN C |  6   9  | [ANA] C2  \n [GND] VSS |  7   8  | [ANA] C1  \n           +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "mcp23017": {
+    "schema_version": 2,
+    "name": "MCP23017 (SPDIP-28)",
+    "description": "Sixteen-bit I2C GPIO expander.",
+    "category": "digital",
+    "package": "SPDIP-28",
+    "voltage": "1.8-5.5 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "GPB0",
+        "kind": "digital",
+        "description": "GPB0 bidirectional.",
+        "functions": [
+          "GPIO"
+        ],
+        "voltage": "0-VDD",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "GPB1",
+        "kind": "digital",
+        "description": "GPB1 bidirectional.",
+        "functions": [
+          "GPIO"
+        ],
+        "voltage": "0-VDD",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "GPB2",
+        "kind": "digital",
+        "description": "GPB2 bidirectional.",
+        "functions": [
+          "GPIO"
+        ],
+        "voltage": "0-VDD",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "GPB3",
+        "kind": "digital",
+        "description": "GPB3 bidirectional.",
+        "functions": [
+          "GPIO"
+        ],
+        "voltage": "0-VDD",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "GPB4",
+        "kind": "digital",
+        "description": "GPB4 bidirectional.",
+        "functions": [
+          "GPIO"
+        ],
+        "voltage": "0-VDD",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "GPB5",
+        "kind": "digital",
+        "description": "GPB5 bidirectional.",
+        "functions": [
+          "GPIO"
+        ],
+        "voltage": "0-VDD",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "GPB6",
+        "kind": "digital",
+        "description": "GPB6 bidirectional.",
+        "functions": [
+          "GPIO"
+        ],
+        "voltage": "0-VDD",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "GPB7",
+        "kind": "digital",
+        "description": "GPB7 output.",
+        "functions": [
+          "GPIO"
+        ],
+        "voltage": "0-VDD",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "VDD",
+        "kind": "power",
+        "description": "VDD power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "VSS",
+        "kind": "ground",
+        "description": "VSS power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "NC",
+        "kind": "nc",
+        "description": "NC no connect.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "SCL",
+        "kind": "communication",
+        "description": "I2C clock input.",
+        "functions": [
+          "I2C clock"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "SDA",
+        "kind": "communication",
+        "description": "Bidirectional I2C data; external pull-up required.",
+        "functions": [
+          "I2C data"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "NC",
+        "kind": "nc",
+        "description": "NC no connect.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "A0",
+        "kind": "control",
+        "description": "I2C address strap; connect to VDD or VSS.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "A1",
+        "kind": "control",
+        "description": "I2C address strap; connect to VDD or VSS.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "17",
+        "name": "A2",
+        "kind": "control",
+        "description": "I2C address strap; connect to VDD or VSS.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "18",
+        "name": "/RESET",
+        "kind": "control",
+        "description": "/RESET input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "19",
+        "name": "INTB",
+        "kind": "digital",
+        "description": "INTB tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "20",
+        "name": "INTA",
+        "kind": "digital",
+        "description": "INTA tri state.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "21",
+        "name": "GPA0",
+        "kind": "digital",
+        "description": "GPA0 bidirectional.",
+        "functions": [
+          "GPIO"
+        ],
+        "voltage": "0-VDD",
+        "notes": []
+      },
+      {
+        "number": "22",
+        "name": "GPA1",
+        "kind": "digital",
+        "description": "GPA1 bidirectional.",
+        "functions": [
+          "GPIO"
+        ],
+        "voltage": "0-VDD",
+        "notes": []
+      },
+      {
+        "number": "23",
+        "name": "GPA2",
+        "kind": "digital",
+        "description": "GPA2 bidirectional.",
+        "functions": [
+          "GPIO"
+        ],
+        "voltage": "0-VDD",
+        "notes": []
+      },
+      {
+        "number": "24",
+        "name": "GPA3",
+        "kind": "digital",
+        "description": "GPA3 bidirectional.",
+        "functions": [
+          "GPIO"
+        ],
+        "voltage": "0-VDD",
+        "notes": []
+      },
+      {
+        "number": "25",
+        "name": "GPA4",
+        "kind": "digital",
+        "description": "GPA4 bidirectional.",
+        "functions": [
+          "GPIO"
+        ],
+        "voltage": "0-VDD",
+        "notes": []
+      },
+      {
+        "number": "26",
+        "name": "GPA5",
+        "kind": "digital",
+        "description": "GPA5 bidirectional.",
+        "functions": [
+          "GPIO"
+        ],
+        "voltage": "0-VDD",
+        "notes": []
+      },
+      {
+        "number": "27",
+        "name": "GPA6",
+        "kind": "digital",
+        "description": "GPA6 bidirectional.",
+        "functions": [
+          "GPIO"
+        ],
+        "voltage": "0-VDD",
+        "notes": []
+      },
+      {
+        "number": "28",
+        "name": "GPA7",
+        "kind": "digital",
+        "description": "GPA7 output.",
+        "functions": [
+          "GPIO"
+        ],
+        "voltage": "0-VDD",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/20001952C.pdf"
+    ],
+    "notes": [
+      "Package-specific pin map; breakout boards may use a different connector order.",
+      "Address range 0x20-0x27 selected by A2/A1/A0. I2C lines require pull-up resistors."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "1.8-5.5 V"
+    },
+    "ascii_art": "MCP23017 (SPDIP-28) [mcp23017]\nSixteen-bit I2C GPIO expander.\nPackage: SPDIP-28 | Supply: 1.8-5.5 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n             +---------+\n   [IO] GPB0 |  1   28 | [IO] GPA7   \n   [IO] GPB1 |  2   27 | [IO] GPA6   \n   [IO] GPB2 |  3   26 | [IO] GPA5   \n   [IO] GPB3 |  4   25 | [IO] GPA4   \n   [IO] GPB4 |  5   24 | [IO] GPA3   \n   [IO] GPB5 |  6   23 | [IO] GPA2   \n   [IO] GPB6 |  7   22 | [IO] GPA1   \n   [IO] GPB7 |  8   21 | [IO] GPA0   \n   [PWR] VDD |  9   20 | [IO] INTA   \n   [GND] VSS | 10   19 | [IO] INTB   \n     [NC] NC | 11   18 | [CTL] /RESET\n   [BUS] SCL | 12   17 | [CTL] A2    \n   [BUS] SDA | 13   16 | [CTL] A1    \n     [NC] NC | 14   15 | [CTL] A0    \n             +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "pcf8574": {
+    "schema_version": 2,
+    "name": "PCF8574 (PDIP-16)",
+    "description": "Eight quasi-bidirectional GPIOs over I2C.",
+    "category": "digital",
+    "package": "PDIP-16",
+    "voltage": "2.5-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "A0",
+        "kind": "digital",
+        "description": "A0 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "A1",
+        "kind": "digital",
+        "description": "A1 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "A2",
+        "kind": "digital",
+        "description": "A2 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "P0",
+        "kind": "digital",
+        "description": "P0 bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "P1",
+        "kind": "digital",
+        "description": "P1 bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "P2",
+        "kind": "digital",
+        "description": "P2 bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "P3",
+        "kind": "digital",
+        "description": "P3 bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "P4",
+        "kind": "digital",
+        "description": "P4 bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "P5",
+        "kind": "digital",
+        "description": "P5 bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "P6",
+        "kind": "digital",
+        "description": "P6 bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "P7",
+        "kind": "digital",
+        "description": "P7 bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "/INT",
+        "kind": "digital",
+        "description": "/INT open collector.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "SCL",
+        "kind": "communication",
+        "description": "SCL input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "SDA",
+        "kind": "communication",
+        "description": "SDA bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "VDD",
+        "kind": "power",
+        "description": "VDD power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/pcf8574.pdf"
+    ],
+    "notes": [
+      "Package-specific pin map; breakout boards may use a different connector order."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2.5-6 V"
+    },
+    "ascii_art": "PCF8574 (PDIP-16) [pcf8574]\nEight quasi-bidirectional GPIOs over I2C.\nPackage: PDIP-16 | Supply: 2.5-6 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n          +---------+\n  [IO] A0 |  1   16 | [PWR] VDD\n  [IO] A1 |  2   15 | [BUS] SDA\n  [IO] A2 |  3   14 | [BUS] SCL\n  [IO] P0 |  4   13 | [IO] /INT\n  [IO] P1 |  5   12 | [IO] P7  \n  [IO] P2 |  6   11 | [IO] P6  \n  [IO] P3 |  7   10 | [IO] P5  \n[GND] GND |  8   9  | [IO] P4  \n          +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "max232": {
+    "schema_version": 2,
+    "name": "MAX232 (PDIP-16)",
+    "description": "Dual RS-232 level converter.",
+    "category": "digital",
+    "package": "PDIP-16",
+    "voltage": "4.5-5.5 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "C1+",
+        "kind": "digital",
+        "description": "C1+ passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "VS+",
+        "kind": "digital",
+        "description": "VS+ power out.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "C1-",
+        "kind": "digital",
+        "description": "C1- passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "C2+",
+        "kind": "digital",
+        "description": "C2+ passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "C2-",
+        "kind": "digital",
+        "description": "C2- passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "VS-",
+        "kind": "digital",
+        "description": "VS- power out.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "T2OUT",
+        "kind": "digital",
+        "description": "T2OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "R2IN",
+        "kind": "digital",
+        "description": "R2IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "R2OUT",
+        "kind": "digital",
+        "description": "R2OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "T2IN",
+        "kind": "digital",
+        "description": "T2IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "T1IN",
+        "kind": "digital",
+        "description": "T1IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "R1OUT",
+        "kind": "digital",
+        "description": "R1OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "R1IN",
+        "kind": "digital",
+        "description": "R1IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "T1OUT",
+        "kind": "digital",
+        "description": "T1OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/max232.pdf"
+    ],
+    "notes": [
+      "Package-specific pin map; breakout boards may use a different connector order."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "4.5-5.5 V"
+    },
+    "ascii_art": "MAX232 (PDIP-16) [max232]\nDual RS-232 level converter.\nPackage: PDIP-16 | Supply: 4.5-5.5 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n           +---------+\n  [IO] C1+ |  1   16 | [PWR] VCC \n  [IO] VS+ |  2   15 | [GND] GND \n  [IO] C1- |  3   14 | [IO] T1OUT\n  [IO] C2+ |  4   13 | [IO] R1IN \n  [IO] C2- |  5   12 | [IO] R1OUT\n  [IO] VS- |  6   11 | [IO] T1IN \n[IO] T2OUT |  7   10 | [IO] T2IN \n [IO] R2IN |  8   9  | [IO] R2OUT\n           +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "max3232": {
+    "schema_version": 2,
+    "name": "MAX3232 (PDIP-16)",
+    "description": "Dual RS-232 converter for 3.3 V systems.",
+    "category": "digital",
+    "package": "PDIP-16",
+    "voltage": "3-5.5 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "C1+",
+        "kind": "digital",
+        "description": "C1+ passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "VS+",
+        "kind": "digital",
+        "description": "VS+ power out.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "C1-",
+        "kind": "digital",
+        "description": "C1- passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "C2+",
+        "kind": "digital",
+        "description": "C2+ passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "C2-",
+        "kind": "digital",
+        "description": "C2- passive.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "VS-",
+        "kind": "digital",
+        "description": "VS- power out.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "T2OUT",
+        "kind": "digital",
+        "description": "T2OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "R2IN",
+        "kind": "digital",
+        "description": "R2IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "R2OUT",
+        "kind": "digital",
+        "description": "R2OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "T2IN",
+        "kind": "digital",
+        "description": "T2IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "T1IN",
+        "kind": "digital",
+        "description": "T1IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "R1OUT",
+        "kind": "digital",
+        "description": "R1OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "R1IN",
+        "kind": "digital",
+        "description": "R1IN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "T1OUT",
+        "kind": "digital",
+        "description": "T1OUT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/max3232.pdf"
+    ],
+    "notes": [
+      "Package-specific pin map; breakout boards may use a different connector order."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "3-5.5 V"
+    },
+    "ascii_art": "MAX3232 (PDIP-16) [max3232]\nDual RS-232 converter for 3.3 V systems.\nPackage: PDIP-16 | Supply: 3-5.5 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n           +---------+\n  [IO] C1+ |  1   16 | [PWR] VCC \n  [IO] VS+ |  2   15 | [GND] GND \n  [IO] C1- |  3   14 | [IO] T1OUT\n  [IO] C2+ |  4   13 | [IO] R1IN \n  [IO] C2- |  5   12 | [IO] R1OUT\n  [IO] VS- |  6   11 | [IO] T1IN \n[IO] T2OUT |  7   10 | [IO] T2IN \n [IO] R2IN |  8   9  | [IO] R2OUT\n           +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "l293d": {
+    "schema_version": 2,
+    "name": "L293D (PDIP-16)",
+    "description": "Dual motor bridge with integrated clamp diodes.",
+    "category": "digital",
+    "package": "PDIP-16",
+    "voltage": "Logic 4.5-7 V; motor 4.5-36 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "EN1,2",
+        "kind": "control",
+        "description": "EN1,2 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "1A",
+        "kind": "digital",
+        "description": "1A input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "1Y",
+        "kind": "digital",
+        "description": "1Y output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "2Y",
+        "kind": "digital",
+        "description": "2Y output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "2A",
+        "kind": "digital",
+        "description": "2A input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "VCC2",
+        "kind": "power",
+        "description": "VCC2 power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "EN3,4",
+        "kind": "control",
+        "description": "EN3,4 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "3A",
+        "kind": "digital",
+        "description": "3A input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "3Y",
+        "kind": "digital",
+        "description": "3Y output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "4Y",
+        "kind": "digital",
+        "description": "4Y output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "4A",
+        "kind": "digital",
+        "description": "4A input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "VCC1",
+        "kind": "power",
+        "description": "VCC1 power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/l293d.pdf"
+    ],
+    "notes": [
+      "Package-specific pin map; breakout boards may use a different connector order."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "Logic 4.5-7 V; motor 4.5-36 V"
+    },
+    "ascii_art": "L293D (PDIP-16) [l293d]\nDual motor bridge with integrated clamp diodes.\nPackage: PDIP-16 | Supply: Logic 4.5-7 V; motor 4.5-36 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n            +---------+\n[CTL] EN1,2 |  1   16 | [PWR] VCC1 \n    [IO] 1A |  2   15 | [IO] 4A    \n    [IO] 1Y |  3   14 | [IO] 4Y    \n  [GND] GND |  4   13 | [GND] GND  \n  [GND] GND |  5   12 | [GND] GND  \n    [IO] 2Y |  6   11 | [IO] 3Y    \n    [IO] 2A |  7   10 | [IO] 3A    \n [PWR] VCC2 |  8   9  | [CTL] EN3,4\n            +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "uln2003a": {
+    "schema_version": 2,
+    "name": "ULN2003A (PDIP-16)",
+    "description": "Seven Darlington low-side drivers.",
+    "category": "digital",
+    "package": "PDIP-16",
+    "voltage": "Load-dependent; outputs rated to 50 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "I1",
+        "kind": "digital",
+        "description": "Logic input through integrated base resistor.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "I2",
+        "kind": "digital",
+        "description": "Logic input through integrated base resistor.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "I3",
+        "kind": "digital",
+        "description": "Logic input through integrated base resistor.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "I4",
+        "kind": "digital",
+        "description": "Logic input through integrated base resistor.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "I5",
+        "kind": "digital",
+        "description": "Logic input through integrated base resistor.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "I6",
+        "kind": "digital",
+        "description": "Logic input through integrated base resistor.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "I7",
+        "kind": "digital",
+        "description": "Logic input through integrated base resistor.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "COM",
+        "kind": "power",
+        "description": "Common cathode of internal flyback diodes; connect to positive load supply for inductive loads.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "O7",
+        "kind": "digital",
+        "description": "Open-collector low-side load output; not a power source.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "O6",
+        "kind": "digital",
+        "description": "Open-collector low-side load output; not a power source.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "O5",
+        "kind": "digital",
+        "description": "Open-collector low-side load output; not a power source.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "O4",
+        "kind": "digital",
+        "description": "Open-collector low-side load output; not a power source.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "O3",
+        "kind": "digital",
+        "description": "Open-collector low-side load output; not a power source.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "O2",
+        "kind": "digital",
+        "description": "Open-collector low-side load output; not a power source.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "O1",
+        "kind": "digital",
+        "description": "Open-collector low-side load output; not a power source.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/uln2003a.pdf"
+    ],
+    "notes": [
+      "Package-specific pin map; breakout boards may use a different connector order."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view; notch up. Pin 1 at upper left; numbers run counterclockwise."
+    },
+    "electrical": {
+      "Supply": "Load-dependent; outputs rated to 50 V"
+    },
+    "ascii_art": "ULN2003A (PDIP-16) [uln2003a]\nSeven Darlington low-side drivers.\nPackage: PDIP-16 | Supply: Load-dependent; outputs rated to 50 V\nTop view; notch up. Pin 1 at upper left; numbers run counterclockwise.\n\n          +---------+\n  [IO] I1 |  1   16 | [IO] O1  \n  [IO] I2 |  2   15 | [IO] O2  \n  [IO] I3 |  3   14 | [IO] O3  \n  [IO] I4 |  4   13 | [IO] O4  \n  [IO] I5 |  5   12 | [IO] O5  \n  [IO] I6 |  6   11 | [IO] O6  \n  [IO] I7 |  7   10 | [IO] O7  \n[GND] GND |  8   9  | [PWR] COM\n          +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "24lc02": {
+    "schema_version": 2,
+    "name": "24LC02B (PDIP-8)",
+    "description": "Two-kilobit serial I2C EEPROM.",
+    "category": "digital",
+    "package": "PDIP-8",
+    "voltage": "2.5-5.5 V",
+    "aliases": [
+      "24lc02b"
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "A0",
+        "kind": "nc",
+        "description": "Unused on the 24LC02B; address selection is not implemented on this terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "A1",
+        "kind": "nc",
+        "description": "Unused on the 24LC02B; address selection is not implemented on this terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "A2",
+        "kind": "nc",
+        "description": "Unused on the 24LC02B; address selection is not implemented on this terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "SDA",
+        "kind": "communication",
+        "description": "SDA bidirectional.",
+        "functions": [
+          "I2C"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "SCL",
+        "kind": "communication",
+        "description": "SCL input.",
+        "functions": [
+          "I2C"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "WP",
+        "kind": "digital",
+        "description": "WP input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/24AA02-24LC02B-24FC02-2Kbit-I2C-Serial-EEPROM-DS20001709.pdf"
+    ],
+    "notes": [
+      "Bare IC package, not breakout-board connector order.",
+      "A0/A1/A2 are not used by 24LC02B; do not assume these pins select independent device addresses. WP must be tied to a defined level."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view, notch/marker up; pin numbering counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2.5-5.5 V"
+    },
+    "ascii_art": "24LC02B (PDIP-8) [24lc02]\nTwo-kilobit serial I2C EEPROM.\nPackage: PDIP-8 | Supply: 2.5-5.5 V\nTop view, notch/marker up; pin numbering counterclockwise.\n\n          +-------+\n  [NC] A0 | 1   8 | [PWR] VCC\n  [NC] A1 | 2   7 | [IO] WP  \n  [NC] A2 | 3   6 | [BUS] SCL\n[GND] GND | 4   5 | [BUS] SDA\n          +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "24lc256": {
+    "schema_version": 2,
+    "name": "24LC256 (PDIP-8)",
+    "description": "256-kilobit serial I2C EEPROM.",
+    "category": "digital",
+    "package": "PDIP-8",
+    "voltage": "2.5-5.5 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "A0",
+        "kind": "control",
+        "description": "Device address strap; connect to a defined level.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "A1",
+        "kind": "control",
+        "description": "Device address strap; connect to a defined level.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "A2",
+        "kind": "control",
+        "description": "Device address strap; connect to a defined level.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "SDA",
+        "kind": "communication",
+        "description": "SDA bidirectional.",
+        "functions": [
+          "I2C"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "SCL",
+        "kind": "communication",
+        "description": "SCL input.",
+        "functions": [
+          "I2C"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "WP",
+        "kind": "control",
+        "description": "Write protect; tie to a defined level.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.microchip.com/en-us/product/24LC256"
+    ],
+    "notes": [
+      "Bare IC package, not breakout-board connector order."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view, notch/marker up; pin numbering counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2.5-5.5 V"
+    },
+    "ascii_art": "24LC256 (PDIP-8) [24lc256]\n256-kilobit serial I2C EEPROM.\nPackage: PDIP-8 | Supply: 2.5-5.5 V\nTop view, notch/marker up; pin numbering counterclockwise.\n\n          +-------+\n [CTL] A0 | 1   8 | [PWR] VCC\n [CTL] A1 | 2   7 | [CTL] WP \n [CTL] A2 | 3   6 | [BUS] SCL\n[GND] GND | 4   5 | [BUS] SDA\n          +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "pc817": {
+    "schema_version": 2,
+    "name": "PC817 (DIP-4)",
+    "description": "Phototransistor optocoupler.",
+    "category": "digital",
+    "package": "DIP-4",
+    "voltage": "Circuit-dependent; see LED and transistor limits",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "ANODE",
+        "kind": "analog",
+        "description": "Input LED anode.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "CATHODE",
+        "kind": "analog",
+        "description": "Input LED cathode.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "EMITTER",
+        "kind": "analog",
+        "description": "Isolated output phototransistor emitter.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "COLLECTOR",
+        "kind": "analog",
+        "description": "Isolated output phototransistor collector.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://global.sharp/products/device/lineup/data/pdf/datasheet/pc817x_e.pdf"
+    ],
+    "notes": [
+      "Bare IC package, not breakout-board connector order.",
+      "Input LED requires a current-limiting resistor. Input and output grounds may be isolated."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view, notch/marker up; pin numbering counterclockwise."
+    },
+    "electrical": {
+      "Supply": "Circuit-dependent; see LED and transistor limits"
+    },
+    "ascii_art": "PC817 (DIP-4) [pc817]\nPhototransistor optocoupler.\nPackage: DIP-4 | Supply: Circuit-dependent; see LED and transistor limits\nTop view, notch/marker up; pin numbering counterclockwise.\n\n                +-------+\n    [ANA] ANODE | 1   4 | [ANA] COLLECTOR\n  [ANA] CATHODE | 2   3 | [ANA] EMITTER  \n                +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "4n25": {
+    "schema_version": 2,
+    "name": "4N25 (DIP-6)",
+    "description": "Phototransistor optocoupler with base access.",
+    "category": "digital",
+    "package": "DIP-6",
+    "voltage": "Circuit-dependent; see LED and transistor limits",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "ANODE",
+        "kind": "analog",
+        "description": "Input LED anode.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "CATHODE",
+        "kind": "analog",
+        "description": "Input LED cathode.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "NC",
+        "kind": "nc",
+        "description": "Unused; leave unconnected.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "EMITTER",
+        "kind": "analog",
+        "description": "Isolated output phototransistor emitter.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "COLLECTOR",
+        "kind": "analog",
+        "description": "Isolated output phototransistor collector.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "BASE",
+        "kind": "analog",
+        "description": "Isolated output phototransistor base.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.vishay.com/docs/83725/4n25.pdf"
+    ],
+    "notes": [
+      "Bare IC package, not breakout-board connector order.",
+      "Input LED requires a current-limiting resistor. Input and output grounds may be isolated."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view, notch/marker up; pin numbering counterclockwise."
+    },
+    "electrical": {
+      "Supply": "Circuit-dependent; see LED and transistor limits"
+    },
+    "ascii_art": "4N25 (DIP-6) [4n25]\nPhototransistor optocoupler with base access.\nPackage: DIP-6 | Supply: Circuit-dependent; see LED and transistor limits\nTop view, notch/marker up; pin numbering counterclockwise.\n\n                +-------+\n    [ANA] ANODE | 1   6 | [ANA] BASE     \n  [ANA] CATHODE | 2   5 | [ANA] COLLECTOR\n        [NC] NC | 3   4 | [ANA] EMITTER  \n                +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "mcp2515": {
+    "schema_version": 2,
+    "name": "MCP2515 (SOIC-18)",
+    "description": "SPI-controlled CAN bus controller; external transceiver required.",
+    "category": "digital",
+    "package": "SOIC-18",
+    "voltage": "2.7-5.5 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "TXCAN",
+        "kind": "digital",
+        "description": "TXCAN output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "RXCAN",
+        "kind": "digital",
+        "description": "RXCAN input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "CLKOUT/SOF",
+        "kind": "digital",
+        "description": "CLKOUT/SOF output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "/TX0RTS",
+        "kind": "digital",
+        "description": "/TX0RTS input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "/TX1RTS",
+        "kind": "digital",
+        "description": "/TX1RTS input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "/TX2RTS",
+        "kind": "digital",
+        "description": "/TX2RTS input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "OSC2",
+        "kind": "digital",
+        "description": "OSC2 output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "OSC1",
+        "kind": "digital",
+        "description": "OSC1 input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "9",
+        "name": "VSS",
+        "kind": "ground",
+        "description": "VSS power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "10",
+        "name": "/RX1BF",
+        "kind": "digital",
+        "description": "/RX1BF output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "11",
+        "name": "/RX0BF",
+        "kind": "digital",
+        "description": "/RX0BF output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "12",
+        "name": "/INT",
+        "kind": "digital",
+        "description": "/INT output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "13",
+        "name": "SCK",
+        "kind": "communication",
+        "description": "SCK input.",
+        "functions": [
+          "SPI"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "14",
+        "name": "SI",
+        "kind": "digital",
+        "description": "SI input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "15",
+        "name": "SO",
+        "kind": "digital",
+        "description": "SO output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "16",
+        "name": "/CS",
+        "kind": "communication",
+        "description": "/CS input.",
+        "functions": [
+          "SPI"
+        ],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "17",
+        "name": "/RESET",
+        "kind": "control",
+        "description": "/RESET input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "18",
+        "name": "VDD",
+        "kind": "power",
+        "description": "VDD power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.microchip.com/en-us/product/MCP2515"
+    ],
+    "notes": [
+      "Bare IC package, not breakout-board connector order."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view, notch/marker up; pin numbering counterclockwise."
+    },
+    "electrical": {
+      "Supply": "2.7-5.5 V"
+    },
+    "ascii_art": "MCP2515 (SOIC-18) [mcp2515]\nSPI-controlled CAN bus controller; external transceiver required.\nPackage: SOIC-18 | Supply: 2.7-5.5 V\nTop view, notch/marker up; pin numbering counterclockwise.\n\n                +---------+\n     [IO] TXCAN |  1   18 | [PWR] VDD      \n     [IO] RXCAN |  2   17 | [CTL] /RESET   \n[IO] CLKOUT/SOF |  3   16 | [BUS] /CS      \n   [IO] /TX0RTS |  4   15 | [IO] SO        \n   [IO] /TX1RTS |  5   14 | [IO] SI        \n   [IO] /TX2RTS |  6   13 | [BUS] SCK      \n      [IO] OSC2 |  7   12 | [IO] /INT      \n      [IO] OSC1 |  8   11 | [IO] /RX0BF    \n      [GND] VSS |  9   10 | [IO] /RX1BF    \n                +---------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "mcp2551": {
+    "schema_version": 2,
+    "name": "MCP2551 (PDIP-8)",
+    "description": "High-speed CAN transceiver.",
+    "category": "digital",
+    "package": "PDIP-8",
+    "voltage": "4.5-5.5 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "TXD",
+        "kind": "communication",
+        "description": "TXD input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "VSS",
+        "kind": "ground",
+        "description": "VSS power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "VDD",
+        "kind": "power",
+        "description": "VDD power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "RXD",
+        "kind": "communication",
+        "description": "RXD output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "Vref",
+        "kind": "digital",
+        "description": "Vref power out.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "CANL",
+        "kind": "digital",
+        "description": "CANL bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "CANH",
+        "kind": "digital",
+        "description": "CANH bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "Rs",
+        "kind": "digital",
+        "description": "Rs input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.microchip.com/en-us/product/MCP2551"
+    ],
+    "notes": [
+      "Bare IC package, not breakout-board connector order."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view, notch/marker up; pin numbering counterclockwise."
+    },
+    "electrical": {
+      "Supply": "4.5-5.5 V"
+    },
+    "ascii_art": "MCP2551 (PDIP-8) [mcp2551]\nHigh-speed CAN transceiver.\nPackage: PDIP-8 | Supply: 4.5-5.5 V\nTop view, notch/marker up; pin numbering counterclockwise.\n\n          +-------+\n[BUS] TXD | 1   8 | [IO] Rs  \n[GND] VSS | 2   7 | [IO] CANH\n[PWR] VDD | 3   6 | [IO] CANL\n[BUS] RXD | 4   5 | [IO] Vref\n          +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "sn65hvd230": {
+    "schema_version": 2,
+    "name": "SN65HVD230 (SOIC-8)",
+    "description": "3.3 V CAN transceiver.",
+    "category": "digital",
+    "package": "SOIC-8",
+    "voltage": "3.0-3.6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "D",
+        "kind": "digital",
+        "description": "D input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND power in.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "VCC",
+        "kind": "power",
+        "description": "VCC power in.",
+        "functions": [],
+        "voltage": "See supply limits",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "R",
+        "kind": "digital",
+        "description": "R output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "5",
+        "name": "Vref",
+        "kind": "digital",
+        "description": "Vref output.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "6",
+        "name": "CANL",
+        "kind": "digital",
+        "description": "CANL bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "7",
+        "name": "CANH",
+        "kind": "digital",
+        "description": "CANH bidirectional.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "8",
+        "name": "Rs",
+        "kind": "digital",
+        "description": "Rs input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/sn65hvd230.pdf"
+    ],
+    "notes": [
+      "Bare IC package, not breakout-board connector order."
+    ],
+    "layout": {
+      "type": "dip",
+      "orientation": "Top view, notch/marker up; pin numbering counterclockwise."
+    },
+    "electrical": {
+      "Supply": "3.0-3.6 V"
+    },
+    "ascii_art": "SN65HVD230 (SOIC-8) [sn65hvd230]\n3.3 V CAN transceiver.\nPackage: SOIC-8 | Supply: 3.0-3.6 V\nTop view, notch/marker up; pin numbering counterclockwise.\n\n          +-------+\n   [IO] D | 1   8 | [IO] Rs  \n[GND] GND | 2   7 | [IO] CANH\n[PWR] VCC | 3   6 | [IO] CANL\n   [IO] R | 4   5 | [IO] Vref\n          +-------+\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
   }
 }

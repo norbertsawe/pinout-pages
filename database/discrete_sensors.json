@@ -1,22 +1,717 @@
 {
   "bc547": {
-    "name": "BC547 NPN Bipolar Junction Transistor (TO-92)",
-    "description": "General purpose small-signal NPN transistor. Highly used for switching and amplification in labs.",
-    "ascii_art": "\n               \u001b[1mBC547 TO-92 Front View\u001b[0m\n                  (Flat Face)\n                  .---------.\n                 /   \u001b[1mBC547\u001b[0m   \\\n                |  \u001b[1mC\u001b[0m   \u001b[1mB\u001b[0m   \u001b[1mE\u001b[0m  |\n                |  |   |   |  |\n                |  |   |   |  |\n                   1   2   3\n                   \n                Pin 1: \u001b[36mCollector\u001b[0m\n                Pin 2: \u001b[36mBase\u001b[0m\n                Pin 3: \u001b[36mEmitter\u001b[0m\n        "
+    "schema_version": 2,
+    "name": "BC547 NPN transistor",
+    "description": "Package-specific terminal reference.",
+    "category": "discrete_sensors",
+    "package": "TO-92",
+    "voltage": "See part-specific limits in notes/datasheet",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "C",
+        "kind": "analog",
+        "description": "Collector.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "B",
+        "kind": "analog",
+        "description": "Base input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "E",
+        "kind": "analog",
+        "description": "Emitter.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.onsemi.com/pdf/datasheet/bc546-d.pdf"
+    ],
+    "notes": [
+      "Onsemi TO-92 pin numbering: collector 1, base 2, emitter 3; check manufacturer drawing."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Package pin numbers; consult manufacturer drawing for front/bottom view and lead order."
+    },
+    "electrical": {
+      "Supply": "See part-specific limits in notes/datasheet"
+    },
+    "ascii_art": "BC547 NPN transistor [bc547]\nPackage-specific terminal reference.\nPackage: TO-92 | Supply: See part-specific limits in notes/datasheet\nPackage pin numbers; consult manufacturer drawing for front/bottom view and lead order.\n\n1 [ANA] C\n2 [ANA] B\n3 [ANA] E\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "bc557": {
+    "schema_version": 2,
+    "name": "BC557 PNP transistor",
+    "description": "Package-specific terminal reference.",
+    "category": "discrete_sensors",
+    "package": "TO-92",
+    "voltage": "See part-specific limits in notes/datasheet",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "C",
+        "kind": "analog",
+        "description": "Collector.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "B",
+        "kind": "analog",
+        "description": "Base input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "E",
+        "kind": "analog",
+        "description": "Emitter.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.onsemi.com/pdf/datasheet/bc556b-d.pdf"
+    ],
+    "notes": [
+      "Complementary PNP device; verify manufacturer package ordering."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Package pin numbers; consult manufacturer drawing for front/bottom view and lead order."
+    },
+    "electrical": {
+      "Supply": "See part-specific limits in notes/datasheet"
+    },
+    "ascii_art": "BC557 PNP transistor [bc557]\nPackage-specific terminal reference.\nPackage: TO-92 | Supply: See part-specific limits in notes/datasheet\nPackage pin numbers; consult manufacturer drawing for front/bottom view and lead order.\n\n1 [ANA] C\n2 [ANA] B\n3 [ANA] E\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "2n3904": {
+    "schema_version": 2,
+    "name": "2N3904 NPN transistor",
+    "description": "Package-specific terminal reference.",
+    "category": "discrete_sensors",
+    "package": "TO-92",
+    "voltage": "See part-specific limits in notes/datasheet",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "E",
+        "kind": "analog",
+        "description": "Emitter.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "B",
+        "kind": "analog",
+        "description": "Base input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "C",
+        "kind": "analog",
+        "description": "Collector.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.onsemi.com/pdf/datasheet/2n3903-d.pdf"
+    ],
+    "notes": [
+      "Emitter 1, base 2, collector 3 for this package."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Package pin numbers; consult manufacturer drawing for front/bottom view and lead order."
+    },
+    "electrical": {
+      "Supply": "See part-specific limits in notes/datasheet"
+    },
+    "ascii_art": "2N3904 NPN transistor [2n3904]\nPackage-specific terminal reference.\nPackage: TO-92 | Supply: See part-specific limits in notes/datasheet\nPackage pin numbers; consult manufacturer drawing for front/bottom view and lead order.\n\n1 [ANA] E\n2 [ANA] B\n3 [ANA] C\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "2n3906": {
+    "schema_version": 2,
+    "name": "2N3906 PNP transistor",
+    "description": "Package-specific terminal reference.",
+    "category": "discrete_sensors",
+    "package": "TO-92",
+    "voltage": "See part-specific limits in notes/datasheet",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "E",
+        "kind": "analog",
+        "description": "Emitter.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "B",
+        "kind": "analog",
+        "description": "Base input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "C",
+        "kind": "analog",
+        "description": "Collector.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.onsemi.com/pdf/datasheet/2n3906-d.pdf"
+    ],
+    "notes": [
+      "Emitter 1, base 2, collector 3 for this package."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Package pin numbers; consult manufacturer drawing for front/bottom view and lead order."
+    },
+    "electrical": {
+      "Supply": "See part-specific limits in notes/datasheet"
+    },
+    "ascii_art": "2N3906 PNP transistor [2n3906]\nPackage-specific terminal reference.\nPackage: TO-92 | Supply: See part-specific limits in notes/datasheet\nPackage pin numbers; consult manufacturer drawing for front/bottom view and lead order.\n\n1 [ANA] E\n2 [ANA] B\n3 [ANA] C\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
   },
   "irf540n": {
-    "name": "IRF540N N-Channel Power MOSFET (TO-220)",
-    "description": "High-current N-Channel Power MOSFET (100V, 33A). Used for switching high power loads from logic pins.",
-    "ascii_art": "\n               \u001b[1mIRF540N TO-220 Front View\u001b[0m\n                  +------------+\n                  |  [ Metal ] |\n                  |  [ Tab   ] |\n                  |------------|\n                  |  \u001b[1mIRF540N\u001b[0m   |\n                  |  \u001b[1mG\u001b[0m   \u001b[1mD\u001b[0m   \u001b[1mS\u001b[0m |\n                  |  |   |   | |\n                     1   2   3\n                     \n                Pin 1: \u001b[36mGate\u001b[0m (Trigger)\n                Pin 2: \u001b[36mDrain\u001b[0m (Connected to Load V-)\n                Pin 3: \u001b[36mSource\u001b[0m (Connected to System GND)\n        "
+    "schema_version": 2,
+    "name": "IRF540N N-channel MOSFET",
+    "description": "Package-specific terminal reference.",
+    "category": "discrete_sensors",
+    "package": "TO-220",
+    "voltage": "See part-specific limits in notes/datasheet",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "G",
+        "kind": "analog",
+        "description": "Gate control input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "D",
+        "kind": "analog",
+        "description": "Drain power terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "S",
+        "kind": "analog",
+        "description": "Source terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.infineon.com/part/IRF540N"
+    ],
+    "notes": [
+      "Tab is drain. Not a logic-level MOSFET; low RDS(on) is specified with 10 V gate drive."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Package pin numbers; consult manufacturer drawing for front/bottom view and lead order."
+    },
+    "electrical": {
+      "Supply": "See part-specific limits in notes/datasheet"
+    },
+    "ascii_art": "IRF540N N-channel MOSFET [irf540n]\nPackage-specific terminal reference.\nPackage: TO-220 | Supply: See part-specific limits in notes/datasheet\nPackage pin numbers; consult manufacturer drawing for front/bottom view and lead order.\n\n1 [ANA] G\n2 [ANA] D\n3 [ANA] S\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
   },
-  "hcsr04": {
-    "name": "HC-SR04 Ultrasonic Distance Sensor Module",
-    "description": "Non-contact ultrasonic range measurement module (2cm to 400cm range). Uses sonic pulses and echoes.",
-    "ascii_art": "\n                  \u001b[1mHC-SR04 Front & Connector View\u001b[0m\n               +---------------------------------+\n               |   [ Transmitter ]   [ Receiver ]|\n               |       (T)               (R)     |\n               +---------------===---------------+\n                               |||\n                               1234\n                               \n                   Pin 1: \u001b[31mVCC\u001b[0m (+5V DC Input)\n                   Pin 2: \u001b[36mTRIG\u001b[0m (Trigger Input: 10us High pulse starts ping)\n                   Pin 3: \u001b[36mECHO\u001b[0m (Echo Output: Duration of High signal = flight time)\n                   Pin 4: \u001b[1mGND\u001b[0m (System Ground)\n        "
+  "irfz44n": {
+    "schema_version": 2,
+    "name": "IRFZ44N N-channel MOSFET",
+    "description": "Package-specific terminal reference.",
+    "category": "discrete_sensors",
+    "package": "TO-220",
+    "voltage": "See part-specific limits in notes/datasheet",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "G",
+        "kind": "analog",
+        "description": "Gate control input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "D",
+        "kind": "analog",
+        "description": "Drain power terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "S",
+        "kind": "analog",
+        "description": "Source terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.infineon.com/part/IRFZ44N"
+    ],
+    "notes": [
+      "Tab is drain. Not a logic-level MOSFET."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Package pin numbers; consult manufacturer drawing for front/bottom view and lead order."
+    },
+    "electrical": {
+      "Supply": "See part-specific limits in notes/datasheet"
+    },
+    "ascii_art": "IRFZ44N N-channel MOSFET [irfz44n]\nPackage-specific terminal reference.\nPackage: TO-220 | Supply: See part-specific limits in notes/datasheet\nPackage pin numbers; consult manufacturer drawing for front/bottom view and lead order.\n\n1 [ANA] G\n2 [ANA] D\n3 [ANA] S\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "irlz44n": {
+    "schema_version": 2,
+    "name": "IRLZ44N logic-level MOSFET",
+    "description": "Package-specific terminal reference.",
+    "category": "discrete_sensors",
+    "package": "TO-220",
+    "voltage": "See part-specific limits in notes/datasheet",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "G",
+        "kind": "analog",
+        "description": "Gate control input.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "D",
+        "kind": "analog",
+        "description": "Drain power terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "S",
+        "kind": "analog",
+        "description": "Source terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.infineon.com/part/IRLZ44N"
+    ],
+    "notes": [
+      "Tab is drain. Check RDS(on) at the intended gate voltage; gate threshold is not full turn-on voltage."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Package pin numbers; consult manufacturer drawing for front/bottom view and lead order."
+    },
+    "electrical": {
+      "Supply": "See part-specific limits in notes/datasheet"
+    },
+    "ascii_art": "IRLZ44N logic-level MOSFET [irlz44n]\nPackage-specific terminal reference.\nPackage: TO-220 | Supply: See part-specific limits in notes/datasheet\nPackage pin numbers; consult manufacturer drawing for front/bottom view and lead order.\n\n1 [ANA] G\n2 [ANA] D\n3 [ANA] S\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "7805": {
+    "schema_version": 2,
+    "name": "L7805 5 V regulator",
+    "description": "Package-specific terminal reference.",
+    "category": "discrete_sensors",
+    "package": "TO-220",
+    "voltage": "See part-specific limits in notes/datasheet",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "IN",
+        "kind": "analog",
+        "description": "IN terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND terminal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "OUT",
+        "kind": "analog",
+        "description": "OUT terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.st.com/resource/en/datasheet/l78.pdf"
+    ],
+    "notes": [
+      "Output is 5 V nominal. Requires input headroom, decoupling and adequate thermal design. Tab is ground."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Package pin numbers; consult manufacturer drawing for front/bottom view and lead order."
+    },
+    "electrical": {
+      "Supply": "See part-specific limits in notes/datasheet"
+    },
+    "ascii_art": "L7805 5 V regulator [7805]\nPackage-specific terminal reference.\nPackage: TO-220 | Supply: See part-specific limits in notes/datasheet\nPackage pin numbers; consult manufacturer drawing for front/bottom view and lead order.\n\n1 [ANA] IN\n2 [GND] GND\n3 [ANA] OUT\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "lm317": {
+    "schema_version": 2,
+    "name": "LM317 adjustable regulator",
+    "description": "Package-specific terminal reference.",
+    "category": "discrete_sensors",
+    "package": "TO-220",
+    "voltage": "See part-specific limits in notes/datasheet",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "ADJ",
+        "kind": "analog",
+        "description": "ADJ terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "OUT",
+        "kind": "analog",
+        "description": "OUT terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "IN",
+        "kind": "analog",
+        "description": "IN terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.ti.com/lit/ds/symlink/lm317.pdf"
+    ],
+    "notes": [
+      "Tab is output. Resistor network sets output voltage; observe dropout and thermal limits."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Package pin numbers; consult manufacturer drawing for front/bottom view and lead order."
+    },
+    "electrical": {
+      "Supply": "See part-specific limits in notes/datasheet"
+    },
+    "ascii_art": "LM317 adjustable regulator [lm317]\nPackage-specific terminal reference.\nPackage: TO-220 | Supply: See part-specific limits in notes/datasheet\nPackage pin numbers; consult manufacturer drawing for front/bottom view and lead order.\n\n1 [ANA] ADJ\n2 [ANA] OUT\n3 [ANA] IN\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "ds18b20": {
+    "schema_version": 2,
+    "name": "DS18B20 temperature sensor",
+    "description": "Package-specific terminal reference.",
+    "category": "discrete_sensors",
+    "package": "TO-92",
+    "voltage": "See part-specific limits in notes/datasheet",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "GND",
+        "kind": "ground",
+        "description": "GND terminal.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "DQ",
+        "kind": "communication",
+        "description": "DQ terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "VDD",
+        "kind": "power",
+        "description": "VDD terminal.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf"
+    ],
+    "notes": [
+      "Supply 3.0-5.5 V. DQ needs a pull-up; parasite power has additional requirements."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Package pin numbers; consult manufacturer drawing for front/bottom view and lead order."
+    },
+    "electrical": {
+      "Supply": "See part-specific limits in notes/datasheet"
+    },
+    "ascii_art": "DS18B20 temperature sensor [ds18b20]\nPackage-specific terminal reference.\nPackage: TO-92 | Supply: See part-specific limits in notes/datasheet\nPackage pin numbers; consult manufacturer drawing for front/bottom view and lead order.\n\n1 [GND] GND\n2 [BUS] DQ\n3 [PWR] VDD\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
   },
   "dht11": {
-    "name": "DHT11/DHT22 Temperature & Humidity Sensor",
-    "description": "Digital humidity and temperature sensor. Highly used in smart building or agricultural lab setups.",
-    "ascii_art": "\n               \u001b[1mDHT11 / DHT22 (Pins Facing You)\u001b[0m\n                     .---------------.\n                    | [][][][][][][] |\n                    | [][][][][][][] |\n                    | [][][][][][][] |\n                    |                |\n                    '----------------'\n                       |   |   |   |\n                       1   2   3   4\n                       \n                   Pin 1: \u001b[31mVCC\u001b[0m (3.3V to 5.5V Power)\n                   Pin 2: \u001b[36mDATA\u001b[0m (Single-bus bidirectional data link)\n                   Pin 3: \u001b[1mNC\u001b[0m (No Connect - Leave empty)\n                   Pin 4: \u001b[1mGND\u001b[0m (System Ground)\n        "
+    "schema_version": 2,
+    "name": "DHT11 bare four-pin sensor",
+    "description": "Temperature and humidity sensor; bare device, not a three-pin breakout.",
+    "category": "discrete_sensors",
+    "package": "4-pin sensor",
+    "voltage": "3.5-5.5 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "VCC",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "3.5-5.5 V",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "DATA",
+        "kind": "communication",
+        "description": "DATA interface signal.",
+        "functions": [
+          "Single-wire sensor bus"
+        ],
+        "voltage": "",
+        "notes": [
+          "Use a pull-up to a voltage compatible with your MCU."
+        ]
+      },
+      {
+        "number": "3",
+        "name": "NC",
+        "kind": "nc",
+        "description": "Not connected; leave unused.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.aosong.com/en/products-21.html"
+    ],
+    "notes": [
+      "DHT protocol is not Dallas/Maxim 1-Wire. Module connector orders vary."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Front grille facing viewer, leads down, left to right 1-4."
+    },
+    "electrical": {
+      "Supply": "3.5-5.5 V"
+    },
+    "ascii_art": "DHT11 bare four-pin sensor [dht11]\nTemperature and humidity sensor; bare device, not a three-pin breakout.\nPackage: 4-pin sensor | Supply: 3.5-5.5 V\nFront grille facing viewer, leads down, left to right 1-4.\n\n1 [PWR] VCC\n2 [BUS] DATA\n3 [NC] NC\n4 [GND] GND\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "dht22": {
+    "schema_version": 2,
+    "name": "DHT22 bare four-pin sensor",
+    "description": "Temperature and humidity sensor; bare device, not a three-pin breakout.",
+    "category": "discrete_sensors",
+    "package": "4-pin sensor",
+    "voltage": "3.3-6 V",
+    "aliases": [],
+    "pins": [
+      {
+        "number": "1",
+        "name": "VCC",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "3.3-6 V",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "DATA",
+        "kind": "communication",
+        "description": "DATA interface signal.",
+        "functions": [
+          "Single-wire sensor bus"
+        ],
+        "voltage": "",
+        "notes": [
+          "Use a pull-up to a voltage compatible with your MCU."
+        ]
+      },
+      {
+        "number": "3",
+        "name": "NC",
+        "kind": "nc",
+        "description": "Not connected; leave unused.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "4",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://www.aosong.com/en/products-22.html"
+    ],
+    "notes": [
+      "DHT protocol is not Dallas/Maxim 1-Wire. Module connector orders vary."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Front grille facing viewer, leads down, left to right 1-4."
+    },
+    "electrical": {
+      "Supply": "3.3-6 V"
+    },
+    "ascii_art": "DHT22 bare four-pin sensor [dht22]\nTemperature and humidity sensor; bare device, not a three-pin breakout.\nPackage: 4-pin sensor | Supply: 3.3-6 V\nFront grille facing viewer, leads down, left to right 1-4.\n\n1 [PWR] VCC\n2 [BUS] DATA\n3 [NC] NC\n4 [GND] GND\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
+  },
+  "hcsr04": {
+    "schema_version": 2,
+    "name": "HC-SR04 ultrasonic module",
+    "description": "Four-pin trigger/echo distance module.",
+    "category": "discrete_sensors",
+    "package": "4-pin module header",
+    "voltage": "5 V supply",
+    "aliases": [
+      "hc-sr04"
+    ],
+    "pins": [
+      {
+        "number": "1",
+        "name": "VCC",
+        "kind": "power",
+        "description": "Supply or reference connection.",
+        "functions": [],
+        "voltage": "5 V",
+        "notes": []
+      },
+      {
+        "number": "2",
+        "name": "TRIG",
+        "kind": "control",
+        "description": "A high pulse of at least 10 us starts measurement.",
+        "functions": [],
+        "voltage": "",
+        "notes": []
+      },
+      {
+        "number": "3",
+        "name": "ECHO",
+        "kind": "digital",
+        "description": "Pulse width indicates round-trip time.",
+        "functions": [],
+        "voltage": "5 V output",
+        "notes": [
+          "Use a divider or level shifter into 3.3 V-only inputs."
+        ]
+      },
+      {
+        "number": "4",
+        "name": "GND",
+        "kind": "ground",
+        "description": "Ground return.",
+        "functions": [],
+        "voltage": "0 V",
+        "notes": []
+      }
+    ],
+    "sources": [
+      "https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf"
+    ],
+    "notes": [
+      "HC-SR04-compatible clones can differ."
+    ],
+    "layout": {
+      "type": "table",
+      "orientation": "Front transducers facing viewer, connector below: VCC, TRIG, ECHO, GND left to right."
+    },
+    "electrical": {
+      "Supply": "5 V supply"
+    },
+    "ascii_art": "HC-SR04 ultrasonic module [hcsr04]\nFour-pin trigger/echo distance module.\nPackage: 4-pin module header | Supply: 5 V supply\nFront transducers facing viewer, connector below: VCC, TRIG, ECHO, GND left to right.\n\n1 [PWR] VCC\n2 [CTL] TRIG\n3 [IO] ECHO\n4 [GND] GND\n\nPWR power | GND ground | IO digital | ANA analog | BUS interface | CTL control | NC unused\n"
   }
 }
